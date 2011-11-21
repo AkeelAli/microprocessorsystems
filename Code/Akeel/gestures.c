@@ -13,6 +13,7 @@ symbol_t moves[VALID_MOVES] = {scissors, paper, sync, rock, scissors, paper, syn
 static float prev_acc[3];
 static float acc[3];
 static float delta[3];
+static float abs_delta[3];
 
 int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 
@@ -20,9 +21,13 @@ int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 	acc[1] = y;
 	acc[2] = z;
 
-	delta[0] = fabs( (acc[0] - prev_acc[0]) );
-	delta[1] = fabs( (acc[1] - prev_acc[1]) );
-	delta[2] = fabs( (acc[2] - prev_acc[2]) );
+	delta[0] = (acc[0] - prev_acc[0]);
+	delta[1] = (acc[1] - prev_acc[1]);
+	delta[2] = (acc[2] - prev_acc[2]);
+
+	abs_delta[0] = fabs(acc[0] - prev_acc[0]);
+	abs_delta[1] = fabs(acc[1] - prev_acc[1]);
+	abs_delta[2] = fabs(acc[2] - prev_acc[2]);
 	
 	/* roll overrides other gestures hence comes first in comparison */
 	if (roll > ROLL_MAG)
@@ -31,22 +36,22 @@ int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 	else if (-roll > ROLL_MAG) 
 		intelligent_push(neg_roll);
 
-	else if (delta[0] > delta[1] && delta[0] > delta[2]) {
-		if (acc[0] > ACC_X_MAG)			 /* compare the value as opposed to the delta */
+	else if (abs_delta[0] > abs_delta[1] && abs_delta[0] > abs_delta[2]) {
+		if (delta[0] > ACC_X_MAG)			 /* compare the value as opposed to the delta */
 			intelligent_push(pos_x);
-		else if (-acc[0] > ACC_X_MAG)
+		else if (-delta[0] > ACC_X_MAG)
 			intelligent_push(neg_x);	
 	}
-	else if (delta[1] > delta[0] && delta[1] > delta[2]) {
-		if (acc[1] > ACC_Y_MAG)			 /* compare the value as opposed to the delta */
+	else if (abs_delta[1] > abs_delta[0] && abs_delta[1] > abs_delta[2]) {
+		if (delta[1] > ACC_Y_MAG)			 /* compare the value as opposed to the delta */
 			intelligent_push(pos_y);
-		else if (-acc[1] > ACC_Y_MAG)
+		else if (-delta[1] > ACC_Y_MAG)
 			intelligent_push(neg_y);
 	}
 	else {
-		if (acc[2] > ACC_Z_MAG)			 /* compare the value as opposed to the delta */
+		if (delta[2] > ACC_Z_MAG)			 /* compare the value as opposed to the delta */
 			intelligent_push(pos_z);
-		else if (-acc[2] > ACC_Z_MAG)
+		else if (-delta[2] > ACC_Z_MAG)
 			intelligent_push(neg_z);	
 	} 
 	
