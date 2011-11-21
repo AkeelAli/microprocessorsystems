@@ -2,10 +2,10 @@
 #define GESTURES_H
 
 //Threshold values use to indicate presence of microgesture:
-#define		ACC_X_MAG	10000000
-#define 	ACC_Y_MAG	10000000
-#define		ACC_Z_MAG	10000000
-#define		ROLL_MAG	25	  /* threshold angle */
+#define		ACC_X_MAG	1000
+#define 	ACC_Y_MAG	5000
+#define		ACC_Z_MAG	7000
+#define		ROLL_MAG	10	  /* threshold angle */
 
 typedef enum {
 	pos_x = 1,

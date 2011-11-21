@@ -3,8 +3,8 @@
 
 #define MAX 2
 
-mgest_t buff[MAX];
-int sp = 0;	 /* next free space on stack */
+static mgest_t buff[MAX];
+static int sp = 0;	 /* next free space on stack */
 
 static int isEmpty(){
 	return (sp == 0);
@@ -57,7 +57,7 @@ int process_symbol(symbol_t *s){
 	if(sp != 2)  /* must have 2 mgests on stack */
 		return ERROR;
 	
-	if (pop(&tmp1) != ERROR && pop(&tmp2) != ERROR){
+	if ((pop(&tmp1) != ERROR) && (pop(&tmp2) != ERROR)){
 	 	int i;
 		for (i = 0; i < VALID_MOVES; i++){
 			if (tmp1 == valid_moves[i][0] && tmp2 == valid_moves[i][1]){
@@ -68,8 +68,7 @@ int process_symbol(symbol_t *s){
 	}
 
 	//re-push only the last-in element (no valid move)
-	push(tmp2);
-	sp = 1;
+	push(tmp1);
 	s = 0;	// 0 = NULL
 	return ERROR;
 }
