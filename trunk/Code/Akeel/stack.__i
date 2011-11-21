@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I..\Akeel -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -o "stack.o" --omf_browse "stack.crf" --depend "stack.d" "stack.c"
