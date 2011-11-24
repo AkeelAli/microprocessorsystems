@@ -135,6 +135,7 @@ u8 read_byte (u16 address) {
 	drop_css();
 	while(miso_high());
 	wait ();
+
 	//while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == RESET);
 	// keep reading untill 200 times the same value
    	tmp = 2000;
