@@ -137,7 +137,7 @@ u8 read_byte (u16 address) {
 	wait ();
 	//while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == RESET);
 	// keep reading untill 200 times the same value
-   	tmp = 200;
+   	tmp = 2000;
   	while (tmp){
 		SPI_I2S_SendData( SPI1,(address | TI_CCxxx0_READ_SINGLE)<<8);
 		
@@ -145,7 +145,7 @@ u8 read_byte (u16 address) {
 		if (t2 == t)
 			tmp--;
 		else
-			tmp = 200;
+			tmp = 2000;
 		t2 = t;
 	}
 	raise_css();
@@ -157,7 +157,7 @@ u8 read_byte (u16 address) {
 
 // this is weird. add wait
 void test_send(void) { 		 
-	write_byte (0x02,0x04);	  
+	write_byte (0x02,0x12);	  
 	
 	t3 = read_byte(0x02);   
 
@@ -190,7 +190,7 @@ void SysTick_Handler(void) {
 
 u8 set_config (u16 address, u16 byte) {
  	 write_byte (address,byte);	  
-	 wait();
+	 
 	 if (byte != read_byte(address))
 	 	return 1;
 	 else

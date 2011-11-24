@@ -3,7 +3,7 @@
 <title>Static Call Graph - [C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\code_4\microprocessorsystems\Code\Georgi\Lab 2_final\lab_2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\code_4\microprocessorsystems\Code\Georgi\Lab 2_final\lab_2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Thu Nov 24 14:09:41 2011
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Thu Nov 24 14:22:30 2011
 <BR><P>
 <H3>Maximum Stack Usage =         80 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -641,7 +641,6 @@ Global Symbols
 
 <P><STRONG><a name="[5a]"></a>wait</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rf2500.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 </UL>
 
@@ -668,7 +667,7 @@ Global Symbols
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 </UL>
 
-<P><STRONG><a name="[59]"></a>read_byte</STRONG> (Thumb, 122 bytes, Stack size 8 bytes, rf2500.o(.text))
+<P><STRONG><a name="[59]"></a>read_byte</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = read_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drop_css
@@ -695,12 +694,11 @@ Global Symbols
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
 </UL>
 
-<P><STRONG><a name="[5e]"></a>set_config</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, rf2500.o(.text))
+<P><STRONG><a name="[5e]"></a>set_config</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
 </UL>
