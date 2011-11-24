@@ -640,9 +640,9 @@ Image Symbol Table
     wait                                     0x08000bf1   Thumb Code    18  rf2500.o(.text)
     miso_high                                0x08000c03   Thumb Code    12  rf2500.o(.text)
     drop_css                                 0x08000c0f   Thumb Code    28  rf2500.o(.text)
-    read_byte                                0x08000c2b   Thumb Code   122  rf2500.o(.text)
-    write_byte                               0x08000ca5   Thumb Code    38  rf2500.o(.text)
-    set_config                               0x08000ccb   Thumb Code    36  rf2500.o(.text)
+    read_byte                                0x08000c2b   Thumb Code   126  rf2500.o(.text)
+    write_byte                               0x08000ca9   Thumb Code    38  rf2500.o(.text)
+    set_config                               0x08000ccf   Thumb Code    32  rf2500.o(.text)
     configure                                0x08000cef   Thumb Code   562  rf2500.o(.text)
     test_send                                0x08000f21   Thumb Code    22  rf2500.o(.text)
     rf_reset                                 0x08000f37   Thumb Code    48  rf2500.o(.text)
@@ -774,14 +774,14 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
          8          0          0          0          0     223211   main.o
-      1296         50          0         10          0      20377   rf2500.o
+      1296         50          0         10          0      20373   rf2500.o
         52         18        236          0        512        744   stm32f10x.o
        856         40          0          0          0     225605   stm32f10x_gpio.o
        932         52          0         20          0       8652   stm32f10x_rcc.o
        784         12          0          0          0     225478   stm32f10x_spi.o
 
     ----------------------------------------------------------------------
-      3928        172        268         32        512     704067   Object Totals
+      3928        172        268         32        512     704063   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          2          0          1   (incl. Padding)
 
@@ -832,8 +832,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4228        192        268         32        608     703848   Grand Totals
-      4228        192        268         32        608     703848   ELF Image Totals
+      4228        192        268         32        608     703844   Grand Totals
+      4228        192        268         32        608     703844   ELF Image Totals
       4228        192        268         32          0          0   ROM Totals
 
 ==============================================================================
