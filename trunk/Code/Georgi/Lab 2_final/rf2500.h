@@ -33,4 +33,10 @@ void rf_reset (void);
 void test_send(void);
 void write_byte (u16 address, u16 byte);
 u8 read_byte (u16 address);
+
+// sets a config register. it then reads back to make sure everything is fine
+// return 0 on success and 1 on failure
+u8 set_config (u16 address, u16 byte);
+u8 configure (void);
+
 #endif

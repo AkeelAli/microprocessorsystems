@@ -3,131 +3,404 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\Lab 2_final_4\Lab 2_final\lab_2.uvproj
+C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\code_4\microprocessorsystems\Code\Georgi\Lab 2_final\lab_2.uvproj
 Project File Date:  11/18/2011
 
 <h2>Output:</h2>
-Build target 'Target 1'
-compiling main.c...
-main.c(9): warning:  #111-D: statement is unreachable
-compiling rf2500.c...
-linking...
-Program Size: Code=3640 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3640 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=3640 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3608 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3592 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
 Program Size: Code=3588 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 linking...
-Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
-rf2500.c(141): error:  #20: identifier "t0" is undefined
+rf2500.c(49): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3596 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(49): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3580 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(49): warning:  #111-D: statement is unreachable
+rf2500.c(136): error:  #20: identifier "top" is undefined
 Target not created
 Build target 'Target 1'
 compiling rf2500.c...
-rf2500.c(141): error:  #20: identifier "t0" is undefined
+rf2500.c(49): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3608 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3640 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3620 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(9): warning:  #111-D: statement is unreachable
+compiling rf2500.c...
+rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
+linking...
+Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
+linking...
+Program Size: Code=3668 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
+linking...
+Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3812 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=3940 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4064 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4120 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4148 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4212 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(198): warning:  #940-D: missing return statement at end of non-void function "set_config"
+rf2500.c(242): error:  #140: too many arguments in function call
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(242): error:  #140: too many arguments in function call
+Target not created
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(242): error:  #140: too many arguments in function call
 Target not created
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(151): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(151): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(151): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 linking...
-Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\Lab 2_final_4\\Lab 2_final\\lab_2.AXF" 
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4236 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
