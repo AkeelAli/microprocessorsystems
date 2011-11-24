@@ -105,8 +105,9 @@ void rf_reset (void) {
 	drop_css();
 
 	while(miso_high());
-
-	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES<<8);
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
+	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
 
 
 	raise_css();
