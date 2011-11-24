@@ -1,0 +1,31 @@
+*** Creating Trace Output File 'lab_2.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"stm32f10x.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"stm32f10x_gpio.o"'
+### List of Objects: adding '"stm32f10x_i2c.o"'
+### List of Objects: adding '"stm32f10x_rcc.o"'
+### List of Objects: adding '"debugger.o"'
+### List of Objects: adding '"system_stm32f10x.o"'
+### List of Objects: adding '"stm32f10x_tim.o"'
+### List of Objects: adding '"misc.o"'
+### List of Objects: adding '"stm32f10x_exti.o"'
+### List of Objects: adding '"lps001dl_i2c.o"'
+### List of Objects: adding '"stm32f10x_spi.o"'
+### List of Objects: adding '"rf2500.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "stm32f10x.o" "main.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "debugger.o" "system_stm32f10x.o" "stm32f10x_tim.o" "misc.o" "stm32f10x_exti.o" "lps001dl_i2c.o" "stm32f10x_spi.o" "rf2500.o" --strict --scatter "lab_2.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lab_2.map" -o "lab_2.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'lab_2.axf'
+### ADS-LD Command File: 'lab_2.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'lab_2.lnp', Handle=0x000004BC
+### Writing '.lnp' file
+### ADS-LD Command file 'lab_2.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
