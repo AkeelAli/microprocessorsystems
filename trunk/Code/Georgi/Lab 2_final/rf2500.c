@@ -35,7 +35,7 @@ void init_spi (void) {
 	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
 	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
 	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
 	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
 	SPI_InitStructure.SPI_CRCPolynomial = 7;
 
@@ -155,7 +155,6 @@ u8 read_byte (u16 address) {
 	SPI1->DR = (address | TI_CCxxx0_READ_SINGLE)<<8;
 	
 	t = SPI1->DR;
-	t = SPI1->DR;
 	//t = SPI1->DR;
 	//while(1) {
 	//t3++;
@@ -199,8 +198,8 @@ u8 read_byte (u16 address) {
 void test_send(void) { 		 
 	
 	write_byte (TI_CCxxx0_TEST2,0x52);	
-
-	read_byte(TI_CCxxx0_TEST2); 
+	while(1)
+	t3 = read_byte(TI_CCxxx0_TEST2); 
 	//t3 = read_byte(TI_CCxxx0_TEST2);   
 //
 //	drop_css();
