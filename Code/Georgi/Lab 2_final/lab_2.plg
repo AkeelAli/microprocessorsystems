@@ -3,86 +3,40 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\code_4\microprocessorsystems\Code\Georgi\Lab 2_final\lab_2.uvproj
-Project File Date:  11/18/2011
+H:\code\Code\Georgi\Lab 2_final\lab_2.uvproj
+Project File Date:  11/25/2011
 
 <h2>Output:</h2>
 Build target 'Target 1'
+assembling STM32F10x.s...
+compiling main.c...
+main.c(9): warning:  #111-D: statement is unreachable
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_rcc.c...
+compiling debugger.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_tim.c...
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling LPS001DL_I2C.c...
+compiling stm32f10x_spi.c...
 compiling rf2500.c...
+rf2500.c(109): warning:  #111-D: statement is unreachable
 linking...
-Program Size: Code=3588 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
+rf2500.c(109): warning:  #111-D: statement is unreachable
 linking...
-Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(49): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=3596 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4212 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(49): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=3580 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(49): warning:  #111-D: statement is unreachable
-rf2500.c(136): error:  #20: identifier "top" is undefined
-Target not created
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(49): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=3608 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3640 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3620 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
@@ -90,269 +44,15 @@ Build target 'Target 1'
 compiling main.c...
 main.c(9): warning:  #111-D: statement is unreachable
 compiling rf2500.c...
-rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
 linking...
-Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
-linking...
-Program Size: Code=3668 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4268 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(206): warning:  #940-D: missing return statement at end of non-void function "configure"
-linking...
-Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4236 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=3672 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3744 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3812 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=3940 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4064 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4120 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4148 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4212 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(198): warning:  #940-D: missing return statement at end of non-void function "set_config"
-rf2500.c(242): error:  #140: too many arguments in function call
-Target not created
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(242): error:  #140: too many arguments in function call
-Target not created
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-_____^
-*** error 56: cant open file
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(242): error:  #140: too many arguments in function call
-Target not created
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(151): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(151): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(151): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
@@ -361,24 +61,399 @@ compiling rf2500.c...
 linking...
 Program Size: Code=4236 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Build target 'Target 1'
+linking...
+Program Size: Code=4236 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4216 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(119): error:  #20: identifier "SPI" is undefined
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4152 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 linking...
-Program Size: Code=4224 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4152 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4160 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4160 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4164 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(147): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4164 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(149): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(149): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(155): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3580 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4164 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
@@ -387,29 +462,84 @@ compiling rf2500.c...
 linking...
 Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(148): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4164 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4156 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(150): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(150): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(122): warning:  #111-D: statement is unreachable
+rf2500.c(151): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3548 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
@@ -417,178 +547,1011 @@ Build target 'Target 1'
 compiling rf2500.c...
 rf2500.c(151): warning:  #111-D: statement is unreachable
 linking...
-Program Size: Code=3608 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
-linking...
-Program Size: Code=4232 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4232 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4232 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=4172 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-linking...
-Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(146): warning:  #111-D: statement is unreachable
+rf2500.c(151): warning:  #111-D: statement is unreachable
 linking...
 Program Size: Code=3572 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Build target 'Target 1'
-compiling rf2500.c...
-rf2500.c(145): warning:  #111-D: statement is unreachable
-linking...
-Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
-rf2500.c(145): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3584 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3584 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3576 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3584 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(156): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3584 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(158): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3576 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3576 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(157): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3584 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3576 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(154): warning:  #111-D: statement is unreachable
 linking...
 Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
-rf2500.c(145): warning:  #111-D: statement is unreachable
+rf2500.c(156): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3576 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(153): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3568 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4184 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(48): error:  #20: identifier "t2" is undefined
+rf2500.c(50): error:  #20: identifier "t" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(9): warning:  #111-D: statement is unreachable
+compiling rf2500.c...
+linking...
+lab_2.axf: Error: L6200E: Symbol tmp multiply defined (by rf2500.o and main.o).
+lab_2.axf: Error: L6200E: Symbol t multiply defined (by rf2500.o and main.o).
+lab_2.axf: Error: L6200E: Symbol t2 multiply defined (by rf2500.o and main.o).
+lab_2.axf: Error: L6200E: Symbol t3 multiply defined (by rf2500.o and main.o).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(9): warning:  #111-D: statement is unreachable
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4196 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4220 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4196 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4196 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(157): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3596 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(157): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3596 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(159): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4188 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(159): warning:  #111-D: statement is unreachable
 linking...
 Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=3564 RO-data=268 RW-data=32 ZI-data=608  
-"lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4228 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4180 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
 Build target 'Target 1'
 compiling rf2500.c...
 linking...
-Program Size: Code=4244 RO-data=268 RW-data=32 ZI-data=608  
+Program Size: Code=4196 RO-data=268 RW-data=32 ZI-data=608  
 "lab_2.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\gkosta\\Downloads\\code4_working read write but need to figure out multiple\\code_4\\microprocessorsystems\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
-USB Communication Failure
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4192 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(162): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4200 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4204 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(164): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3580 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4208 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4208 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(164): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3580 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4176 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4156 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4160 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+rf2500.c(227): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3592 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+rf2500.c(229): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3600 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+rf2500.c(230): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3604 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3560 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(166): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4152 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4156 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4152 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4168 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4144 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4144 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(158): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(158): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(158): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(158): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=3556 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+linking...
+Program Size: Code=4156 RO-data=268 RW-data=32 ZI-data=608  
+"lab_2.axf" - 0 Error(s), 0 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.

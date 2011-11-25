@@ -7,7 +7,6 @@
 #include "C2500.h"
 #include <stdbool.h>
 
-
 void rf_transmit_packets ( u8 *byte, const u8 count);
 
 void rf_receive_packets ( u8 *bytes, u8 count ) ;
@@ -38,5 +37,7 @@ u8 read_byte (u16 address);
 // return 0 on success and 1 on failure
 u8 set_config (u16 address, u16 byte);
 u8 configure (void);
+
+void send_strobe (u8 strobe);
 
 #endif
