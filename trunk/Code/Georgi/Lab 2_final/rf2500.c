@@ -1,6 +1,8 @@
 #include "rf2500.h"
 
-
+u16 tmp;
+u16 t,t2;
+u8 t3;
 
 
 void init_spi (void) {
@@ -26,16 +28,14 @@ void init_spi (void) {
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 
-	// need to define the MISO here somewhere
-
 
 	SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
 	SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
 	SPI_InitStructure.SPI_DataSize = SPI_DataSize_16b;
-	SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;
-	SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
 	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_256;
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;
 	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
 	SPI_InitStructure.SPI_CRCPolynomial = 7;
 
@@ -46,10 +46,15 @@ void init_spi (void) {
 	SPI_Cmd(SPI1, ENABLE);
 
 	SysTick_Config (800);
-	rf_reset();
 
+	raise_css();
+
+	rf_reset();
+	
 	test_send();
-	configure();
+		test_send();
+		test_send();
+	//configure();
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
@@ -96,26 +101,20 @@ void rf_receive_packets ( u8 *bytes, u8 count ) {
 void rf_reset (void) {
 
  	
-	raise_css();
 	drop_css();
 	raise_css();
 	
 	wait();
 
-	drop_css();
+	send_strobe	 (TI_CCxxx0_SRES);
 
-	while(miso_high());
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
-	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
-
-
-	raise_css();
+//	t2=2000;
+//	while(t2--)
+//	t = SPI1->DR;
+	
 	
 }
-u16 tmp;
-u16 t,t2;
-u8 t3;
+
 
 // this works!	 don't add wait
 void write_byte (u16 address, u16 byte) {
@@ -125,43 +124,113 @@ void write_byte (u16 address, u16 byte) {
 	while(miso_high());
 
 
-	SPI_I2S_SendData  (SPI1,address << 8 | byte);
+	SPI1->DR = address << 8 | byte;
+
+	raise_css();
+
+}
+
+void send_strobe (u8 strobe) {
+ 	drop_css();
+
+	while(miso_high());
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
+
+	SPI1->DR = strobe;
+
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
+
+	
 
 	raise_css();
 }
 
 u8 read_byte (u16 address) {
-	t=0;
-	t2=1;
+	
 	drop_css();
 	while(miso_high());
-	wait ();
+	//wait ();
 
-	//while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == RESET);
-	// keep reading untill 200 times the same value
-   	tmp = 2000;
-  	while (tmp){
-		SPI_I2S_SendData( SPI1,(address | TI_CCxxx0_READ_SINGLE)<<8);
-		
-	   	t = SPI_I2S_ReceiveData(SPI1);
-		if (t2 == t)
-			tmp--;
-		else
-			tmp = 2000;
-		t2 = t;
-	}
+	
+	SPI1->DR = (address | TI_CCxxx0_READ_SINGLE)<<8;
+	
+	t = SPI1->DR;
+	t = SPI1->DR;
+	//t = SPI1->DR;
+	//while(1) {
+	//t3++;
+	//t = SPI1->DR;
+	//t2--;	
+	//if( t == 0x12) t2 = 0;
+	//}
+
 	raise_css();
-//	wait();
+
+
 	return t;
+
+//	t=0;
+//	t2=1;
+//	drop_css();
+//	while(miso_high());
+//	wait ();
+//
+//	//while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == RESET);
+//	// keep reading untill 200 times the same value
+//   	tmp = 2000;
+//  	while (tmp){
+//		SPI_I2S_SendData( SPI1,(address | TI_CCxxx0_READ_SINGLE)<<8);
+//		
+//	   	t = SPI_I2S_ReceiveData(SPI1);
+//		if (t2 == t)
+//			tmp--;
+//		else
+//			tmp = 2000;
+//		t2 = t;
+//	}
+//	raise_css();
+////	wait();
+//	return t;
 	
 
 }
 
 // this is weird. add wait
 void test_send(void) { 		 
-	write_byte (0x02,0x12);	  
 	
-	t3 = read_byte(0x02);   
+	write_byte (TI_CCxxx0_TEST2,0x52);	
+
+	read_byte(TI_CCxxx0_TEST2); 
+	//t3 = read_byte(TI_CCxxx0_TEST2);   
+//
+//	drop_css();
+//
+//	while(miso_high());
+//
+//
+//	SPI1->DR = TI_CCxxx0_TEST2 << 8 | 0x12;
+//
+//	raise_css();
+//	wait();
+//	drop_css();
+//	while(miso_high());
+//	//wait ();
+//
+//	
+//	SPI1->DR = (TI_CCxxx0_TEST2 | TI_CCxxx0_READ_SINGLE)<<8;
+//	while(1)
+//	t = SPI1->DR;
+//	
+//	//while(1) {
+//	//t3++;
+//	//t = SPI1->DR;
+//	//t2--;	
+//	//if( t == 0x12) t2 = 0;
+//	//}
+//
+//	raise_css();
+
+
 
 }
 FlagStatus s;
