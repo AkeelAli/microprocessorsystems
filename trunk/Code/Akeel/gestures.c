@@ -3,12 +3,11 @@
 #include "gestures.h"
 #include "mgest_stack.h"
 
-/* valid_moves and moves go together, and must be updated together */
-mgest_t valid_moves[VALID_MOVES][2] = { 
-		{pos_x, neg_x}, {pos_y, neg_y}, {pos_z, neg_z}, {pos_roll, neg_roll},
-		{neg_x, pos_x}, {neg_y, pos_y}, {neg_z, pos_z}, {neg_roll, pos_roll}
-	}; 
-symbol_t moves[VALID_MOVES] = {scissors, paper, sync, rock, scissors, paper, sync, rock};
+/* valid moves for the game */
+gesture valid_moves[VALID_MOVES] = {
+		 {{pos_x, neg_x}, scissors}, {{pos_y, neg_y}, paper}, {{pos_z, neg_z}, sync}, {{pos_roll, neg_roll}, rock},
+		 {{neg_x, pos_x}, scissors}, {{neg_y, pos_y}, paper}, {{neg_z, pos_z}, sync}, {{neg_roll, pos_roll}, rock}
+	};
 
 static float prev_acc[3];
 static float acc[3];

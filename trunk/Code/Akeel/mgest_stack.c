@@ -60,8 +60,8 @@ int process_symbol(symbol_t *s){
 	if ((pop(&tmp1) != ERROR) && (pop(&tmp2) != ERROR)){
 	 	int i;
 		for (i = 0; i < VALID_MOVES; i++){
-			if (tmp1 == valid_moves[i][0] && tmp2 == valid_moves[i][1]){
-				*s = moves[i];
+			if (tmp1 == valid_moves[i].mgest[0] && tmp2 == valid_moves[i].mgest[1]){
+				*s = valid_moves[i].symbol;
 				return SUCCESS;
 			}
 		}

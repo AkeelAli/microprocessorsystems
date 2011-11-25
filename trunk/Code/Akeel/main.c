@@ -1,5 +1,3 @@
-/*MAIN FILE DEMO 4/LAB 4*/
-
 //include library header files
 #include <stdio.h>
 #include "stm32f10x_conf.h"
@@ -20,16 +18,17 @@ LSM_Acc_ConfigTypeDef accConfig;
 NVIC_InitTypeDef nvicConfig;
 TIM_TimeBaseInitTypeDef timConfig;
 //raw arrays for Accelerometer and Magnetometer
-s16 rawAcc[4][3];
+s16 rawAcc[4][3];		//4 buffers of 3 s16 values each
 s16 rawGyro[4][3];
 
-//storage buffer for statistics
+/*storage circular buffers for statistics */
+//history of pitch & roll (and their squares)
 float pitch_stat[10], roll_stat[10], pitch2_stat[10], roll2_stat[10];
 float mean_pitch, mean_roll, pitchsquare, rollsquare, var_pitch, var_roll;
 
 short stat_count = 0;
-short newData = 0;
-int data = 0;
+short newData = 0;	 //set when there is new raw data after a TIM2 interrupt
+int data = 0; //counter for raw data placement in buffer (counts up to 3 then wraps back to 0)
 
 float accelX,accelY,accelZ;
 float accelYZ,accelXY;
@@ -40,28 +39,24 @@ float gyrosp_pitch_b, gyro_pitch, gyrosp_pitch;
 float fuse_factor_r,fuse_factor_p;
 float ax_project,ay_project;
 
-symbol_t move;
+symbol_t move; //UpdateGesture stores the move in this variable
 
 int main(void){
-// u8 temp;
- 
- //initialize Accelerometer	and Gyroscope
- initAccGyro();
- //initialize the Timer Interrupt
- initTIM();
- 
- 
- while(1){
+	//initialize Accelerometer	and Gyroscope
+	initAccGyro();
+	//initialize the Timer Interrupt
+	initTIM();
+	
+	while(1){
 	  if(newData){
 		 update_Orientation();
-
+	
 		 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
 		 
 		 newData = 0;
 	  }
-
- }
- //return 0;
+	
+	}
 
 }
 
@@ -83,7 +78,7 @@ void initTIM(void){
 	//Configure the Interrupt
 	nvicConfig.NVIC_IRQChannel = TIM2_IRQn;
   	nvicConfig.NVIC_IRQChannelPreemptionPriority = 2;
-  	nvicConfig.NVIC_IRQChannelSubPriority = 0; 
+  	nvicConfig.NVIC_IRQChannelSubPriority = 2; 
   	nvicConfig.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&nvicConfig);
 	//Start the timer
@@ -114,12 +109,12 @@ __irq void TIM2_IRQHandler(void){
 	TIM_ClearITPendingBit(TIM2,TIM_IT_Update); //clear the pending Interrupt
 	LSM303DLH_Acc_Read_Acc(rawAcc[data]); //update the Accelerometer value
 	LPRYxxxAL_Read_Rate(rawGyro[data]);	//update the Gyroscope value
-	data = (data + 1)%4;  //set the counter up
+	data = (data + 1) % 4;  //set the counter up
 	newData = 1; //indicate that new data is available
 }
 //this method filters the data and computes the fused roll/pitch
 void update_Orientation(void){
-  	//computes the sum of the accelerometer readings in teh array
+  	//computes the sum of the accelerometer readings in the array
 	accelX = (rawAcc[0][0] + rawAcc[1][0] + rawAcc[2][0] + rawAcc[3][0]);
 	accelY = (rawAcc[0][1] + rawAcc[1][1] + rawAcc[2][1] + rawAcc[3][1]);
 	accelZ = (rawAcc[0][2] + rawAcc[1][2] + rawAcc[2][2] + rawAcc[3][2]);	 
@@ -144,11 +139,12 @@ void update_Orientation(void){
 	pitchsquare = pitchsquare - pitch2_stat[stat_count]/10 + pitch*pitch/10;
 	rollsquare = rollsquare - roll2_stat[stat_count]/10 + roll*roll/10;
 	
+	//update history buffers with latest values
 	pitch_stat[stat_count] = pitch;
 	pitch2_stat[stat_count] = pitch*pitch;
 	roll_stat[stat_count] = roll;
 	roll2_stat[stat_count] = roll*roll;
-	stat_count = (stat_count+1)%10;		
+	stat_count = (stat_count + 1) % 10;		
 
 	var_pitch = pitchsquare - mean_pitch*mean_pitch;
 	var_roll = rollsquare - mean_roll*mean_roll;
@@ -156,7 +152,7 @@ void update_Orientation(void){
 	//compute the fuse factor for each of the roll and pitch angles
 	fuse_factor_r = 0.1+0.9*exp(-(var_roll*var_roll/64));
 	fuse_factor_p = 0.1+0.9*exp(-(var_pitch*var_pitch/64));
-	//obtain roll, pitch, and yaw speed from teh gyroscope
+	//obtain roll, pitch, and yaw speed from the gyroscope
 	gyrosp_roll = (rawGyro[0][0] + rawGyro[1][0] + rawGyro[2][0] + rawGyro[3][0])/4;
 	gyrosp_pitch = (rawGyro[0][1] + rawGyro[1][1] + rawGyro[2][1] + rawGyro[3][1])/4;
 	gyrosp_yaw = (rawGyro[0][2] + rawGyro[1][2] + rawGyro[2][2] + rawGyro[3][2])/4;
@@ -171,7 +167,7 @@ void update_Orientation(void){
 	gyro_yaw += (gyrosp_yaw+gyrosp_yaw_b)/50.0;	
 	gyrosp_yaw_b = gyrosp_yaw;
 
-	//compute teh fused roll and pitch using the formulae presented
+	//compute the fused roll and pitch
 	roll_fuse = fuse_factor_r*roll + (1-fuse_factor_r)*(roll_fuse+(gyrosp_roll+gyrosp_roll_b)/50.0);
 	
 	pitch_fuse = fuse_factor_p*pitch + (1-fuse_factor_p)*(pitch_fuse+(gyrosp_pitch+gyrosp_pitch_b)/50.0);
