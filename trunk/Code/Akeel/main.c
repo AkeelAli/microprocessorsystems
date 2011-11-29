@@ -7,6 +7,9 @@
 #include <math.h>
 #include "gestures.h"
 
+#include "spi_protocol.h"
+#include "cc2500.h"
+
 //Define constants/Macros
 #define PI 3.141592654
 
@@ -41,22 +44,45 @@ float ax_project,ay_project;
 
 symbol_t move; //UpdateGesture stores the move in this variable
 
+uint16_t readout=0;
+
 int main(void){
+	
 	//initialize Accelerometer	and Gyroscope
 	initAccGyro();
 	//initialize the Timer Interrupt
 	initTIM();
-	
+
+							SPI_Configuration();
+							RF_Config();
+						
 	while(1){
 	  if(newData){
 		 update_Orientation();
 	
 		 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
 		 
+							SPI_Write(0x2C, 0xFF);
+							readout= SPI_Read(0x2C);
+
 		 newData = 0;
 	  }
 	
-	}
+	}  
+
+
+	
+/*	while(1)
+	RF_Receive(&readout);
+  */
+	/*while(1) {
+		SPI_Write(0x2C, 0xFF);
+		readout= SPI_Read(0x2C);
+		
+	}  */
+
+//	SPI_Write(0x2C, 0xFF);
+//	readout = SPI_Read(0x2C);
 
 }
 
