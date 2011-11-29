@@ -466,6 +466,21 @@
               <FileType>1</FileType>
               <FilePath>.\mgest_stack.c</FilePath>
             </File>
+            <File>
+              <FileName>cc2500.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\cc2500.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\spi_protocol.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\stm32f10x_spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -560,6 +575,21 @@
               <FileName>mgest_stack.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\mgest_stack.h</FilePath>
+            </File>
+            <File>
+              <FileName>cc2500.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\cc2500.h</FilePath>
+            </File>
+            <File>
+              <FileName>spi_protocol.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\spi_protocol.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\stm32f10x_spi.h</FilePath>
             </File>
           </Files>
         </Group>

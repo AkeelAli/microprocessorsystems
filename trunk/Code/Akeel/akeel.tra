@@ -27,7 +27,7 @@
 ### ADS-LD Output File: 'akeel.axf'
 ### ADS-LD Command File: 'akeel.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'akeel.lnp', Handle=0x00000664
+### Creating CmdFile 'akeel.lnp', Handle=0x000003A0
 ### Writing '.lnp' file
 ### ADS-LD Command file 'akeel.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
