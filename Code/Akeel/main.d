@@ -21,3 +21,6 @@ main.o: HAL_LPRYxxxAL.h
 main.o: atan_LUT.h
 main.o: C:\Keil\ARM\RV31\INC\math.h
 main.o: gestures.h
+main.o: spi_protocol.h
+main.o: stm32f10x_spi.h
+main.o: cc2500.h

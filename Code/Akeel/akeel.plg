@@ -3,1405 +3,13 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\Akeel\McGill\Fall 2011\microP\FinalProject\Code\Akeel\akeel.uvproj
-Project File Date:  11/20/2011
+\\campus.mcgill.ca\EMF\ELE\aali28\Desktop\microP\Final\Code\Akeel\akeel.uvproj
+Project File Date:  11/21/2011
 
 <h2>Output:</h2>
 Build target 'Target 1'
 compiling atan_LUT.c...
 compiling debugger.c...
-compiling Gestures.c...
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-Gestures.c(3): error:  #20: identifier "s16" is undefined
-Gestures.c(3): error:  #20: identifier "s16" is undefined
-Gestures.c(3): error:  #20: identifier "s16" is undefined
-Gestures.c(3): error:  #20: identifier "s16" is undefined
-Gestures.c(6): error:  #20: identifier "s16" is undefined
-Gestures.c(7): error:  #20: identifier "s16" is undefined
-Gestures.c(10): warning:  #223-D: function "abs" declared implicitly
-Gestures.c(27): error:  #28: expression must have a constant value
-Gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-Gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-Gestures.c(34): error:  #28: expression must have a constant value
-Gestures.c(41): error:  #28: expression must have a constant value
-Gestures.c(48): error:  #28: expression must have a constant value
-Gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-Gestures.c(56): warning:  #127-D: expected a statement
-Gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-compiling LPRYxxxAL.c...
-LPRYxxxAL.c(53): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LPRYxxxAL.c(54): error:  #20: identifier "ADC_InitTypeDef" is undefined
-LPRYxxxAL.c(60): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_ADC1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_0" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_2" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_4" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_5" is undefined
-LPRYxxxAL.c(63): error:  #20: identifier "GPIO_Mode_AIN" is undefined
-LPRYxxxAL.c(64): warning:  #223-D: function "GPIO_Init" declared implicitly
-LPRYxxxAL.c(67): error:  #20: identifier "ADC_Mode_Independent" is undefined
-LPRYxxxAL.c(70): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
-LPRYxxxAL.c(71): error:  #20: identifier "ADC_DataAlign_Right" is undefined
-LPRYxxxAL.c(75): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_Channel_10" is undefined
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_SampleTime_239Cycles5" is undefined
-LPRYxxxAL.c(76): error:  #20: identifier "ADC_Channel_11" is undefined
-LPRYxxxAL.c(77): error:  #20: identifier "ADC_Channel_12" is undefined
-LPRYxxxAL.c(78): error:  #20: identifier "ADC_Channel_14" is undefined
-LPRYxxxAL.c(79): error:  #20: identifier "ADC_Channel_15" is undefined
-LPRYxxxAL.c(81): warning:  #223-D: function "ADC_Init" declared implicitly
-LPRYxxxAL.c(84): warning:  #223-D: function "ADC_Cmd" declared implicitly
-LPRYxxxAL.c(87): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
-LPRYxxxAL.c(89): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(92): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
-LPRYxxxAL.c(94): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(106): error:  #20: identifier "DMA_InitTypeDef" is undefined
-LPRYxxxAL.c(108): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
-LPRYxxxAL.c(108): error:  #20: identifier "RCC_AHBPeriph_DMA1" is undefined
-LPRYxxxAL.c(110): warning:  #223-D: function "DMA_DeInit" declared implicitly
-LPRYxxxAL.c(113): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
-LPRYxxxAL.c(115): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
-LPRYxxxAL.c(116): error:  #20: identifier "DMA_MemoryInc_Enable" is undefined
-LPRYxxxAL.c(117): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
-LPRYxxxAL.c(118): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
-LPRYxxxAL.c(119): error:  #20: identifier "DMA_Mode_Circular" is undefined
-LPRYxxxAL.c(120): error:  #20: identifier "DMA_Priority_High" is undefined
-LPRYxxxAL.c(121): error:  #20: identifier "DMA_M2M_Disable" is undefined
-LPRYxxxAL.c(122): warning:  #223-D: function "DMA_Init" declared implicitly
-LPRYxxxAL.c(134): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-compiling LSM303DLH.c...
-LSM303DLH.c(48): error:  #20: identifier "I2C_InitTypeDef" is undefined
-LSM303DLH.c(49): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LSM303DLH.c(52): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
-LSM303DLH.c(52): error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
-LSM303DLH.c(53): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LSM303DLH.c(53): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_6" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_7" is undefined
-LSM303DLH.c(57): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
-LSM303DLH.c(58): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
-LSM303DLH.c(59): warning:  #223-D: function "GPIO_Init" declared implicitly
-LSM303DLH.c(62): error:  #20: identifier "I2C_Mode_I2C" is undefined
-LSM303DLH.c(63): error:  #20: identifier "I2C_DutyCycle_2" is undefined
-LSM303DLH.c(65): error:  #20: identifier "I2C_Ack_Enable" is undefined
-LSM303DLH.c(66): error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
-LSM303DLH.c(70): warning:  #223-D: function "I2C_Init" declared implicitly
-LSM303DLH.c(73): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(87): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(90): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(90): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(93): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(93): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(96): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(99): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(102): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(111): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(128): warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
-LSM303DLH.c(128): error:  #20: identifier "I2C_FLAG_BUSY" is undefined
-LSM303DLH.c(131): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(134): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(134): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(137): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(137): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(140): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(143): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(146): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(149): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(158): error:  #20: identifier "I2C_Direction_Receiver" is undefined
-LSM303DLH.c(161): error:  #20: identifier "I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED" is undefined
-LSM303DLH.c(169): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-LSM303DLH.c(172): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(176): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_RECEIVED" is undefined
-LSM303DLH.c(179): warning:  #223-D: function "I2C_ReceiveData" declared implicitly
-LSM303DLH.c(190): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-compiling main.c...
-compiling misc.c...
-misc.c(98): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(116): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(157): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(176): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(200): warning:  #223-D: function "assert_param" declared implicitly
-compiling stack.c...
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-stack.c(5): error:  #20: identifier "micro_gesture" is undefined
-stack.c(8): error:  #20: identifier "micro_gesture" is undefined
-stack.c(16): error:  #20: identifier "micro_gesture" is undefined
-stack.c(22): warning:  #1-D: last line of file ends without a newline
-compiling stm32f10x_adc.c...
-stm32f10x_adc.c(181): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(222): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(301): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(326): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(356): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(395): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(433): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(459): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(484): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(513): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(538): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(688): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(762): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(802): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(826): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(851): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(876): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(933): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(997): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1056): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1148): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1198): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1230): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1251): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1286): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_dma.c...
-stm32f10x_dma.c(113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(207): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(297): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(329): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(355): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(506): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(580): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(666): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_exti.c...
-stm32f10x_exti.c(105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(173): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(189): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(211): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(228): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(251): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_gpio.c...
-stm32f10x_gpio.c(110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(177): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(307): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(323): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(345): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(360): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(376): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(436): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(465): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(485): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(546): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(605): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(624): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_i2c.c...
-stm32f10x_i2c.c(164): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(197): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(324): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(348): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(372): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(420): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(444): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(469): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(494): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(518): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(547): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(572): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(585): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(603): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(640): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(660): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(686): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(760): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(782): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(797): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(821): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(847): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(991): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1038): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1093): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1170): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1206): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1265): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_rcc.c...
-stm32f10x_rcc.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(347): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(366): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(392): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(577): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(621): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(647): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(673): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(712): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(740): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(779): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(841): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(874): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(891): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(905): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1074): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1136): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1226): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1247): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1260): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1292): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1339): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1458): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_tim.c...
-stm32f10x_tim.c(124): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(229): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(365): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(447): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(526): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(588): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(649): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(705): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(824): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(865): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(902): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(930): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(957): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(982): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1001): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1070): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1111): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1143): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1193): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1223): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1262): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1309): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1333): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1357): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1402): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1426): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1451): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1503): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1528): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1552): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1576): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1600): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1626): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1651): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1676): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1701): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1727): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1751): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1775): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1822): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1846): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1869): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1893): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1917): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1941): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1969): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1999): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2041): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2137): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2163): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2218): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2239): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2257): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2271): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2299): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2313): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2327): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2346): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2368): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2390): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2412): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2434): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2450): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2463): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2489): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2502): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2515): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2550): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2627): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2669): warning:  #223-D: function "assert_param" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-LPRYxxxAL.c(53): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LPRYxxxAL.c(54): error:  #20: identifier "ADC_InitTypeDef" is undefined
-LPRYxxxAL.c(60): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_ADC1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_0" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_2" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_4" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_5" is undefined
-LPRYxxxAL.c(63): error:  #20: identifier "GPIO_Mode_AIN" is undefined
-LPRYxxxAL.c(64): warning:  #223-D: function "GPIO_Init" declared implicitly
-LPRYxxxAL.c(67): error:  #20: identifier "ADC_Mode_Independent" is undefined
-LPRYxxxAL.c(70): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
-LPRYxxxAL.c(71): error:  #20: identifier "ADC_DataAlign_Right" is undefined
-LPRYxxxAL.c(75): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_Channel_10" is undefined
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_SampleTime_239Cycles5" is undefined
-LPRYxxxAL.c(76): error:  #20: identifier "ADC_Channel_11" is undefined
-LPRYxxxAL.c(77): error:  #20: identifier "ADC_Channel_12" is undefined
-LPRYxxxAL.c(78): error:  #20: identifier "ADC_Channel_14" is undefined
-LPRYxxxAL.c(79): error:  #20: identifier "ADC_Channel_15" is undefined
-LPRYxxxAL.c(81): warning:  #223-D: function "ADC_Init" declared implicitly
-LPRYxxxAL.c(84): warning:  #223-D: function "ADC_Cmd" declared implicitly
-LPRYxxxAL.c(87): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
-LPRYxxxAL.c(89): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(92): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
-LPRYxxxAL.c(94): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(106): error:  #20: identifier "DMA_InitTypeDef" is undefined
-LPRYxxxAL.c(108): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
-LPRYxxxAL.c(108): error:  #20: identifier "RCC_AHBPeriph_DMA1" is undefined
-LPRYxxxAL.c(110): warning:  #223-D: function "DMA_DeInit" declared implicitly
-LPRYxxxAL.c(113): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
-LPRYxxxAL.c(115): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
-LPRYxxxAL.c(116): error:  #20: identifier "DMA_MemoryInc_Enable" is undefined
-LPRYxxxAL.c(117): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
-LPRYxxxAL.c(118): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
-LPRYxxxAL.c(119): error:  #20: identifier "DMA_Mode_Circular" is undefined
-LPRYxxxAL.c(120): error:  #20: identifier "DMA_Priority_High" is undefined
-LPRYxxxAL.c(121): error:  #20: identifier "DMA_M2M_Disable" is undefined
-LPRYxxxAL.c(122): warning:  #223-D: function "DMA_Init" declared implicitly
-LPRYxxxAL.c(134): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-compiling LSM303DLH.c...
-LSM303DLH.c(48): error:  #20: identifier "I2C_InitTypeDef" is undefined
-LSM303DLH.c(49): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LSM303DLH.c(52): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
-LSM303DLH.c(52): error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
-LSM303DLH.c(53): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LSM303DLH.c(53): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_6" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_7" is undefined
-LSM303DLH.c(57): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
-LSM303DLH.c(58): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
-LSM303DLH.c(59): warning:  #223-D: function "GPIO_Init" declared implicitly
-LSM303DLH.c(62): error:  #20: identifier "I2C_Mode_I2C" is undefined
-LSM303DLH.c(63): error:  #20: identifier "I2C_DutyCycle_2" is undefined
-LSM303DLH.c(65): error:  #20: identifier "I2C_Ack_Enable" is undefined
-LSM303DLH.c(66): error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
-LSM303DLH.c(70): warning:  #223-D: function "I2C_Init" declared implicitly
-LSM303DLH.c(73): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(87): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(90): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(90): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(93): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(93): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(96): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(99): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(102): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(111): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(128): warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
-LSM303DLH.c(128): error:  #20: identifier "I2C_FLAG_BUSY" is undefined
-LSM303DLH.c(131): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(134): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(134): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(137): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(137): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(140): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(143): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(146): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(149): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(158): error:  #20: identifier "I2C_Direction_Receiver" is undefined
-LSM303DLH.c(161): error:  #20: identifier "I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED" is undefined
-LSM303DLH.c(169): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-LSM303DLH.c(172): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(176): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_RECEIVED" is undefined
-LSM303DLH.c(179): warning:  #223-D: function "I2C_ReceiveData" declared implicitly
-LSM303DLH.c(190): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-compiling main.c...
-compiling misc.c...
-misc.c(98): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(116): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(157): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(176): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(200): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_adc.c...
-stm32f10x_adc.c(181): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(222): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(301): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(326): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(356): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(395): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(433): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(459): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(484): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(513): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(538): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(688): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(762): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(802): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(826): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(851): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(876): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(933): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(997): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1056): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1148): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1198): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1230): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1251): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1286): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_dma.c...
-stm32f10x_dma.c(113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(207): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(297): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(329): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(355): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(506): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(580): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(666): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_exti.c...
-stm32f10x_exti.c(105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(173): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(189): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(211): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(228): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(251): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_gpio.c...
-stm32f10x_gpio.c(110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(177): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(307): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(323): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(345): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(360): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(376): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(436): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(465): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(485): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(546): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(605): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(624): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_i2c.c...
-stm32f10x_i2c.c(164): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(197): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(324): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(348): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(372): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(420): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(444): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(469): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(494): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(518): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(547): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(572): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(585): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(603): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(640): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(660): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(686): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(760): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(782): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(797): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(821): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(847): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(991): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1038): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1093): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1170): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1206): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1265): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_rcc.c...
-stm32f10x_rcc.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(347): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(366): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(392): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(577): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(621): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(647): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(673): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(712): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(740): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(779): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(841): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(874): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(891): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(905): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1074): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1136): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1226): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1247): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1260): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1292): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1339): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1458): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_tim.c...
-stm32f10x_tim.c(124): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(229): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(365): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(447): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(526): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(588): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(649): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(705): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(824): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(865): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(902): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(930): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(957): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(982): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1001): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1070): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1111): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1143): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1193): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1223): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1262): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1309): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1333): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1357): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1402): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1426): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1451): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1503): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1528): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1552): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1576): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1600): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1626): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1651): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1676): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1701): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1727): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1751): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1775): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1822): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1846): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1869): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1893): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1917): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1941): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1969): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1999): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2041): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2137): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2163): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2218): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2239): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2257): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2271): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2299): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2313): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2327): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2346): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2368): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2390): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2412): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2434): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2450): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2463): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2489): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2502): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2515): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2550): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2627): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2669): warning:  #223-D: function "assert_param" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-LPRYxxxAL.c(53): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LPRYxxxAL.c(54): error:  #20: identifier "ADC_InitTypeDef" is undefined
-LPRYxxxAL.c(60): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
-LPRYxxxAL.c(60): error:  #20: identifier "RCC_APB2Periph_ADC1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_1" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_0" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_2" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_4" is undefined
-LPRYxxxAL.c(62): error:  #20: identifier "GPIO_Pin_5" is undefined
-LPRYxxxAL.c(63): error:  #20: identifier "GPIO_Mode_AIN" is undefined
-LPRYxxxAL.c(64): warning:  #223-D: function "GPIO_Init" declared implicitly
-LPRYxxxAL.c(67): error:  #20: identifier "ADC_Mode_Independent" is undefined
-LPRYxxxAL.c(70): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
-LPRYxxxAL.c(71): error:  #20: identifier "ADC_DataAlign_Right" is undefined
-LPRYxxxAL.c(75): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_Channel_10" is undefined
-LPRYxxxAL.c(75): error:  #20: identifier "ADC_SampleTime_239Cycles5" is undefined
-LPRYxxxAL.c(76): error:  #20: identifier "ADC_Channel_11" is undefined
-LPRYxxxAL.c(77): error:  #20: identifier "ADC_Channel_12" is undefined
-LPRYxxxAL.c(78): error:  #20: identifier "ADC_Channel_14" is undefined
-LPRYxxxAL.c(79): error:  #20: identifier "ADC_Channel_15" is undefined
-LPRYxxxAL.c(81): warning:  #223-D: function "ADC_Init" declared implicitly
-LPRYxxxAL.c(84): warning:  #223-D: function "ADC_Cmd" declared implicitly
-LPRYxxxAL.c(87): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
-LPRYxxxAL.c(89): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(92): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
-LPRYxxxAL.c(94): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
-LPRYxxxAL.c(106): error:  #20: identifier "DMA_InitTypeDef" is undefined
-LPRYxxxAL.c(108): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
-LPRYxxxAL.c(108): error:  #20: identifier "RCC_AHBPeriph_DMA1" is undefined
-LPRYxxxAL.c(110): warning:  #223-D: function "DMA_DeInit" declared implicitly
-LPRYxxxAL.c(113): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
-LPRYxxxAL.c(115): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
-LPRYxxxAL.c(116): error:  #20: identifier "DMA_MemoryInc_Enable" is undefined
-LPRYxxxAL.c(117): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
-LPRYxxxAL.c(118): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
-LPRYxxxAL.c(119): error:  #20: identifier "DMA_Mode_Circular" is undefined
-LPRYxxxAL.c(120): error:  #20: identifier "DMA_Priority_High" is undefined
-LPRYxxxAL.c(121): error:  #20: identifier "DMA_M2M_Disable" is undefined
-LPRYxxxAL.c(122): warning:  #223-D: function "DMA_Init" declared implicitly
-LPRYxxxAL.c(134): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-compiling LSM303DLH.c...
-LSM303DLH.c(48): error:  #20: identifier "I2C_InitTypeDef" is undefined
-LSM303DLH.c(49): error:  #20: identifier "GPIO_InitTypeDef" is undefined
-LSM303DLH.c(52): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
-LSM303DLH.c(52): error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
-LSM303DLH.c(53): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
-LSM303DLH.c(53): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_6" is undefined
-LSM303DLH.c(56): error:  #20: identifier "GPIO_Pin_7" is undefined
-LSM303DLH.c(57): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
-LSM303DLH.c(58): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
-LSM303DLH.c(59): warning:  #223-D: function "GPIO_Init" declared implicitly
-LSM303DLH.c(62): error:  #20: identifier "I2C_Mode_I2C" is undefined
-LSM303DLH.c(63): error:  #20: identifier "I2C_DutyCycle_2" is undefined
-LSM303DLH.c(65): error:  #20: identifier "I2C_Ack_Enable" is undefined
-LSM303DLH.c(66): error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
-LSM303DLH.c(70): warning:  #223-D: function "I2C_Init" declared implicitly
-LSM303DLH.c(73): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(87): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(90): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(90): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(93): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(93): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(96): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(99): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(102): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(111): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(128): warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
-LSM303DLH.c(128): error:  #20: identifier "I2C_FLAG_BUSY" is undefined
-LSM303DLH.c(131): warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
-LSM303DLH.c(134): warning:  #223-D: function "I2C_CheckEvent" declared implicitly
-LSM303DLH.c(134): error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
-LSM303DLH.c(137): warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
-LSM303DLH.c(137): error:  #20: identifier "I2C_Direction_Transmitter" is undefined
-LSM303DLH.c(140): error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
-LSM303DLH.c(143): warning:  #223-D: function "I2C_Cmd" declared implicitly
-LSM303DLH.c(146): warning:  #223-D: function "I2C_SendData" declared implicitly
-LSM303DLH.c(149): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
-LSM303DLH.c(158): error:  #20: identifier "I2C_Direction_Receiver" is undefined
-LSM303DLH.c(161): error:  #20: identifier "I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED" is undefined
-LSM303DLH.c(169): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-LSM303DLH.c(172): warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
-LSM303DLH.c(176): error:  #20: identifier "I2C_EVENT_MASTER_BYTE_RECEIVED" is undefined
-LSM303DLH.c(179): warning:  #223-D: function "I2C_ReceiveData" declared implicitly
-LSM303DLH.c(190): warning:  #223-D: function "I2C_AcknowledgeConfig" declared implicitly
-compiling main.c...
-compiling misc.c...
-misc.c(98): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(116): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(157): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(176): warning:  #223-D: function "assert_param" declared implicitly
-misc.c(200): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_adc.c...
-stm32f10x_adc.c(181): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(222): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(301): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(326): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(356): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(395): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(433): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(459): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(484): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(513): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(538): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(688): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(762): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(802): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(826): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(851): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(876): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(933): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(997): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1056): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1148): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1198): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1230): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1251): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_adc.c(1286): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_dma.c...
-stm32f10x_dma.c(113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(207): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(297): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(329): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(355): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(506): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(580): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_dma.c(666): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_exti.c...
-stm32f10x_exti.c(105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(173): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(189): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(211): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(228): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_exti.c(251): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_gpio.c...
-stm32f10x_gpio.c(110): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(177): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(307): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(323): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(345): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(360): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(376): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(419): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(436): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(465): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(485): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(546): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(605): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_gpio.c(624): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_i2c.c...
-stm32f10x_i2c.c(164): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(197): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(324): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(348): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(372): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(396): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(420): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(444): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(469): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(494): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(518): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(547): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(572): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(585): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(603): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(640): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(660): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(686): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(710): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(736): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(760): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(782): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(797): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(821): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(847): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(991): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1038): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1093): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1170): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1206): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_i2c.c(1265): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_rcc.c...
-stm32f10x_rcc.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(347): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(366): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(392): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(577): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(621): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(647): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(673): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(712): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(740): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(779): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(841): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(874): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(891): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(905): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1074): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1105): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1136): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1226): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1247): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1260): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1292): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1339): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1413): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_rcc.c(1458): warning:  #223-D: function "assert_param" declared implicitly
-compiling stm32f10x_tim.c...
-stm32f10x_tim.c(124): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(229): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(282): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(365): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(447): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(526): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(588): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(649): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(705): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(824): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(865): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(902): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(930): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(957): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(982): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1001): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1029): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1070): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1111): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1143): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1169): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1193): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1223): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1262): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1309): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1333): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1357): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1381): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1402): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1426): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1451): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1503): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1528): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1552): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1576): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1600): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1626): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1651): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1676): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1701): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1727): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1751): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1775): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1799): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1822): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1846): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1869): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1893): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1917): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1941): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1969): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(1999): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2041): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2085): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2113): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2137): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2163): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2195): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2218): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2239): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2257): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2271): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2285): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2299): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2313): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2327): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2346): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2368): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2390): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2412): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2434): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2450): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2463): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2476): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2489): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2502): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2515): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2550): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2593): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2627): warning:  #223-D: function "assert_param" declared implicitly
-stm32f10x_tim.c(2669): warning:  #223-D: function "assert_param" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-compiling LSM303DLH.c...
-compiling main.c...
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_tim.c...
-linking...
-akeel.axf: Error: L6320W: Ignoring --entry command. Cannot find argument 'Reset_Handler'.
-akeel.axf: Warning: L6320W: Ignoring --first command. Cannot find argument '__Vectors'.
-Target not created
-Build target 'Target 1'
-linking...
-akeel.axf: Error: L6320W: Ignoring --entry command. Cannot find argument 'Reset_Handler'.
-akeel.axf: Warning: L6320W: Ignoring --first command. Cannot find argument '__Vectors'.
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-compiling LSM303DLH.c...
-compiling main.c...
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_tim.c...
-linking...
-akeel.axf: Error: L6320W: Ignoring --entry command. Cannot find argument 'Reset_Handler'.
-akeel.axf: Warning: L6320W: Ignoring --first command. Cannot find argument '__Vectors'.
-Target not created
-Build target 'Target 1'
-assembling STM32F10x.s...
-linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-compiling LSM303DLH.c...
-compiling main.c...
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_tim.c...
-assembling STM32F10x.s...
-compiling stack.c...
-Gestures.h(30): error:  #40: expected an identifier
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-stack.c(22): warning:  #1-D: last line of file ends without a newline
-compiling gestures.c...
-Gestures.h(30): error:  #40: expected an identifier
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(6): error:  #20: identifier "s16" is undefined
-gestures.c(7): error:  #20: identifier "s16" is undefined
-gestures.c(10): warning:  #223-D: function "abs" declared implicitly
-gestures.c(27): error:  #28: expression must have a constant value
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #28: expression must have a constant value
-gestures.c(41): error:  #28: expression must have a constant value
-gestures.c(48): error:  #28: expression must have a constant value
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling stack.c...
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-stack.c(22): warning:  #1-D: last line of file ends without a newline
-compiling gestures.c...
-Gestures.h(35): error:  #20: identifier "s16" is undefined
-Gestures.h(36): error:  #20: identifier "s16" is undefined
-Gestures.h(37): error:  #20: identifier "s16" is undefined
-Gestures.h(38): error:  #20: identifier "s16" is undefined
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #100: duplicate parameter name
-Gestures.h(40): error:  #92: identifier-list parameters may only be used in a function definition
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(3): error:  #20: identifier "s16" is undefined
-gestures.c(6): error:  #20: identifier "s16" is undefined
-gestures.c(7): error:  #20: identifier "s16" is undefined
-gestures.c(10): warning:  #223-D: function "abs" declared implicitly
-gestures.c(27): error:  #28: expression must have a constant value
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #28: expression must have a constant value
-gestures.c(41): error:  #28: expression must have a constant value
-gestures.c(48): error:  #28: expression must have a constant value
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling stack.c...
-stack.c(22): warning:  #1-D: last line of file ends without a newline
-compiling gestures.c...
-gestures.c(10): warning:  #223-D: function "abs" declared implicitly
-gestures.c(27): error:  #28: expression must have a constant value
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #28: expression must have a constant value
-gestures.c(41): error:  #28: expression must have a constant value
-gestures.c(48): error:  #28: expression must have a constant value
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(10): warning:  #223-D: function "abs" declared implicitly
-gestures.c(27): error:  #28: expression must have a constant value
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #28: expression must have a constant value
-gestures.c(41): error:  #28: expression must have a constant value
-gestures.c(48): error:  #28: expression must have a constant value
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(10): warning:  #260-D: explicit type is missing ("int" assumed)
-gestures.c(10): error:  #101: "delta_x" has already been declared in the current scope
-gestures.c(11): warning:  #260-D: explicit type is missing ("int" assumed)
-gestures.c(11): error:  #101: "delta_y" has already been declared in the current scope
-gestures.c(12): warning:  #260-D: explicit type is missing ("int" assumed)
-gestures.c(12): error:  #101: "delta_z" has already been declared in the current scope
-gestures.c(15): warning:  #223-D: function "abs" declared implicitly
-gestures.c(27): error:  #259: constant value is not known
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #259: constant value is not known
-gestures.c(41): error:  #259: constant value is not known
-gestures.c(48): error:  #28: expression must have a constant value
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-gestures.c(6): warning:  #177-D: variable "delta_x" was declared but never referenced
-gestures.c(6): warning:  #177-D: variable "delta_y" was declared but never referenced
-gestures.c(6): warning:  #177-D: variable "delta_z" was declared but never referenced
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(6): warning:  #257-D: const variable "delta_x" requires an initializer
-gestures.c(6): warning:  #257-D: const variable "delta_y" requires an initializer
-gestures.c(6): warning:  #257-D: const variable "delta_z" requires an initializer
-gestures.c(6): warning:  #257-D: const variable "delta_roll" requires an initializer
-gestures.c(10): error:  #137: expression must be a modifiable lvalue
-gestures.c(11): error:  #137: expression must be a modifiable lvalue
-gestures.c(12): error:  #137: expression must be a modifiable lvalue
-gestures.c(15): warning:  #223-D: function "abs" declared implicitly
-gestures.c(15): error:  #137: expression must be a modifiable lvalue
-gestures.c(27): error:  #259: constant value is not known
-gestures.c(28): error:  #20: identifier "prevrawAcc" is undefined
-gestures.c(29): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(34): error:  #259: constant value is not known
-gestures.c(41): error:  #259: constant value is not known
-gestures.c(48): error:  #259: constant value is not known
-gestures.c(49): error:  #20: identifier "prevrawGyr" is undefined
-gestures.c(56): warning:  #127-D: expected a statement
-gestures.c(66): warning:  #223-D: function "process_symbol" declared implicitly
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(1): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(1): error:  #20: identifier "mgest" is undefined
-gestures.h(39): error:  #101: "roll" has already been declared in the current scope
-gestures.c(37): error:  #20: identifier "x" is undefined
-gestures.c(38): error:  #20: identifier "y" is undefined
-gestures.c(39): error:  #20: identifier "z" is undefined
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.h(1): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(1): error:  #20: identifier "mgest" is undefined
-gestures.h(39): error:  #101: "roll" has already been declared in the current scope
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(1): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(1): error:  #20: identifier "mgest" is undefined
-gestures.h(39): error:  #101: "roll" has already been declared in the current scope
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.h(1): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(1): error:  #20: identifier "mgest" is undefined
-gestures.h(39): error:  #101: "roll" has already been declared in the current scope
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(1): error:  #3: #include file "gestures.h" includes itself
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(47): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(42): error:  #101: "roll" has already been declared in the current scope
-gestures.h(47): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(14): warning:  #1-D: last line of file ends without a newline
-gestures.h(24): error:  #101: "pos_x" has already been declared in the current scope
-gestures.h(25): error:  #101: "neg_x" has already been declared in the current scope
-gestures.h(26): error:  #101: "pos_y" has already been declared in the current scope
-gestures.h(27): error:  #101: "neg_y" has already been declared in the current scope
-gestures.h(28): error:  #101: "pos_z" has already been declared in the current scope
-gestures.h(29): error:  #101: "neg_z" has already been declared in the current scope
-gestures.h(30): error:  #101: "pos_roll" has already been declared in the current scope
-gestures.h(31): error:  #101: "neg_roll" has already been declared in the current scope
-gestures.h(32): error:  #256: invalid redeclaration of type name "mgest" (declared at line 12 of "mgest_stack.h")
-gestures.h(42): error:  #101: "roll" has already been declared in the current scope
-gestures.h(47): warning:  #1-D: last line of file ends without a newline
-gestures.c(12): warning:  #188-D: enumerated type mixed with another type
-gestures.c(15): warning:  #188-D: enumerated type mixed with another type
-gestures.c(19): warning:  #188-D: enumerated type mixed with another type
-gestures.c(21): warning:  #188-D: enumerated type mixed with another type
-gestures.c(25): warning:  #188-D: enumerated type mixed with another type
-gestures.c(27): warning:  #188-D: enumerated type mixed with another type
-gestures.c(31): warning:  #188-D: enumerated type mixed with another type
-gestures.c(33): warning:  #188-D: enumerated type mixed with another type
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(47): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(42): error:  #101: "roll" has already been declared in the current scope
-gestures.h(47): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(45): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest" is undefined
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #20: identifier "mgest_t" is undefined
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.c(5): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(16): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(24): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(32): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(41): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(54): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(54): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
 compiling LPRYxxxAL.c...
 compiling LSM303DLH.c...
 compiling main.c...
@@ -1415,248 +23,9 @@ compiling stm32f10x_rcc.c...
 compiling stm32f10x_tim.c...
 assembling STM32F10x.s...
 compiling gestures.c...
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(14): warning:  #1-D: last line of file ends without a newline
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(14): warning:  #1-D: last line of file ends without a newline
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): error:  #101: "mgest" has already been declared in the current scope
-mgest_stack.h(4): error:  #101: "pos_x" has already been declared in the current scope
-mgest_stack.h(5): error:  #101: "neg_x" has already been declared in the current scope
-mgest_stack.h(6): error:  #101: "pos_y" has already been declared in the current scope
-mgest_stack.h(7): error:  #101: "neg_y" has already been declared in the current scope
-mgest_stack.h(8): error:  #101: "pos_z" has already been declared in the current scope
-mgest_stack.h(9): error:  #101: "neg_z" has already been declared in the current scope
-mgest_stack.h(10): error:  #101: "pos_roll" has already been declared in the current scope
-mgest_stack.h(11): error:  #101: "neg_roll" has already been declared in the current scope
-mgest_stack.h(12): error:  #256: invalid redeclaration of type name "mgest_t" (declared at line 12)
-mgest_stack.h(14): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(14): error:  #147-D: declaration is incompatible with "int intelligent_push(mgest_t)" (declared at line 14)
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-gestures.c(12): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(12): error:  #20: identifier "pos_roll" is undefined
-gestures.c(15): error:  #20: identifier "neg_roll" is undefined
-gestures.c(19): error:  #20: identifier "pos_x" is undefined
-gestures.c(21): error:  #20: identifier "neg_x" is undefined
-gestures.c(25): error:  #20: identifier "pos_y" is undefined
-gestures.c(27): error:  #20: identifier "neg_y" is undefined
-gestures.c(31): error:  #20: identifier "pos_z" is undefined
-gestures.c(33): error:  #20: identifier "neg_z" is undefined
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-gestures.h(29): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(14): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-gestures.c(12): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(3): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-linking...
-akeel.axf: Error: L6200E: Symbol prev_acc multiply defined (by mgest_stack.o and gestures.o).
-akeel.axf: Error: L6200E: Symbol prev_roll multiply defined (by mgest_stack.o and gestures.o).
-Target not created
-Build target 'Target 1'
-compiling atan_LUT.c...
-compiling debugger.c...
-compiling LPRYxxxAL.c...
-compiling LSM303DLH.c...
-compiling main.c...
-compiling misc.c...
-compiling stm32f10x_adc.c...
-compiling stm32f10x_dma.c...
-compiling stm32f10x_exti.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_i2c.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_tim.c...
-assembling STM32F10x.s...
-compiling gestures.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-gestures.c(12): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-linking...
-akeel.axf: Error: L6200E: Symbol prev_acc multiply defined (by mgest_stack.o and gestures.o).
-akeel.axf: Error: L6200E: Symbol prev_roll multiply defined (by mgest_stack.o and gestures.o).
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-gestures.c(45): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(4): warning:  #177-D: variable "result" was declared but never referenced
-compiling mgest_stack.c...
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-gestures.h(38): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(34): warning:  #1-D: last line of file ends without a newline
-gestures.c(15): warning:  #223-D: function "intelligent_push" declared implicitly
-gestures.c(48): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(7): warning:  #177-D: variable "result" was declared but never referenced
-gestures.c(4): warning:  #550-D: variable "prev_roll" was set but never used
-compiling mgest_stack.c...
-gestures.h(34): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
-"akeel.axf" - 0 Error(s), 9 Warning(s).
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(35): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-gestures.h(35): warning:  #1-D: last line of file ends without a newline
-gestures.c(48): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(7): warning:  #177-D: variable "result" was declared but never referenced
-gestures.c(4): warning:  #550-D: variable "prev_roll" was set but never used
-compiling mgest_stack.c...
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-gestures.h(35): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-gestures.c(48): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(7): warning:  #177-D: variable "result" was declared but never referenced
-gestures.c(4): warning:  #550-D: variable "prev_roll" was set but never used
-compiling mgest_stack.c...
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.h(8): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #1-D: last line of file ends without a newline
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-gestures.c(48): warning:  #940-D: missing return statement at end of non-void function "updateGesture"
-gestures.c(7): warning:  #177-D: variable "result" was declared but never referenced
-gestures.c(4): warning:  #550-D: variable "prev_roll" was set but never used
-compiling mgest_stack.c...
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-gestures.c(4): warning:  #550-D: variable "prev_roll" was set but never used
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(6): error:  #20: identifier "mgest_t" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-mgest_stack.h(4): error:  #20: identifier "mgest_t" is undefined
-compiling mgest_stack.c...
-mgest_stack.h(4): error:  #20: identifier "mgest_t" is undefined
-gestures.h(27): error:  #20: identifier "s16" is undefined
-mgest_stack.c(57): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-mgest_stack.h(4): error:  #20: identifier "mgest_t" is undefined
-gestures.h(27): error:  #20: identifier "s16" is undefined
-mgest_stack.c(57): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(17): warning:  #223-D: function "intelligent_push" declared implicitly
-compiling mgest_stack.c...
-mgest_stack.h(4): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(7): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(18): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(26): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(34): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(43): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(45): error:  #20: identifier "mgest_t" is undefined
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(17): warning:  #223-D: function "intelligent_push" declared implicitly
-compiling mgest_stack.c...
-gestures.h(27): error:  #20: identifier "s16" is undefined
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-gestures.h(27): error:  #20: identifier "s16" is undefined
-mgest_stack.c(56): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(8): error:  #101: "mgest" has already been declared in the current scope
-gestures.h(9): error:  #101: "pos_x" has already been declared in the current scope
-gestures.h(10): error:  #101: "neg_x" has already been declared in the current scope
-gestures.h(11): error:  #101: "pos_y" has already been declared in the current scope
-gestures.h(12): error:  #101: "neg_y" has already been declared in the current scope
-gestures.h(13): error:  #101: "pos_z" has already been declared in the current scope
-gestures.h(14): error:  #101: "neg_z" has already been declared in the current scope
-gestures.h(15): error:  #101: "pos_roll" has already been declared in the current scope
-gestures.h(16): error:  #101: "neg_roll" has already been declared in the current scope
-gestures.h(17): error:  #256: invalid redeclaration of type name "mgest_t" (declared at line 17)
-gestures.h(19): error:  #101: "symbol" has already been declared in the current scope
-gestures.h(20): error:  #101: "paper" has already been declared in the current scope
-gestures.h(21): error:  #101: "rock" has already been declared in the current scope
-gestures.h(22): error:  #101: "scissor" has already been declared in the current scope
-gestures.h(23): error:  #256: invalid redeclaration of type name "symbol_t" (declared at line 23)
-compiling mgest_stack.c...
-gestures.h(25): error:  #20: identifier "s16" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-gestures.h(27): error:  #20: identifier "s16" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
 compiling mgest_stack.c...
 linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
+Program Size: Code=22640 RO-data=904 RW-data=196 ZI-data=892  
 "akeel.axf" - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 compiling atan_LUT.c...
@@ -1676,318 +45,157 @@ assembling STM32F10x.s...
 compiling gestures.c...
 compiling mgest_stack.c...
 linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
+Program Size: Code=22640 RO-data=904 RW-data=196 ZI-data=892  
 "akeel.axf" - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
-compiling gestures.c...
-gestures.c(8): error:  #147-D: declaration is incompatible with "int updateGesture(s16 *, float)" (declared at line 32 of "gestures.h")
-gestures.c(46): warning:  #223-D: function "process_symbol" declared implicitly
-compiling mgest_stack.c...
-..\Akeel\stm32f10x.h(462): error:  #40: expected an identifier
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(46): warning:  #223-D: function "process_symbol" declared implicitly
-compiling mgest_stack.c...
-..\Akeel\stm32f10x.h(462): error:  #40: expected an identifier
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(46): warning:  #223-D: function "process_symbol" declared implicitly
-compiling mgest_stack.c...
+compiling cc2500.c...
+compiling spi_protocol.c...
+compiling stm32f10x_spi.c...
 linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
+Program Size: Code=22640 RO-data=904 RW-data=196 ZI-data=892  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(62): warning:  #223-D: function "GPIO_SPI_Configuration" declared implicitly
+main.c(63): warning:  #223-D: function "SPI_Configuration" declared implicitly
+linking...
+Program Size: Code=22996 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=22996 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(67): error:  #254: type name is not allowed
+main.c(67): error:  #18: expected a ")"
+main.c(68): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(68): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(65): error:  #65: expected a ";"
+main.c(64): warning:  #550-D: variable "readout" was set but never used
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(64): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23012 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=23012 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(69): warning:  #223-D: function "RF_Receive" declared implicitly
+main.c(69): error:  #20: identifier "received_data" is undefined
+main.c(64): warning:  #177-D: variable "readout" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(69): warning:  #223-D: function "RF_Receive" declared implicitly
+linking...
+Program Size: Code=23856 RO-data=904 RW-data=164 ZI-data=844  
 "akeel.axf" - 0 Error(s), 1 Warning(s).
 Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
+compiling main.c...
+main.c(70): error:  #167: argument of type "uint16_t" is incompatible with parameter of type "uint16_t *"
+Target not created
+Build target 'Target 1'
+compiling main.c...
 linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
+Program Size: Code=23860 RO-data=908 RW-data=164 ZI-data=844  
 "akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(62): error:  #20: identifier "mgest" is undefined
-mgest_stack.c(62): error:  #65: expected a ";"
-mgest_stack.c(63): error:  #20: identifier "tmp1" is undefined
-mgest_stack.c(63): error:  #20: identifier "tmp2" is undefined
-mgest_stack.c(68): error:  #65: expected a ";"
-mgest_stack.c(70): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-mgest_stack.c(17): warning:  #177-D: function "clear" was declared but never referenced
-Target not created
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(62): error:  #268: declaration may not appear after executable statement in block
-mgest_stack.c(68): error:  #65: expected a ";"
-mgest_stack.c(70): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-mgest_stack.c(17): warning:  #177-D: function "clear" was declared but never referenced
-Target not created
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(69): error:  #65: expected a ";"
-mgest_stack.c(71): warning:  #940-D: missing return statement at end of non-void function "process_symbol"
-mgest_stack.c(17): warning:  #177-D: function "clear" was declared but never referenced
-Target not created
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(69): error:  #65: expected a ";"
-mgest_stack.c(17): warning:  #177-D: function "clear" was declared but never referenced
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #20: identifier "scissor" is undefined
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(37): error:  #65: expected a ";"
-compiling mgest_stack.c...
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(31): error:  #20: identifier "scissor" is undefined
-gestures.h(31): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-gestures.h(32): error:  #146: too many initializer values
-..\Akeel\stm32f10x.h(141): error:  #65: expected a ";"
-..\Akeel\stm32f10x.h(406): warning:  #12-D: parsing restarts here after previous syntax error
-..\Akeel\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
-mgest_stack.c(64): error:  #513: a value of type "int *" cannot be assigned to an entity of type "symbol_t"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(31): error:  #20: identifier "scissor" is undefined
-gestures.h(37): error:  #65: expected a ";"
-compiling mgest_stack.c...
-gestures.h(31): error:  #20: identifier "scissor" is undefined
-..\Akeel\stm32f10x.h(141): error:  #65: expected a ";"
-..\Akeel\stm32f10x.h(406): warning:  #12-D: parsing restarts here after previous syntax error
-..\Akeel\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
-mgest_stack.c(64): error:  #513: a value of type "int *" cannot be assigned to an entity of type "symbol_t"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-mgest_stack.c(64): error:  #513: a value of type "int *" cannot be assigned to an entity of type "symbol_t"
-Target not created
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(64): warning:  #188-D: enumerated type mixed with another type
+compiling spi_protocol.c...
 linking...
-akeel.axf: Error: L6200E: Symbol valid_moves multiply defined (by mgest_stack.o and gestures.o).
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-compiling mgest_stack.c...
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(31): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-gestures.h(32): warning:  #188-D: enumerated type mixed with another type
-mgest_stack.c(64): error:  #513: a value of type "symbol_t *" cannot be assigned to an entity of type "symbol_t"
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.h(39): error:  #65: expected a ";"
-compiling mgest_stack.c...
-..\Akeel\stm32f10x.h(141): error:  #65: expected a ";"
-..\Akeel\stm32f10x.h(406): warning:  #12-D: parsing restarts here after previous syntax error
-..\Akeel\core_cm3.h(1502): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1515): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1529): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1542): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1555): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1569): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1586): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1609): error:  #20: identifier "IRQn_Type" is undefined
-..\Akeel\core_cm3.h(1699): error:  #20: identifier "SysTick_IRQn" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-akeel.axf: Error: L6200E: Symbol valid_moves multiply defined (by mgest_stack.o and gestures.o).
-akeel.axf: Error: L6200E: Symbol moves multiply defined (by mgest_stack.o and gestures.o).
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-Program Size: Code=23264 RO-data=904 RW-data=160 ZI-data=840  
+Program Size: Code=23860 RO-data=908 RW-data=164 ZI-data=844  
 "akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23860 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23860 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23860 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
 Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling main.c...
-main.c(58): error:  #167: argument of type "symbol_t *" is incompatible with parameter of type "symbol_t"
-compiling gestures.c...
-gestures.c(22): error:  #268: declaration may not appear after executable statement in block
-gestures.c(23): error:  #268: declaration may not appear after executable statement in block
-gestures.c(24): error:  #268: declaration may not appear after executable statement in block
-compiling mgest_stack.c...
-mgest_stack.c(73): error:  #20: identifier "NULL" is undefined
-Target not created
-Build target 'Target 1'
-compiling main.c...
-compiling gestures.c...
-gestures.c(22): error:  #268: declaration may not appear after executable statement in block
-gestures.c(23): error:  #268: declaration may not appear after executable statement in block
-gestures.c(24): error:  #268: declaration may not appear after executable statement in block
-gestures.c(58): error:  #167: argument of type "symbol_t **" is incompatible with parameter of type "symbol_t *"
-compiling mgest_stack.c...
-mgest_stack.c(73): error:  #20: identifier "NULL" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-gestures.c(59): error:  #167: argument of type "symbol_t **" is incompatible with parameter of type "symbol_t *"
-compiling mgest_stack.c...
-mgest_stack.c(73): error:  #20: identifier "NULL" is undefined
-Target not created
-Build target 'Target 1'
-compiling gestures.c...
-compiling mgest_stack.c...
-mgest_stack.c(73): error:  #20: identifier "NULL" is undefined
-Target not created
-Build target 'Target 1'
-compiling mgest_stack.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
 linking...
-Program Size: Code=23992 RO-data=904 RW-data=188 ZI-data=892  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
+Program Size: Code=23008 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
 Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
 compiling main.c...
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-Program Size: Code=23992 RO-data=904 RW-data=188 ZI-data=892  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24000 RO-data=904 RW-data=188 ZI-data=892  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24000 RO-data=904 RW-data=188 ZI-data=892  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling main.c...
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24000 RO-data=904 RW-data=188 ZI-data=892  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling main.c...
-compiling gestures.c...
-compiling mgest_stack.c...
-mgest_stack.c(71): error:  #167: argument of type "mgest_t *" is incompatible with parameter of type "mgest_t"
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+compiling cc2500.c...
+compiling spi_protocol.c...
+spi_protocol.c(36): warning:  #174-D: expression has no effect
+spi_protocol.c(50): warning:  #223-D: function "SPI_Prepare_Receive" declared implicitly
+spi_protocol.c(54): warning:  #174-D: expression has no effect
+spi_protocol.c(56): error:  #65: expected a ";"
+spi_protocol.c(57): warning:  #940-D: missing return statement at end of non-void function "SPI_Read"
 Target not created
 Build target 'Target 1'
-compiling mgest_stack.c...
+compiling spi_protocol.c...
+spi_protocol.c(36): warning:  #174-D: expression has no effect
+spi_protocol.c(50): warning:  #223-D: function "SPI_Prepare_Receive" declared implicitly
+spi_protocol.c(54): warning:  #174-D: expression has no effect
 linking...
-Program Size: Code=24012 RO-data=908 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling main.c...
-compiling gestures.c...
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24012 RO-data=908 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
+akeel.axf: Error: L6218E: Undefined symbol SPI_Prepare_Receive (referred from spi_protocol.o).
+Target not created
 Build target 'Target 1'
 compiling atan_LUT.c...
 compiling debugger.c...
 compiling LPRYxxxAL.c...
 compiling LSM303DLH.c...
 compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
 compiling misc.c...
 compiling stm32f10x_adc.c...
 compiling stm32f10x_dma.c...
@@ -1999,141 +207,235 @@ compiling stm32f10x_tim.c...
 assembling STM32F10x.s...
 compiling gestures.c...
 compiling mgest_stack.c...
+compiling cc2500.c...
+compiling spi_protocol.c...
+compiling stm32f10x_spi.c...
 linking...
-Program Size: Code=24008 RO-data=904 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
+Program Size: Code=23004 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
 Erase Done.
 Programming Done.
 Verify OK.
 Build target 'Target 1'
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24012 RO-data=908 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24012 RO-data=908 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(21): warning:  #188-D: enumerated type mixed with another type
-mgest_stack.c(22): warning:  #188-D: enumerated type mixed with another type
-linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24024 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=188 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-linking...
-Program Size: Code=24008 RO-data=904 RW-data=196 ZI-data=876  
-"akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(63): error:  #75: operand of "*" must be a pointer
-mgest_stack.c(63): error:  #75: operand of "*" must be a pointer
-mgest_stack.c(71): error:  #75: operand of "*" must be a pointer
+compiling spi_protocol.c...
+spi_protocol.c(120): error:  #268: declaration may not appear after executable statement in block
 Target not created
 Build target 'Target 1'
-compiling mgest_stack.c...
-mgest_stack.c(71): error:  #75: operand of "*" must be a pointer
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23012 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=23012 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23012 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+compiling spi_protocol.c...
+spi_protocol.c(6): warning:  #223-D: function "drop_css" declared implicitly
+spi_protocol.c(7): warning:  #223-D: function "raise_css" declared implicitly
+spi_protocol.c(10): error:  #20: identifier "TI_CCxxx0_SRES" is undefined
+spi_protocol.c(14): error:  #159: declaration is incompatible with previous "drop_css" (declared at line 6)
+spi_protocol.c(23): error:  #159: declaration is incompatible with previous "raise_css" (declared at line 7)
 Target not created
 Build target 'Target 1'
-compiling mgest_stack.c...
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+compiling cc2500.c...
+cc2500.c(5): warning:  #223-D: function "RF_Reset" declared implicitly
+cc2500.c(6): warning:  #223-D: function "SPI_Write" declared implicitly
+cc2500.c(6): error:  #20: identifier "SETTING_A_IOCFG0" is undefined
+cc2500.c(7): error:  #20: identifier "SETTING_A_MCSM1" is undefined
+cc2500.c(8): error:  #20: identifier "SETTING_A_MCSM0" is undefined
+cc2500.c(9): error:  #20: identifier "SETTING_A_PKTLEN" is undefined
+cc2500.c(10): error:  #20: identifier "SETTING_A_PKTCTRL0" is undefined
+cc2500.c(11): error:  #20: identifier "SMARTRF_SETTING_A_FSCTRL1" is undefined
+cc2500.c(12): error:  #20: identifier "SMARTRF_SETTING_A_FSCTRL0" is undefined
+cc2500.c(13): error:  #20: identifier "SMARTRF_SETTING_A_FREQ2" is undefined
+cc2500.c(14): error:  #20: identifier "SMARTRF_SETTING_A_FREQ1" is undefined
+cc2500.c(15): error:  #20: identifier "SMARTRF_SETTING_A_FREQ0" is undefined
+cc2500.c(16): error:  #20: identifier "SMARTRF_SETTING_A_MDMCFG4" is undefined
+cc2500.c(17): error:  #20: identifier "SMARTRF_SETTING_A_MDMCFG3" is undefined
+cc2500.c(18): error:  #20: identifier "SMARTRF_SETTING_A_MDMCFG2" is undefined
+cc2500.c(19): error:  #20: identifier "SMARTRF_SETTING_A_MDMCFG1" is undefined
+cc2500.c(20): error:  #20: identifier "SMARTRF_SETTING_A_MDMCFG0" is undefined
+cc2500.c(21): error:  #20: identifier "SMARTRF_SETTING_A_CHANNR" is undefined
+cc2500.c(22): error:  #20: identifier "SMARTRF_SETTING_A_DEVIATN" is undefined
+cc2500.c(23): error:  #20: identifier "SMARTRF_SETTING_A_FREND1" is undefined
+cc2500.c(24): error:  #20: identifier "SMARTRF_SETTING_A_FREND0" is undefined
+cc2500.c(25): error:  #20: identifier "SMARTRF_SETTING_A_MCSM0" is undefined
+cc2500.c(26): error:  #20: identifier "SMARTRF_SETTING_A_FOCCFG" is undefined
+cc2500.c(27): error:  #20: identifier "SMARTRF_SETTING_A_BSCFG" is undefined
+cc2500.c(28): error:  #20: identifier "SMARTRF_SETTING_A_AGCCTRL2" is undefined
+cc2500.c(29): error:  #20: identifier "SMARTRF_SETTING_A_AGCCTRL1" is undefined
+cc2500.c(30): error:  #20: identifier "SMARTRF_SETTING_A_AGCCTRL0" is undefined
+cc2500.c(31): error:  #20: identifier "SMARTRF_SETTING_A_FSCAL3" is undefined
+cc2500.c(32): error:  #20: identifier "SMARTRF_SETTING_A_FSCAL2" is undefined
+cc2500.c(33): error:  #20: identifier "SMARTRF_SETTING_A_FSCAL1" is undefined
+cc2500.c(34): error:  #20: identifier "SMARTRF_SETTING_A_FSCAL0" is undefined
+cc2500.c(35): error:  #20: identifier "SMARTRF_SETTING_A_FSTEST" is undefined
+compiling spi_protocol.c...
+spi_protocol.c(7): warning:  #223-D: function "drop_css" declared implicitly
+spi_protocol.c(8): warning:  #223-D: function "raise_css" declared implicitly
+spi_protocol.c(15): error:  #159: declaration is incompatible with previous "drop_css" (declared at line 7)
+spi_protocol.c(24): error:  #159: declaration is incompatible with previous "raise_css" (declared at line 8)
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+compiling cc2500.c...
+compiling spi_protocol.c...
 linking...
-Program Size: Code=24016 RO-data=904 RW-data=196 ZI-data=876  
+Program Size: Code=23840 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #177-D: variable "readout" was declared but never referenced
+compiling cc2500.c...
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
 "akeel.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Akeel\\McGill\\Fall 2011\\microP\\FinalProject\\Code\\Akeel\\akeel.AXF" 
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23840 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=23840 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23840 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23832 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+compiling spi_protocol.c...
+linking...
+Program Size: Code=23836 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=23836 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(65): warning:  #550-D: variable "readout" was set but never used
+linking...
+Program Size: Code=23840 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=23852 RO-data=908 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=23856 RO-data=904 RW-data=164 ZI-data=844  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=24656 RO-data=904 RW-data=196 ZI-data=892  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=24668 RO-data=908 RW-data=196 ZI-data=892  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=24668 RO-data=908 RW-data=196 ZI-data=892  
+"akeel.axf" - 0 Error(s), 0 Warning(s).
+Load "\\\\campus.mcgill.ca\\EMF\\ELE\\aali28\\Desktop\\microP\\Final\\Code\\Akeel\\akeel.AXF" 
 Erase Done.
 Programming Done.
 Verify OK.
