@@ -151,9 +151,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>52</LineNumber>
+          <LineNumber>7</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134221254</Address>
+          <Address>134218180</Address>
           <ByteObject>0</ByteObject>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
@@ -161,7 +161,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename></Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\lab_2\rf2500\52</Expression>
+          <Expression>\\lab_2\main\7</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -183,7 +183,7 @@
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>t3</ItemText>
+          <ItemText>t3,0x10</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -300,8 +300,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>311</TopLine>
-      <CurrentLine>335</CurrentLine>
+      <TopLine>331</TopLine>
+      <CurrentLine>331</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_gpio.c</FilenameWithoutPath>
@@ -438,10 +438,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>29</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>545</TopLine>
-      <CurrentLine>567</CurrentLine>
+      <TopLine>457</TopLine>
+      <CurrentLine>481</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_spi.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_spi.c</FilenameWithoutPath>
@@ -452,10 +452,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>3</ColumnNumber>
+      <ColumnNumber>41</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>121</TopLine>
-      <CurrentLine>121</CurrentLine>
+      <TopLine>158</TopLine>
+      <CurrentLine>169</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rf2500.c</PathWithFileName>
       <FilenameWithoutPath>rf2500.c</FilenameWithoutPath>
@@ -463,9 +463,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\Lab 2_final_4\Lab 2_final\inc\stm32f10x_spi.h</PathWithFilename>
-    <TopLine>447</TopLine>
-    <CurrentLine>468</CurrentLine>
+    <PathWithFilename>H:\code\Code\Georgi\Lab 2_final\inc\stm32f10x_spi.h</PathWithFilename>
+    <TopLine>423</TopLine>
+    <CurrentLine>456</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -489,9 +489,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\Lab 2_final_4\Lab 2_final\C2500.h</PathWithFilename>
-    <TopLine>86</TopLine>
-    <CurrentLine>97</CurrentLine>
+    <PathWithFilename>H:\code\Code\Georgi\Lab 2_final\C2500.h</PathWithFilename>
+    <TopLine>22</TopLine>
+    <CurrentLine>59</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -515,9 +515,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\gkosta\Downloads\code4_working read write but need to figure out multiple\Lab 2_final_4\Lab 2_final\rf2500.h</PathWithFilename>
+    <PathWithFilename>H:\code\Code\Georgi\Lab 2_final\rf2500.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>35</CurrentLine>
+    <CurrentLine>9</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -549,15 +549,15 @@
       <Documents>
         <Doc>
           <Name>.\rf2500.c</Name>
-          <ColumnNumber>3</ColumnNumber>
-          <TopLine>121</TopLine>
-          <CurrentLine>121</CurrentLine>
+          <ColumnNumber>41</ColumnNumber>
+          <TopLine>158</TopLine>
+          <CurrentLine>169</CurrentLine>
         </Doc>
         <Doc>
           <Name>rf2500.h</Name>
-          <ColumnNumber>27</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>35</CurrentLine>
+          <CurrentLine>9</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\STM32F10x.s</Name>
@@ -573,27 +573,27 @@
         </Doc>
         <Doc>
           <Name>C2500.h</Name>
-          <ColumnNumber>24</ColumnNumber>
-          <TopLine>86</TopLine>
-          <CurrentLine>97</CurrentLine>
+          <ColumnNumber>23</ColumnNumber>
+          <TopLine>22</TopLine>
+          <CurrentLine>59</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_spi.c</Name>
-          <ColumnNumber>29</ColumnNumber>
-          <TopLine>545</TopLine>
-          <CurrentLine>567</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>457</TopLine>
+          <CurrentLine>481</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_gpio.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>311</TopLine>
-          <CurrentLine>335</CurrentLine>
+          <TopLine>331</TopLine>
+          <CurrentLine>331</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\inc\stm32f10x_spi.h</Name>
-          <ColumnNumber>32</ColumnNumber>
-          <TopLine>447</TopLine>
-          <CurrentLine>468</CurrentLine>
+          <ColumnNumber>16</ColumnNumber>
+          <TopLine>423</TopLine>
+          <CurrentLine>456</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
