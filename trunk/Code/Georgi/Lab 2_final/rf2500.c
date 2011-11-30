@@ -50,11 +50,8 @@ void init_spi (void) {
 	raise_css();
 
 	rf_reset();
-	
-	test_send();
-		test_send();
-		test_send();
-	//configure();
+
+	configure();
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
@@ -116,120 +113,78 @@ void rf_reset (void) {
 }
 
 
-// this works!	 don't add wait
+// this works!	 don't fucking touch anything
 void write_byte (u16 address, u16 byte) {
-	
-	drop_css();
 
+	 
+	// drop the css and wait until chip is ready
+	drop_css();
 	while(miso_high());
 
-
+	// write the write command
 	SPI1->DR = address << 8 | byte;
+	
+	// wait until no longer busy
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
+
+	// wait until data in the read register
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
+
+	// read the data; this is the status
+	t = SPI1->DR;
 
 	raise_css();
+	
 
 }
 
 void send_strobe (u8 strobe) {
- 	drop_css();
-
-	while(miso_high());
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
-
-	SPI1->DR = strobe;
-
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
-
-	
-
-	raise_css();
-}
-
-u8 read_byte (u16 address) {
-	
+ 	// drop the css and wait until chip is ready
 	drop_css();
 	while(miso_high());
-	//wait ();
 
-	
-	SPI1->DR = (address | TI_CCxxx0_READ_SINGLE)<<8;
-	
-	t = SPI1->DR;
-	//t = SPI1->DR;
-	//while(1) {
-	//t3++;
-	//t = SPI1->DR;
-	//t2--;	
-	//if( t == 0x12) t2 = 0;
-	//}
+	// switch mode to 8 bit
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
 
+	// send the strobe
+	SPI1->DR = strobe;
+
+	// wait until no longer busy
+	while (SPI_I2S_GetFlagStatus(SPI1,SPI_I2S_FLAG_BSY) == SET);
+
+	// switch to 16 bit and release spi
+	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
 	raise_css();
+}
+// this works!	 don't fucking DARE  touch anything
+u8 read_byte (u16 address) {
+	
+	// drop the css and wait until chip is ready
+	drop_css();
+	while(miso_high());
 
+	// send the read command
+	SPI1->DR = (address | TI_CCxxx0_READ_SINGLE)<<8;
+
+	// wait until there is data in the read register
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
+
+	// read the data
+	t = SPI1->DR;
+
+	// wait until chip is no longer busy before releasing/raising css
+	while (SPI_I2S_GetFlagStatus(SPI1,SPI_I2S_FLAG_BSY) == SET);
+	raise_css();   
 
 	return t;
 
-//	t=0;
-//	t2=1;
-//	drop_css();
-//	while(miso_high());
-//	wait ();
-//
-//	//while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == RESET);
-//	// keep reading untill 200 times the same value
-//   	tmp = 2000;
-//  	while (tmp){
-//		SPI_I2S_SendData( SPI1,(address | TI_CCxxx0_READ_SINGLE)<<8);
-//		
-//	   	t = SPI_I2S_ReceiveData(SPI1);
-//		if (t2 == t)
-//			tmp--;
-//		else
-//			tmp = 2000;
-//		t2 = t;
-//	}
-//	raise_css();
-////	wait();
-//	return t;
-	
-
 }
 
-// this is weird. add wait
 void test_send(void) { 		 
+
+	write_byte (TI_CCxxx0_TEST2,0x13);	
 	
-	write_byte (TI_CCxxx0_TEST2,0x52);	
-	while(1)
-	t3 = read_byte(TI_CCxxx0_TEST2); 
-	//t3 = read_byte(TI_CCxxx0_TEST2);   
-//
-//	drop_css();
-//
-//	while(miso_high());
-//
-//
-//	SPI1->DR = TI_CCxxx0_TEST2 << 8 | 0x12;
-//
-//	raise_css();
-//	wait();
-//	drop_css();
-//	while(miso_high());
-//	//wait ();
-//
-//	
-//	SPI1->DR = (TI_CCxxx0_TEST2 | TI_CCxxx0_READ_SINGLE)<<8;
-//	while(1)
-//	t = SPI1->DR;
-//	
-//	//while(1) {
-//	//t3++;
-//	//t = SPI1->DR;
-//	//t2--;	
-//	//if( t == 0x12) t2 = 0;
-//	//}
-//
-//	raise_css();
-
-
+	t3 = read_byte(TI_CCxxx0_TEST2);
 
 }
 FlagStatus s;
