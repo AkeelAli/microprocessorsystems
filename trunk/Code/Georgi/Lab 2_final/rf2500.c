@@ -45,16 +45,20 @@ void init_spi (void) {
 	
 	SPI_Cmd(SPI1, ENABLE);
 
-	SysTick_Config (800);
+	SysTick_Config (100);
 
+
+	
 	raise_css();
 
+   wait (5);
 	rf_reset();
 	
 	configure();
 
-	send_strobe	 (TI_CCxxx0_SRX);
-	send_strobe	 (TI_CCxxx0_SRX);
+	send_strobe	 (TI_CCxxx0_SFSTXON);
+	send_strobe	 (TI_CCxxx0_SFSTXON);
+	//send_strobe	 (TI_CCxxx0_SRX);
 
 
 
@@ -102,13 +106,17 @@ void rf_receive_packets ( u8 *bytes, u8 count ) {
 
 }
 
+RFStatus rf_get_status(void) {
+ 	return (RFStatus) (0x70 & send_strobe(TI_CCxxx0_SNOP));
+}
+
 void rf_reset (void) {
 
  	
 	drop_css();
 	raise_css();
 	
-	wait();
+	wait(5);
 
 	send_strobe	 (TI_CCxxx0_SRES);
 
@@ -118,6 +126,7 @@ void rf_reset (void) {
 	
 	
 }
+
 
 
 // this works!	 don't fucking touch anything
@@ -146,52 +155,8 @@ u16 write_byte (u16 address, u16 byte) {
 
 }
 
-// this works!	 don't fucking touch anything
-u16 write_fifo (u8 length, u8 *bytes) {
 
-	tmp = 0;
-	 
-	// drop the css and wait until chip is ready
-	drop_css();
-	while(miso_high());
-
-	// write the write command
-	SPI1->DR = (TI_CCxxx0_WRITE_BURST | TI_CCxxx0_TXFIFO) << 8 | bytes[0];
-	
-	// wait until no longer busy
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
-
-	// wait until data in the read register
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-
-	// read the data; this is the status
-	t = SPI1->DR;
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_8b);
-	while (tmp < length - 1) {
-	 	
-		// write the write command
-		SPI1->DR = bytes[tmp];
-		
-		// wait until no longer busy
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
-	
-		// wait until data in the read register
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	
-		// read the data; this is the status
-		t = SPI1->DR;
-
-		tmp++;
-
-	}
-
-	raise_css();
-	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
-	return t;
-
-}
-
-void send_strobe (u8 strobe) {
+u16 send_strobe (u8 strobe) {
  	// drop the css and wait until chip is ready
 	drop_css();
 	while(miso_high());
@@ -214,6 +179,8 @@ void send_strobe (u8 strobe) {
 	// switch to 16 bit and release spi
 	SPI_DataSizeConfig(SPI1,SPI_DataSize_16b);
 	raise_css();
+
+	return t;
 }
 // this works!	 don't fucking DARE  touch anything
 u16 read_byte (u16 address) {
@@ -239,17 +206,79 @@ u16 read_byte (u16 address) {
 
 }
 
+
+
+void rf_send_byte (u8 byte) {
+
+	switch ( rf_get_status () ) {
+	 		
+		case RF_STATUS_RXFIFO_OVERFLOW:
+			send_strobe	 (TI_CCxxx0_SFRX);
+
+		case RF_STATUS_TXFIFO_UNDERFLOW:
+			send_strobe	 (TI_CCxxx0_SFTX);
+
+		case RF_STATUS_IDLE:
+			
+			send_strobe	 (TI_CCxxx0_SFSTXON);			
+			send_strobe	 (TI_CCxxx0_SFSTXON);
+
+		default:
+			
+			 
+		
+		     t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
+
+			 while (rf_get_status() == RF_STATUS_CALIBRATE);
+
+			 if (rf_get_status() != RF_STATUS_FSTXON)
+			 	return;
+			 send_strobe (TI_CCxxx0_STX);
+	}
+
+
+}
+RFStatus st;
 void test_send(void) { 		 
 
 	u8 bytes[8];
 	bytes[0] = 0x13;
 	bytes[1] = 0x14;
-	//send_strobe	 (TI_CCxxx0_SFRX);	
+	rf_send_byte(0x12);
+	st = rf_get_status();
+	while(rf_get_status() != RF_STATUS_TXFIFO_UNDERFLOW);
+
+	rf_send_byte(0x12);
+
+	while (1) st = rf_get_status();
+	while (rf_get_status() == RF_STATUS_CALIBRATE);
+
+	
+	
+		
+	//send_strobe ( TI_CCxxx0_SFTX);
+
+	
+	tmp = 0;
+  while(tmp < 63){
+  	tmp++;
+   	t3 = write_byte(TI_CCxxx0_TXFIFO,0x12);
+	}
+   t3 =   send_strobe(TI_CCxxx0_SNOP);
+	send_strobe	 (TI_CCxxx0_STX);
+    
+//	t3 =	write_fifo(2,bytes);
+
+//	t3 =   send_strobe(TI_CCxxx0_SNOP);
+//	t3 =   send_strobe(TI_CCxxx0_SNOP);
+    
+    t3 =   send_strobe(TI_CCxxx0_SNOP);
+	t3 =   send_strobe(TI_CCxxx0_SNOP);
+	/*t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
 	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
 	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
 	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
+	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO); */
 
 }
 FlagStatus s;
@@ -259,23 +288,24 @@ uint8_t miso_high (void) {
 	
 }
 
-bool _timer_lock = true;
-bool _called_once = false;
-void wait(void) {
 
-   _timer_lock = true;
-	while (_timer_lock);
+
+u8 _timer_run = 0;
+u16 _milliseconds = 0;
+void SysTick_Handler(void) {
+		
+	if (_timer_run)
+		_milliseconds++;
+
 }
 
-void SysTick_Handler(void) {
-	if (_timer_lock){
-		_called_once = true;
-	}
-	if (_called_once) {
-		_timer_lock = false; 
-		_called_once = false;
-	}
+void wait(u16 timeout) {
 
+   _timer_run = 1;
+	while (_milliseconds < timeout);
+
+	_timer_run = 0;
+	_milliseconds = 0;
 }
 
 u8 set_config (u16 address, u16 byte) {
