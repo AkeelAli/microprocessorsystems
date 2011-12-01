@@ -55,11 +55,11 @@ void init_spi (void) {
 	
 	configure();
 
-	//send_strobe	 (TI_CCxxx0_SFSTXON);
+
 	//send_strobe	 (TI_CCxxx0_SFSTXON);
 	//send_strobe	 (TI_CCxxx0_SRX);
-
-	test_send();
+	rf_send_byte (0x13);
+	//test_send();
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
@@ -107,6 +107,9 @@ RFStatus rf_get_status(void) {
  	return (RFStatus) (0x70 & send_strobe(TI_CCxxx0_SNOP));
 }
 
+u8 rf_get_free_bytes(void) {
+ 	return	0x0F & send_strobe(TI_CCxxx0_SNOP);
+}
 void rf_reset (void) {
 
  	
@@ -203,10 +206,12 @@ u16 read_byte (u16 address) {
 
 }
 
+ RFStatus status;
 
+ RFStatus statuses[128];
 
 void rf_send_byte (u8 byte) {
-
+	
 	switch ( rf_get_status () ) {
 	 		
 		case RF_STATUS_RXFIFO_OVERFLOW:
@@ -217,21 +222,30 @@ void rf_send_byte (u8 byte) {
 
 		case RF_STATUS_IDLE:
 			
-			send_strobe	 (TI_CCxxx0_SFSTXON);			
 			send_strobe	 (TI_CCxxx0_SFSTXON);
-
-		default:
-			
-			 
+			while (rf_get_status() != RF_STATUS_FSTXON);
 		
-		     t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
+		default: 		
+				 
+			 tmp = 0;
+			 
+			 
+			 while (tmp < 15) {
+			 	 t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
+				 tmp++;
+			  }
+			 send_strobe (TI_CCxxx0_STX);  
+			 while (rf_get_status() == RF_STATUS_TX);
+			 
+			 send_strobe	 (TI_CCxxx0_SFTX);
 
-			 while (rf_get_status() == RF_STATUS_CALIBRATE);
 
-			 if (rf_get_status() != RF_STATUS_FSTXON)
-			 	return;
-			 send_strobe (TI_CCxxx0_STX);
+			 rf_send_byte(byte);
+			 
 	}
+
+   
+
 
 
 }
@@ -321,7 +335,7 @@ u8 configure (void) {
 	   while (set_config(TI_CCxxx0_MDMCFG2,		SMARTRF_SETTING_MDMCFG2		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG1,		SMARTRF_SETTING_MDMCFG1		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG0,		SMARTRF_SETTING_MDMCFG0		)) ;
-	   while (set_config(TI_CCxxx0_CHANNR,		0x08		)) ;
+	   while (set_config(TI_CCxxx0_CHANNR,		0x20		)) ;
 	   while (set_config(TI_CCxxx0_DEVIATN,		SMARTRF_SETTING_DEVIATN		)) ;
 	   while (set_config(TI_CCxxx0_FREND1,		SMARTRF_SETTING_FREND1		)) ;
 	   while (set_config(TI_CCxxx0_FREND0,		SMARTRF_SETTING_FREND0		)) ;

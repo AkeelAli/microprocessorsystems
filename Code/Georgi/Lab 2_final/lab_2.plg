@@ -867,3 +867,535 @@ Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF"
 Full Chip Erase Done.
 Programming Done.
 Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(250): error:  #20: identifier "stats" is undefined
+rf2500.c(252): error:  #268: declaration may not appear after executable statement in block
+rf2500.c(298): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(252): error:  #268: declaration may not appear after executable statement in block
+rf2500.c(283): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(283): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4496 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(283): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4496 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(283): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4452 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(255): warning:  #128-D: loop is not reachable from preceding code
+rf2500.c(284): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4452 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(257): warning:  #128-D: loop is not reachable from preceding code
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 2 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(289): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4488 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(289): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4488 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(289): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4464 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(294): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4508 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(295): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4476 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(295): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4468 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(299): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4500 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(299): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4500 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(289): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4464 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(289): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4464 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(237): error:  #29: expected an expression
+rf2500.c(250): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(237): error:  #29: expected an expression
+rf2500.c(262): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(262): error:  #65: expected a ";"
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(237): error:  #29: expected an expression
+rf2500.c(262): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(262): error:  #65: expected a ";"
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(235): error:  #29: expected an expression
+rf2500.c(262): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(262): error:  #65: expected a ";"
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(235): warning:  #127-D: expected a statement
+rf2500.c(235): error:  #29: expected an expression
+rf2500.c(262): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(262): error:  #65: expected a ";"
+rf2500.c(286): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(229): error:  #29: expected an expression
+rf2500.c(256): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(256): error:  #65: expected a ";"
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(266): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4464 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(236): error:  #20: identifier "RF_STATUS_STX" is undefined
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4516 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4532 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4532 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4516 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4508 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(269): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4500 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(272): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4524 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(223): error:  #20: identifier "RF_STATUS_SFSTXON" is undefined
+rf2500.c(267): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(267): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4484 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(267): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4492 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(267): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4488 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(268): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4496 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling main.c...
+main.c(9): warning:  #111-D: statement is unreachable
+compiling rf2500.c...
+rf2500.c(231): warning:  #174-D: expression has no effect
+rf2500.c(232): error:  #65: expected a ";"
+rf2500.c(272): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(274): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4520 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(274): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4512 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(276): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4536 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(279): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4568 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4568 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4560 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4568 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4576 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4560 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4568 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(232): error:  #65: expected a ";"
+rf2500.c(238): warning:  #12-D: parsing restarts here after previous syntax error
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+Target not created
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4552 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4552 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4552 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4552 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(281): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4572 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(281): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4572 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(281): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4572 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(281): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4572 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(280): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4512 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
+Load "H:\\code\\Code\\Georgi\\Lab 2_final\\lab_2.AXF" 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling rf2500.c...
+rf2500.c(275): warning:  #128-D: loop is not reachable from preceding code
+linking...
+Program Size: Code=4512 RO-data=268 RW-data=36 ZI-data=996  
+"lab_2.axf" - 0 Error(s), 1 Warning(s).
