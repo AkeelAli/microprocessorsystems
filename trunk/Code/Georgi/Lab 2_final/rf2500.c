@@ -236,103 +236,36 @@ void rf_send_byte (u8 byte) {
 
 }
 RFStatus st;
-u16 data[64];
+RFStatus statuses[128];
+u16 data[128];
 void test_send(void) {
-	
-	send_strobe ( TI_CCxxx0_SFRX);
-
-	
-	send_strobe	 (TI_CCxxx0_SRX);
-
-	while (rf_get_status() == RF_STATUS_CALIBRATE);
-	
-	//send_strobe	 (TI_CCxxx0_SRX);
-	read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-
-	while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
-
-	tmp = 64;
-	while (tmp) {
-	   data[64-tmp] = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	   tmp--;
-	}
-
-	while(1) st =  rf_get_status();
-	
-
-   //while (1) {
-//	t3 = read_byte(TI_CCxxx0_RXFIFO);
-//	st =  rf_get_status();
-//}
-	while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
 
 
-	send_strobe ( TI_CCxxx0_SFRX);
+		send_strobe	 (TI_CCxxx0_SRX);
 
-	while (set_config(TI_CCxxx0_CHANNR,		0x08		)) ;
+		while (rf_get_status() != RF_STATUS_RX);
 
-	send_strobe	 (TI_CCxxx0_SRX);
-	send_strobe	 (TI_CCxxx0_SRX);
+		wait (20000);
+		tmp = 0;
+		data[0] = read_byte(TI_CCxxx0_RXFIFO);
+	//	while ((data[tmp++]) & 0x0F00) {
+		while (tmp++ < 128) {
+		   data[tmp] = read_byte(TI_CCxxx0_RXFIFO);
+		}
 
-	while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
 
-	
-	//t3 = read_byte(TI_CCxxx0_RXFIFO);
+		read_byte(TI_CCxxx0_RXFIFO);
 
-	send_strobe ( TI_CCxxx0_SFRX);
+		while (1) st = rf_get_status();
 
-	while (set_config(TI_CCxxx0_CHANNR,		0x08		)) ;
+		while (rf_get_status() != RF_STATUS_RX);
 
-	send_strobe	 (TI_CCxxx0_SRX);
-	send_strobe	 (TI_CCxxx0_SRX);
-
-	while (1) {
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	st =  rf_get_status();
-	}
-	while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
-
-   while(1)
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-
-/*	u8 bytes[8];
-	bytes[0] = 0x13;
-	bytes[1] = 0x14;
-	rf_send_byte(0x12);
-	st = rf_get_status();
-	while(rf_get_status() != RF_STATUS_TXFIFO_UNDERFLOW);
-
-	rf_send_byte(0x12);
-
-	while (1) st = rf_get_status();
-	while (rf_get_status() == RF_STATUS_CALIBRATE);
-
-	  */
-	
+		while (rf_get_status() == RF_STATUS_RX);
+				
 		
-	//send_strobe ( TI_CCxxx0_SFTX);
-
-	
-	tmp = 0;
-  while(tmp < 63){
-  	tmp++;
-   	t3 = write_byte(TI_CCxxx0_TXFIFO,0x12);
-	}
-   t3 =   send_strobe(TI_CCxxx0_SNOP);
-	send_strobe	 (TI_CCxxx0_STX);
-    
-//	t3 =	write_fifo(2,bytes);
-
-//	t3 =   send_strobe(TI_CCxxx0_SNOP);
-//	t3 =   send_strobe(TI_CCxxx0_SNOP);
-    
-    t3 =   send_strobe(TI_CCxxx0_SNOP);
-	t3 =   send_strobe(TI_CCxxx0_SNOP);
-	/*t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO);
-	t3 = read_byte(TI_CCxxx0_READ_BURST | TI_CCxxx0_RXFIFO); */
+	  send_strobe ( TI_CCxxx0_SFRX);
+	  while (rf_get_status() == RF_STATUS_RXFIFO_OVERFLOW);
+	  
 
 }
 FlagStatus s;
@@ -350,7 +283,7 @@ void SysTick_Handler(void) {
 		
 	if (_timer_run)
 		_milliseconds++;
-
+   
 }
 
 void wait(u16 timeout) {
