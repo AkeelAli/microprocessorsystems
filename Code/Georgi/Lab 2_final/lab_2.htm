@@ -3,9 +3,9 @@
 <title>Static Call Graph - [H:\code\Code\Georgi\Lab 2_final\lab_2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image H:\code\Code\Georgi\Lab 2_final\lab_2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Thu Dec 01 15:43:41 2011
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Thu Dec 01 16:17:29 2011
 <BR><P>
-<H3>Maximum Stack Usage =         80 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         72 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 <P>
@@ -27,7 +27,6 @@ Mutually Recursive functions
  <LI><a href="#[9]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">DebugMon_Handler</a><BR>
  <LI><a href="#[a]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a]">PendSV_Handler</a><BR>
  <LI><a href="#[1e]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1e]">ADC_IRQHandler</a><BR>
- <LI><a href="#[5e]">rf_send_byte</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5e]">rf_send_byte</a><BR>
 </UL>
 <P>
 <H3>
@@ -204,7 +203,7 @@ Global Symbols
 <P><STRONG><a name="[90]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[42]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -424,7 +423,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[43]"></a>main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = main &rArr; init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = main &rArr; init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 </UL>
@@ -619,8 +618,8 @@ Global Symbols
 <P><STRONG><a name="[c3]"></a>SPI_BiDirectionalLineConfig</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f10x_spi.o(.text), UNUSED)
 
 <P><STRONG><a name="[5b]"></a>SPI_I2S_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_spi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 </UL>
 
@@ -638,8 +637,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_transmit_packets
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 </UL>
@@ -650,8 +649,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_transmit_packets
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 </UL>
 
@@ -663,8 +662,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_transmit_packets
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 </UL>
 
@@ -677,10 +676,10 @@ Global Symbols
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_DataSizeConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_get_free_bytes
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_get_status
 </UL>
 
@@ -689,36 +688,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
 </UL>
 
-<P><STRONG><a name="[5d]"></a>write_byte</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, rf2500.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = write_byte &rArr; drop_css
-</UL>
-<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drop_css
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;miso_high
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raise_css
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
-</UL>
-<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
-</UL>
-
-<P><STRONG><a name="[5e]"></a>rf_send_byte</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, rf2500.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32 + In Cycle
-<LI>Call Chain = rf_send_byte &rArr;  rf_send_byte (Cycle)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
-<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_get_status
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
-</UL>
-<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
-<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
-</UL>
-
-<P><STRONG><a name="[5f]"></a>read_byte</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, rf2500.o(.text))
+<P><STRONG><a name="[5d]"></a>read_byte</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = read_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drop_css
@@ -726,32 +700,53 @@ Global Symbols
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raise_css
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
+</UL>
+
+<P><STRONG><a name="[5e]"></a>test_send</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, rf2500.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = test_send &rArr; rf_get_status &rArr; send_strobe &rArr; drop_css
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_get_status
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
+</UL>
+
+<P><STRONG><a name="[5f]"></a>write_byte</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, rf2500.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = write_byte &rArr; drop_css
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drop_css
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;miso_high
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raise_css
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
 </UL>
 
 <P><STRONG><a name="[60]"></a>set_config</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = set_config &rArr; write_byte &rArr; drop_css
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
 </UL>
 
-<P><STRONG><a name="[61]"></a>configure</STRONG> (Thumb, 584 bytes, Stack size 8 bytes, rf2500.o(.text))
+<P><STRONG><a name="[61]"></a>configure</STRONG> (Thumb, 562 bytes, Stack size 8 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 </UL>
 
-<P><STRONG><a name="[63]"></a>wait</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rf2500.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
+<P><STRONG><a name="[63]"></a>wait</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, rf2500.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
 </UL>
 
 <P><STRONG><a name="[62]"></a>rf_reset</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, rf2500.o(.text))
@@ -765,12 +760,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 </UL>
 
-<P><STRONG><a name="[49]"></a>init_spi</STRONG> (Thumb, 234 bytes, Stack size 32 bytes, rf2500.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
+<P><STRONG><a name="[49]"></a>init_spi</STRONG> (Thumb, 226 bytes, Stack size 24 bytes, rf2500.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = init_spi &rArr; configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;raise_css
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SSOutputCmd
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
@@ -796,11 +791,13 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
 </UL>
 
-<P><STRONG><a name="[6e]"></a>test_send</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, rf2500.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
+<P><STRONG><a name="[6e]"></a>rf_send_byte</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, rf2500.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;write_byte
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_get_status
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_strobe
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_send_byte
 </UL>
 
 <P><STRONG><a name="[b]"></a>SysTick_Handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rf2500.o(.text))

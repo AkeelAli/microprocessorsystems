@@ -58,8 +58,8 @@ void init_spi (void) {
 
 	//send_strobe	 (TI_CCxxx0_SFSTXON);
 	//send_strobe	 (TI_CCxxx0_SRX);
-	rf_send_byte (0x13);
-	//test_send();
+	//rf_send_byte (0x13);
+	test_send();
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
@@ -254,17 +254,23 @@ RFStatus statuses[128];
 u16 data[128];
 void test_send(void) {
 
-
+		send_strobe	 (TI_CCxxx0_SIDLE);
+		while (rf_get_status() != RF_STATUS_IDLE);
+		send_strobe ( TI_CCxxx0_SFRX);
 		send_strobe	 (TI_CCxxx0_SRX);
 
-		while (rf_get_status() != RF_STATUS_RX);
-
-		wait (20000);
+		while (rf_get_status() == RF_STATUS_CALIBRATE);
+		while (rf_get_status() == RF_STATUS_SETTING);
+		t3 = read_byte(TI_CCxxx0_RXFIFO);
+		//while (1) st = rf_get_status();
+		//while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
+		while (1) st = rf_get_status();
 		tmp = 0;
-		data[0] = read_byte(TI_CCxxx0_RXFIFO);
 	//	while ((data[tmp++]) & 0x0F00) {
-		while (tmp++ < 128) {
-		   data[tmp] = read_byte(TI_CCxxx0_RXFIFO);
+		while (1) {
+		   tmp = 0;
+		   while (tmp < 15)
+		   		data[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
 		}
 
 
@@ -335,7 +341,7 @@ u8 configure (void) {
 	   while (set_config(TI_CCxxx0_MDMCFG2,		SMARTRF_SETTING_MDMCFG2		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG1,		SMARTRF_SETTING_MDMCFG1		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG0,		SMARTRF_SETTING_MDMCFG0		)) ;
-	   while (set_config(TI_CCxxx0_CHANNR,		0x20		)) ;
+	   while (set_config(TI_CCxxx0_CHANNR,		0x08		)) ;
 	   while (set_config(TI_CCxxx0_DEVIATN,		SMARTRF_SETTING_DEVIATN		)) ;
 	   while (set_config(TI_CCxxx0_FREND1,		SMARTRF_SETTING_FREND1		)) ;
 	   while (set_config(TI_CCxxx0_FREND0,		SMARTRF_SETTING_FREND0		)) ;
