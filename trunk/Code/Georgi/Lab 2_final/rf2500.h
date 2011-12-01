@@ -21,6 +21,7 @@ typedef enum {
 } RFStatus;
 
 RFStatus rf_get_status(void);
+u8 rf_get_free_bytes(void);
 
 void rf_transmit_packets ( u8 *byte, const u8 count);
 
