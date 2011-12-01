@@ -3,10 +3,10 @@ main.o: main.h
 main.o: rf2500.h
 main.o: .\inc\stm32f10x_spi.h
 main.o: .\STM32F10x\stm32f10x.h
-main.o: d:\software\Keil\ARM\CMSIS\Include\core_cm3.h
-main.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-main.o: d:\software\Keil\ARM\CMSIS\Include\core_cmInstr.h
-main.o: d:\software\Keil\ARM\CMSIS\Include\core_cmFunc.h
+main.o: C:\Keil\ARM\RV31\INC\core_cm3.h
+main.o: C:\Keil\ARM\RV31\INC\stdint.h
+main.o: C:\Keil\ARM\RV31\INC\core_cmInstr.h
+main.o: C:\Keil\ARM\RV31\INC\core_cmFunc.h
 main.o: .\STM32F10x\system_stm32f10x.h
 main.o: ..\Lab 2_final\stm32f10x_conf.h
 main.o: .\inc\stm32f10x_exti.h
@@ -18,4 +18,4 @@ main.o: .\inc\stm32f10x_spi.h
 main.o: .\inc\stm32f10x_tim.h
 main.o: .\inc\misc.h
 main.o: C2500.h
-main.o: d:\software\Keil\ARM\RV31\INC\stdbool.h
+main.o: C:\Keil\ARM\RV31\INC\stdbool.h
