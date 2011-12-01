@@ -1,10 +1,10 @@
 stm32f10x_spi.o: stm32f10x_spi.c
 stm32f10x_spi.o: .\inc\stm32f10x_spi.h
 stm32f10x_spi.o: .\STM32F10x\stm32f10x.h
-stm32f10x_spi.o: C:\Keil\ARM\RV31\INC\core_cm3.h
-stm32f10x_spi.o: C:\Keil\ARM\RV31\INC\stdint.h
-stm32f10x_spi.o: C:\Keil\ARM\RV31\INC\core_cmInstr.h
-stm32f10x_spi.o: C:\Keil\ARM\RV31\INC\core_cmFunc.h
+stm32f10x_spi.o: d:\software\Keil\ARM\CMSIS\Include\core_cm3.h
+stm32f10x_spi.o: d:\software\Keil\ARM\RV31\INC\stdint.h
+stm32f10x_spi.o: d:\software\Keil\ARM\CMSIS\Include\core_cmInstr.h
+stm32f10x_spi.o: d:\software\Keil\ARM\CMSIS\Include\core_cmFunc.h
 stm32f10x_spi.o: .\STM32F10x\system_stm32f10x.h
 stm32f10x_spi.o: ..\Lab 2_final\stm32f10x_conf.h
 stm32f10x_spi.o: .\inc\stm32f10x_exti.h

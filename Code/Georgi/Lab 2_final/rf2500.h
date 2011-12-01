@@ -7,12 +7,27 @@
 #include "C2500.h"
 #include <stdbool.h>
 
+
+typedef enum {
+
+	RF_STATUS_IDLE = 0x00, 
+	RF_STATUS_RX = 0x10,
+	RF_STATUS_TX = 0x20,
+	RF_STATUS_FSTXON = 0x30,
+	RF_STATUS_CALIBRATE = 0x40,
+	RF_STATUS_SETTING = 0x50,
+	RF_STATUS_RXFIFO_OVERFLOW = 0x60,
+	RF_STATUS_TXFIFO_UNDERFLOW	= 0x70
+} RFStatus;
+
+RFStatus rf_get_status(void);
+
 void rf_transmit_packets ( u8 *byte, const u8 count);
 
 void rf_receive_packets ( u8 *bytes, u8 count ) ;
 
 // wait function, takes microseconds as input
-void wait(void);
+void wait(u16 timeout);
 
 void raise_css (void);
 void drop_css(void);
@@ -31,7 +46,6 @@ void rf_reset (void);
 
 void test_send(void);
 u16 write_byte (u16 address, u16 byte);
-u16 write_fifo (u8 length, u8 *bytes);
 
 u16 read_byte (u16 address);
 
@@ -40,6 +54,8 @@ u16 read_byte (u16 address);
 u8 set_config (u16 address, u16 byte);
 u8 configure (void);
 
-void send_strobe (u8 strobe);
+u16 send_strobe (u8 strobe);
+
+void rf_send_byte (u8 byte);
 
 #endif
