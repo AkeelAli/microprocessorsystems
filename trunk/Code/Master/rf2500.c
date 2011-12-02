@@ -388,7 +388,7 @@ __irq void EXTI9_5_IRQHandler(void) {
 			while (tmp < 32)
 				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);		
 			_new_data = 1;
-			_latest_byte = findMode(data);
+			_latest_byte = findMode(data_rf);
 		}
 		EXTI_ClearITPendingBit(EXTI_Line6);
 	}
