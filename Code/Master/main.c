@@ -48,25 +48,26 @@ uint16_t readout=0;
 int main(void){
 	
 	//initialize Accelerometer	and Gyroscope
-	initAccGyro();
+	//initAccGyro();
 	//initialize the Timer Interrupt
-	initTIM();
+	//initTIM();
 	//initialize SPI & RF
+	init_timer();
 	init_spi();
 			
 						
 	while(1){
-	  if(newData){
-		 update_Orientation();
+	  //if(newData){
+	//	 update_Orientation();
 	
-		 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
+	//	 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
 		
 		 //write_byte (0x2C, 0x56);
 		 //readout = read_byte (0x2C);
-		 rf_read_byte();					 
+		 rf_send_byte(0xBB);					 
 
-		 newData = 0;
-	 }
+	//	 newData = 0;
+	// }
 	
 	}  
 		 
