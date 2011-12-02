@@ -45,29 +45,33 @@ symbol_t move; //UpdateGesture stores the move in this variable
 
 uint16_t readout=0;
 
+
+u8 _new_rf_data = 0;
+
 int main(void){
 	
 	//initialize Accelerometer	and Gyroscope
-	//initAccGyro();
+	initAccGyro();
 	//initialize the Timer Interrupt
-	//initTIM();
+	initTIM();
 	//initialize SPI & RF
 	init_timer();
 	init_spi();
-			
+	send_strobe	 (TI_CCxxx0_SRX);
+	//rf_wait_command();		
 						
 	while(1){
-	  //if(newData){
-	//	 update_Orientation();
+	  if(newData){
+		 update_Orientation();
 	
-	//	 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
+		 if (updateGesture(accelX, accelY, accelZ, roll_fuse, &move) == SUCCESS);
 		
 		 //write_byte (0x2C, 0x56);
 		 //readout = read_byte (0x2C);
-		 rf_send_byte(0xBB);					 
+		 //rf_send_byte(0x17);					 
 
-	//	 newData = 0;
-	// }
+		 newData = 0;
+	 }
 	
 	}  
 		 
@@ -187,6 +191,19 @@ void update_Orientation(void){
 	pitch_fuse = fuse_factor_p*pitch + (1-fuse_factor_p)*(pitch_fuse+(gyrosp_pitch+gyrosp_pitch_b)/50.0);
 		
 		
+}
+
+
+__irq void EXTI9_5_IRQHandler(void) {
+	if(EXTI_GetITStatus(EXTI_Line6) != RESET) {
+		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
+					
+			_new_rf_data = 1;
+			
+		}
+		EXTI_ClearITPendingBit(EXTI_Line6);
+	}
+
 }
 
 
