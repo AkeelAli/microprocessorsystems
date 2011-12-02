@@ -255,6 +255,8 @@ u8 rf_read_byte (void) {
 void test_send(void) {
 
 	t3 = rf_read_byte();
+	t3 = rf_read_byte();
+	t3 = rf_read_byte();
 	t3 = rf_read_byte();	
 	  
 
