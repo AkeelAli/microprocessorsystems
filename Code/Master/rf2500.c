@@ -82,7 +82,7 @@ void init_spi (void) {
 	//send_strobe	 (TI_CCxxx0_SFSTXON);
 	//send_strobe	 (TI_CCxxx0_SRX);
 	//rf_send_byte (0x13);
-	test_send();
+	//test_send();
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
@@ -245,7 +245,6 @@ void rf_send_byte (u8 byte) {
 RFStatus st;
 
 u8 data_rf[32];
-u8 _new_data = 0;
 u8 rf_read_byte (void) {
  	
 	switch ( rf_get_status () ) {
@@ -259,25 +258,14 @@ u8 rf_read_byte (void) {
 		
 		default: 		
 			_latest_byte = 0;
-			_new_data = 0;
+//			_new_data = 0;
 				 
 			send_strobe	 (TI_CCxxx0_SRX);
 			while (rf_get_status() != RF_STATUS_RX);
 			
 			tmp = 0;
 
-			while(!_new_data);
-
-			tmp = 0;
-			while (tmp < 32)
-				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
 			
-			_latest_byte = findMode(data_rf);
-
-			send_strobe ( TI_CCxxx0_SIDLE);
-			 
-			send_strobe ( TI_CCxxx0_SFRX);
-
 			return _latest_byte;
 			 
 	}
@@ -386,15 +374,22 @@ u8 configure (void) {
 
 }
 
+RF_CMD rf_wait_command (void) {
 
-__irq void EXTI9_5_IRQHandler(void) {
-	if(EXTI_GetITStatus(EXTI_Line6) != RESET) {
-		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
-					
-			_new_data = 1;
-			
-		}
-		EXTI_ClearITPendingBit(EXTI_Line6);
-	}
+	rf_read_byte();
+/*	while(!_new_data);
 
+	tmp = 0;
+	while (tmp < 32)
+		data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
+	
+	_latest_byte = findMode(data_rf);
+
+	send_strobe ( TI_CCxxx0_SIDLE);
+	 
+	send_strobe ( TI_CCxxx0_SFRX);
+
+	return (RF_CMD)_latest_byte;  */
+	return 0;
 }
+
