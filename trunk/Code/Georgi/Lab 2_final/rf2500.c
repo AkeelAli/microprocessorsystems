@@ -1,8 +1,8 @@
 #include "rf2500.h"
+#include "service_functions.h"
 
-u16 tmp;
 u16 t,t2;
-u8 t3;
+u8 t3,tmp;
 
 
 void init_spi (void) {
@@ -45,7 +45,7 @@ void init_spi (void) {
 	
 	SPI_Cmd(SPI1, ENABLE);
 
-	SysTick_Config (100);
+	
 
 
 	
@@ -65,6 +65,10 @@ void init_spi (void) {
 
 }
 
+void init_timer (void) {
+ 	SysTick_Config (100);
+}
+
 void raise_css (void) {
 	GPIO_WriteBit(GPIOA, GPIO_Pin_4, (BitAction)1);
 	while (!GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4));		  // wait until bit actually changes
@@ -73,34 +77,6 @@ void raise_css (void) {
 void drop_css(void){
   	GPIO_WriteBit(GPIOA, GPIO_Pin_4, (BitAction)0);
 	while (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4));	  // wait until bit actually changes
-}
-
-
-void rf_transmit_packets ( u8 *byte, const u8 count) {
-
-	u8 i;
-	drop_css();
-
-	// wait for miso to go low
-	while(miso_high());
-
-	// write the address
-	SPI_I2S_SendData  (SPI1,TI_CCxxx0_TXFIFO | TI_CCxxx0_WRITE_BURST);
-
-	// write the data
-	for (i = 0; i < count; i++)
-		SPI_I2S_SendData  (SPI1,(uint16_t)byte[i]);
-
-	// release
-
-	raise_css(); 	
-
-}
-
-void rf_receive_packets ( u8 *bytes, u8 count ) {
-
-	SPI_I2S_ReceiveData(SPI1);
-
 }
 
 RFStatus rf_get_status(void) {
@@ -211,7 +187,43 @@ u16 read_byte (u16 address) {
  RFStatus statuses[128];
 
 void rf_send_byte (u8 byte) {
-	
+   
+    switch ( rf_get_status () ) {
+            
+        case RF_STATUS_RXFIFO_OVERFLOW:
+            send_strobe     (TI_CCxxx0_SFRX);
+
+        case RF_STATUS_TXFIFO_UNDERFLOW:
+            send_strobe     (TI_CCxxx0_SFTX);
+
+        case RF_STATUS_IDLE:
+           
+            send_strobe     (TI_CCxxx0_SFSTXON);
+            while (rf_get_status() != RF_STATUS_FSTXON);
+       
+        default:        
+                 
+             tmp = 0;
+             
+             
+             while (tmp < 33) {
+                  t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
+                  tmp++;
+             }
+             send_strobe (TI_CCxxx0_STX); 
+             while (rf_get_status() == RF_STATUS_TX);
+             
+
+
+             send_strobe     (TI_CCxxx0_SFTX);             
+    }
+
+}
+RFStatus st;
+
+u8 data[32];
+u8 rf_read_byte (void) {
+ 	
 	switch ( rf_get_status () ) {
 	 		
 		case RF_STATUS_RXFIFO_OVERFLOW:
@@ -220,72 +232,30 @@ void rf_send_byte (u8 byte) {
 		case RF_STATUS_TXFIFO_UNDERFLOW:
 			send_strobe	 (TI_CCxxx0_SFTX);
 
-		case RF_STATUS_IDLE:
-			
-			send_strobe	 (TI_CCxxx0_SFSTXON);
-			while (rf_get_status() != RF_STATUS_FSTXON);
 		
 		default: 		
 				 
-			 tmp = 0;
+			send_strobe	 (TI_CCxxx0_SRX);
+			while (rf_get_status() != RF_STATUS_RX);
+			
+			tmp = 0;
+			
+			while (rf_get_status() == RF_STATUS_RX);
+						
+			while (tmp < 32)
+				data[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
 			 
-			 
-			 while (tmp < 15) {
-			 	 t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
-				 tmp++;
-			  }
-			 send_strobe (TI_CCxxx0_STX);  
-			 while (rf_get_status() == RF_STATUS_TX);
-			 
-			 send_strobe	 (TI_CCxxx0_SFTX);
+			send_strobe ( TI_CCxxx0_SFRX);
 
-
-			 rf_send_byte(byte);
+			return findMode(data);
 			 
 	}
 
-   
-
-
-
 }
-RFStatus st;
-RFStatus statuses[128];
-u16 data[128];
 void test_send(void) {
 
-		send_strobe	 (TI_CCxxx0_SIDLE);
-		while (rf_get_status() != RF_STATUS_IDLE);
-		send_strobe ( TI_CCxxx0_SFRX);
-		send_strobe	 (TI_CCxxx0_SRX);
-
-		while (rf_get_status() == RF_STATUS_CALIBRATE);
-		while (rf_get_status() == RF_STATUS_SETTING);
-		//t3 = read_byte(TI_CCxxx0_RXFIFO);
-		//while (1) st = rf_get_status();
-		while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
-		st = rf_get_status();
-		//while (1) st = rf_get_status();
-		tmp = 0;
-	//	while ((data[tmp++]) & 0x0F00) {
-
-		   tmp = 0;
-		   while (tmp < 32)
-		   		data[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
-	
-
-
-		read_byte(TI_CCxxx0_RXFIFO);
-
-		while (1) st = rf_get_status();
-
-		while (rf_get_status() != RF_STATUS_RX);
-
-		while (rf_get_status() == RF_STATUS_RX);
-				
-		
-	  send_strobe ( TI_CCxxx0_SFRX);
-	  while (rf_get_status() == RF_STATUS_RXFIFO_OVERFLOW);
+	t3 = rf_read_byte();
+	t3 = rf_read_byte();	
 	  
 
 }
@@ -299,21 +269,33 @@ uint8_t miso_high (void) {
 
 
 u8 _timer_run = 0;
+u8 _timeout_run = 0;
+u16 _timeouts = 0;
+u16 _target_timeouts = 0;
+u16 _timeout_milliseconds = 0;
 u16 _milliseconds = 0;
 void SysTick_Handler(void) {
 		
-	if (_timer_run)
+	if (_timer_run)	  {
 		_milliseconds++;
-   
+
+	}
 }
 
 void wait(u16 timeout) {
-
+   _milliseconds = 0;
    _timer_run = 1;
+   
 	while (_milliseconds < timeout);
 
 	_timer_run = 0;
 	_milliseconds = 0;
+}
+
+
+void stop_timeout(void) {
+	 _timeout_run = 0;
+	_timeout_milliseconds = 0;
 }
 
 u8 set_config (u16 address, u16 byte) {
@@ -341,7 +323,7 @@ u8 configure (void) {
 	   while (set_config(TI_CCxxx0_MDMCFG2,		SMARTRF_SETTING_MDMCFG2		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG1,		SMARTRF_SETTING_MDMCFG1		)) ;
 	   while (set_config(TI_CCxxx0_MDMCFG0,		SMARTRF_SETTING_MDMCFG0		)) ;
-	   while (set_config(TI_CCxxx0_CHANNR,		0x08		)) ;
+	   while (set_config(TI_CCxxx0_CHANNR,		0x21		)) ;
 	   while (set_config(TI_CCxxx0_DEVIATN,		SMARTRF_SETTING_DEVIATN		)) ;
 	   while (set_config(TI_CCxxx0_FREND1,		SMARTRF_SETTING_FREND1		)) ;
 	   while (set_config(TI_CCxxx0_FREND0,		SMARTRF_SETTING_FREND0		)) ;
