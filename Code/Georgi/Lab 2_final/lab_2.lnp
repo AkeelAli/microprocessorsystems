@@ -1,4 +1,4 @@
---cpu Cortex-M3 "stm32f10x.o" "main.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "debugger.o" "system_stm32f10x.o" "stm32f10x_tim.o" "misc.o" "stm32f10x_exti.o" "lps001dl_i2c.o" "stm32f10x_spi.o" "rf2500.o" --strict --scatter "lab_2.sct" 
+--cpu Cortex-M3 "stm32f10x.o" "main.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "debugger.o" "system_stm32f10x.o" "stm32f10x_tim.o" "misc.o" "stm32f10x_exti.o" "lps001dl_i2c.o" "stm32f10x_spi.o" "rf2500.o" "service_functions.o" --strict --scatter "lab_2.sct" 
 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\lab_2.map" -o "lab_2.axf"

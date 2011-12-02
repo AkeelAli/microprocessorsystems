@@ -23,13 +23,13 @@ typedef enum {
 RFStatus rf_get_status(void);
 u8 rf_get_free_bytes(void);
 
-void rf_transmit_packets ( u8 *byte, const u8 count);
-
-void rf_receive_packets ( u8 *bytes, u8 count ) ;
-
-// wait function, takes microseconds as input
+ void init_timer (void);
+// wait function, takes tens of microseconds as input
 void wait(u16 timeout);
 
+// timeout in tenths of a second
+void timeout (u16 timeout, u8 *timed_out);
+void stop_timeout(void);
 void raise_css (void);
 void drop_css(void);
 
@@ -58,5 +58,6 @@ u8 configure (void);
 u16 send_strobe (u8 strobe);
 
 void rf_send_byte (u8 byte);
+u8 rf_read_byte (void);
 
 #endif

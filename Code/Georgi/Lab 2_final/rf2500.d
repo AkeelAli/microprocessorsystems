@@ -18,3 +18,4 @@ rf2500.o: .\inc\stm32f10x_tim.h
 rf2500.o: .\inc\misc.h
 rf2500.o: C2500.h
 rf2500.o: C:\Keil\ARM\RV31\INC\stdbool.h
+rf2500.o: service_functions.h
