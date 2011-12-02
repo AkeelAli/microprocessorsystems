@@ -267,7 +267,13 @@ u8 rf_read_byte (void) {
 			tmp = 0;
 
 			while(!_new_data);
+
+			tmp = 0;
+			while (tmp < 32)
+				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
 			
+			_latest_byte = findMode(data_rf);
+
 			send_strobe ( TI_CCxxx0_SIDLE);
 			 
 			send_strobe ( TI_CCxxx0_SFRX);
@@ -384,11 +390,9 @@ u8 configure (void) {
 __irq void EXTI9_5_IRQHandler(void) {
 	if(EXTI_GetITStatus(EXTI_Line6) != RESET) {
 		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
-			tmp = 0;
-			while (tmp < 32)
-				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);		
+					
 			_new_data = 1;
-			_latest_byte = findMode(data_rf);
+			
 		}
 		EXTI_ClearITPendingBit(EXTI_Line6);
 	}
