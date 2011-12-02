@@ -261,17 +261,18 @@ void test_send(void) {
 
 		while (rf_get_status() == RF_STATUS_CALIBRATE);
 		while (rf_get_status() == RF_STATUS_SETTING);
-		t3 = read_byte(TI_CCxxx0_RXFIFO);
+		//t3 = read_byte(TI_CCxxx0_RXFIFO);
 		//while (1) st = rf_get_status();
-		//while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
-		while (1) st = rf_get_status();
+		while (rf_get_status() != RF_STATUS_RXFIFO_OVERFLOW);
+		st = rf_get_status();
+		//while (1) st = rf_get_status();
 		tmp = 0;
 	//	while ((data[tmp++]) & 0x0F00) {
-		while (1) {
+
 		   tmp = 0;
-		   while (tmp < 15)
+		   while (tmp < 32)
 		   		data[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
-		}
+	
 
 
 		read_byte(TI_CCxxx0_RXFIFO);
@@ -327,12 +328,11 @@ u8 set_config (u16 address, u16 byte) {
 u8 configure (void) {
 		
 	   while (set_config(TI_CCxxx0_IOCFG0,		SETTING_IOCFG0				)) ;
-	   while (set_config(TI_CCxxx0_MCSM1,		SETTING_MCSM1				)) ;
+	   
 	   while (set_config(TI_CCxxx0_MCSM0,		SETTING_MCSM0				)) ;
-	   while (set_config(TI_CCxxx0_PKTLEN,		SETTING_PKTLEN				)) ;
 	   while (set_config(TI_CCxxx0_PKTCTRL0,	SETTING_PKTCTRL0			)) ;	 
  	   while (set_config(TI_CCxxx0_FSCTRL1,		SMARTRF_SETTING_FSCTRL1		)) ;
-	   while (set_config(TI_CCxxx0_IOCFG0,		SMARTRF_SETTING_FSCTRL0		)) ;
+	   while (set_config(TI_CCxxx0_FSCTRL0,		SMARTRF_SETTING_FSCTRL0		)) ;
 	   while (set_config(TI_CCxxx0_FREQ2,		SMARTRF_SETTING_FREQ2		)) ;
 	   while (set_config(TI_CCxxx0_FREQ1,		SMARTRF_SETTING_FREQ1		)) ;
 	   while (set_config(TI_CCxxx0_FREQ0,		SMARTRF_SETTING_FREQ0		)) ;
@@ -346,6 +346,9 @@ u8 configure (void) {
 	   while (set_config(TI_CCxxx0_FREND1,		SMARTRF_SETTING_FREND1		)) ;
 	   while (set_config(TI_CCxxx0_FREND0,		SMARTRF_SETTING_FREND0		)) ;
 	   while (set_config(TI_CCxxx0_MCSM0,		SMARTRF_SETTING_MCSM0		)) ;
+	   while (set_config(TI_CCxxx0_MCSM1,		SETTING_MCSM1				)) ;
+
+
 	   while (set_config(TI_CCxxx0_FOCCFG,		SMARTRF_SETTING_FOCCFG		)) ;
 	   while (set_config(TI_CCxxx0_BSCFG,		SMARTRF_SETTING_BSCFG		)) ;
 	   while (set_config(TI_CCxxx0_AGCCTRL2,	SMARTRF_SETTING_AGCCTRL2	)) ;

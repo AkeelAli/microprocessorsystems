@@ -3,7 +3,7 @@
 <title>Static Call Graph - [H:\code\Code\Georgi\Lab 2_final\lab_2.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image H:\code\Code\Georgi\Lab 2_final\lab_2.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Thu Dec 01 16:17:29 2011
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 561]: Last Updated: Fri Dec 02 11:57:35 2011
 <BR><P>
 <H3>Maximum Stack Usage =         72 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -705,7 +705,7 @@ Global Symbols
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;test_send
 </UL>
 
-<P><STRONG><a name="[5e]"></a>test_send</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, rf2500.o(.text))
+<P><STRONG><a name="[5e]"></a>test_send</STRONG> (Thumb, 126 bytes, Stack size 0 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = test_send &rArr; rf_get_status &rArr; send_strobe &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_byte
@@ -736,7 +736,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;configure
 </UL>
 
-<P><STRONG><a name="[61]"></a>configure</STRONG> (Thumb, 562 bytes, Stack size 8 bytes, rf2500.o(.text))
+<P><STRONG><a name="[61]"></a>configure</STRONG> (Thumb, 576 bytes, Stack size 8 bytes, rf2500.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = configure &rArr; set_config &rArr; write_byte &rArr; drop_css
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_config
@@ -745,7 +745,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_spi
 </UL>
 
-<P><STRONG><a name="[63]"></a>wait</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, rf2500.o(.text))
+<P><STRONG><a name="[63]"></a>wait</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rf2500.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_reset
 </UL>
 
