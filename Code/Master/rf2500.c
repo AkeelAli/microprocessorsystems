@@ -3,12 +3,14 @@
 
 u16 t,t2;
 u8 t3,tmp;
-
+u8 _latest_byte = 0;
 
 void init_spi (void) {
 
 	GPIO_InitTypeDef GPIO_InitStructure;
 	SPI_InitTypeDef SPI_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+	EXTI_InitTypeDef EXTI_InitStructure;
 
 	RCC_APB2PeriphClockCmd(
 		RCC_APB2Periph_GPIOA | 
@@ -45,8 +47,29 @@ void init_spi (void) {
 	
 	SPI_Cmd(SPI1, ENABLE);
 
-	
 
+
+
+	/* Connect EXTI Line13 to PA6 - MISO I pin */
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA,GPIO_PinSource6);
+
+
+	EXTI_InitStructure.EXTI_Line = EXTI_Line6;
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+	EXTI_Init(&EXTI_InitStructure);
+
+
+
+
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+	NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x00;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	
+	NVIC_Init(&NVIC_InitStructure);	
 
 	
 	raise_css();
@@ -54,6 +77,14 @@ void init_spi (void) {
 	rf_reset();
 	
 	configure();
+
+
+	//send_strobe	 (TI_CCxxx0_SFSTXON);
+	//send_strobe	 (TI_CCxxx0_SRX);
+	//rf_send_byte (0x13);
+	test_send();
+//	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
+
 
 }
 
@@ -214,6 +245,7 @@ void rf_send_byte (u8 byte) {
 RFStatus st;
 
 u8 data_rf[32];
+u8 _new_data = 0;
 u8 rf_read_byte (void) {
  	
 	switch ( rf_get_status () ) {
@@ -226,26 +258,26 @@ u8 rf_read_byte (void) {
 
 		
 		default: 		
+			_latest_byte = 0;
+			_new_data = 0;
 				 
 			send_strobe	 (TI_CCxxx0_SRX);
 			while (rf_get_status() != RF_STATUS_RX);
 			
 			tmp = 0;
+
+			while(!_new_data);
 			
-			while (rf_get_status() == RF_STATUS_RX);
-						
-			while (tmp < 32)
-				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
+			send_strobe ( TI_CCxxx0_SIDLE);
 			 
 			send_strobe ( TI_CCxxx0_SFRX);
 
-			return findMode(data_rf);
+			return _latest_byte;
 			 
 	}
 
 }
 void test_send(void) {
-
 	t3 = rf_read_byte();
 	t3 = rf_read_byte();
 	t3 = rf_read_byte();
@@ -287,11 +319,6 @@ void wait(u16 timeout) {
 }
 
 
-void stop_timeout(void) {
-	 _timeout_run = 0;
-	_timeout_milliseconds = 0;
-}
-
 u8 set_config (u16 address, u16 byte) {
  	 write_byte (address,byte);	  
 	 
@@ -304,7 +331,10 @@ u8 set_config (u16 address, u16 byte) {
 u8 configure (void) {
 		
 	   while (set_config(TI_CCxxx0_IOCFG0,		SETTING_IOCFG0				)) ;
-	   
+	   while (set_config(TI_CCxxx0_IOCFG1,		SETTING_IOCFG1				)) ;
+	   while (set_config(TI_CCxxx0_IOCFG2,		SMARTRF_SETTING_IOCFG2		)) ;
+
+
 	   while (set_config(TI_CCxxx0_MCSM0,		SETTING_MCSM0				)) ;
 	   while (set_config(TI_CCxxx0_PKTCTRL0,	SETTING_PKTCTRL0			)) ;	 
  	   while (set_config(TI_CCxxx0_FSCTRL1,		SMARTRF_SETTING_FSCTRL1		)) ;
@@ -339,7 +369,7 @@ u8 configure (void) {
 	   while (set_config(TI_CCxxx0_TEST1,		SMARTRF_SETTING_TEST1		)) ;
 	   while (set_config(TI_CCxxx0_TEST0,		SMARTRF_SETTING_TEST0		)) ;
 	   while (set_config(TI_CCxxx0_FIFOTHR,		SMARTRF_SETTING_FIFOTHR		)) ;
-	   while (set_config(TI_CCxxx0_IOCFG2,		SMARTRF_SETTING_IOCFG2		)) ;
+	   
 	   while (set_config(TI_CCxxx0_PKTCTRL1,	SMARTRF_SETTING_PKTCTRL1	)) ;
 	   while (set_config(TI_CCxxx0_PKTCTRL0,	SMARTRF_SETTING_PKTCTRL0	)) ;
 	   while (set_config(TI_CCxxx0_ADDR,		SMARTRF_SETTING_ADDR		)) ;
@@ -347,5 +377,20 @@ u8 configure (void) {
 
 	   t3 = read_byte(TI_CCxxx0_CHANNR);
 	   return 0;
+
+}
+
+
+__irq void EXTI9_5_IRQHandler(void) {
+	if(EXTI_GetITStatus(EXTI_Line6) != RESET) {
+		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
+			tmp = 0;
+			while (tmp < 32)
+				data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);		
+			_new_data = 1;
+			_latest_byte = findMode(data);
+		}
+		EXTI_ClearITPendingBit(EXTI_Line6);
+	}
 
 }
