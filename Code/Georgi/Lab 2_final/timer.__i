@@ -1,1 +1,0 @@
--c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F10x -I "..\Lab 2_noncompiling" -I "d:\software\Keil\ARM\CMSIS\Include" -I "d:\software\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -o "timer.o" --omf_browse "timer.crf" --depend "timer.d" "timer.c"

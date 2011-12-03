@@ -1,1 +1,0 @@
-bcdadd.o: bcdadd.s

@@ -1,0 +1,16 @@
+debugger.o: debugger.c
+debugger.o: d:\software\Keil\ARM\RV31\INC\stdio.h
+debugger.o: stm32f10x_conf.h
+debugger.o: stm32f10x_adc.h
+debugger.o: stm32f10x.h
+debugger.o: core_cm3.h
+debugger.o: d:\software\Keil\ARM\RV31\INC\stdint.h
+debugger.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+debugger.o: stm32f10x_conf.h
+debugger.o: stm32f10x_dma.h
+debugger.o: stm32f10x_exti.h
+debugger.o: stm32f10x_gpio.h
+debugger.o: stm32f10x_i2c.h
+debugger.o: stm32f10x_rcc.h
+debugger.o: stm32f10x_tim.h
+debugger.o: misc.h
