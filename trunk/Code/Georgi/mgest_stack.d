@@ -1,0 +1,17 @@
+mgest_stack.o: mgest_stack.c
+mgest_stack.o: gestures.h
+mgest_stack.o: ..\master\stm32f10x.h
+mgest_stack.o: ..\master\core_cm3.h
+mgest_stack.o: d:\software\Keil\ARM\RV31\INC\stdint.h
+mgest_stack.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+mgest_stack.o: ..\master\stm32f10x_conf.h
+mgest_stack.o: ..\master\stm32f10x_adc.h
+mgest_stack.o: ..\master\stm32f10x.h
+mgest_stack.o: ..\master\stm32f10x_dma.h
+mgest_stack.o: ..\master\stm32f10x_exti.h
+mgest_stack.o: ..\master\stm32f10x_gpio.h
+mgest_stack.o: ..\master\stm32f10x_i2c.h
+mgest_stack.o: ..\master\stm32f10x_rcc.h
+mgest_stack.o: ..\master\stm32f10x_tim.h
+mgest_stack.o: ..\master\misc.h
+mgest_stack.o: mgest_stack.h
