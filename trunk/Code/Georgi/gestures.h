@@ -22,7 +22,8 @@ typedef enum {
 	paper = 1,
 	rock,
 	scissors,
-	sync
+	sync,
+	no_move
 } symbol_t;	
 
 typedef struct {

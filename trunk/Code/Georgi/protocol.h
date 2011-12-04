@@ -2,6 +2,7 @@
 #define __PROTOCOL_H
 
 #include <stdint.h>
+#include "communication.h"
 
 typedef enum {
 	RF_STATE_WAIT,	   			// both in this state; if sync gesture recorded go to RF_STATE_M_SYNC_SEND; if request received, go to 	RF_STATE_S_SYNC_WAIT
@@ -16,5 +17,22 @@ typedef enum {
 	RF_STATE_S_MOVE_SEND,		// if no slave move recorded, wait for slave move; send move; go to	RF_STATE_S_END when result is received
 	RF_STATE_S_END 				// send back result received; wait for acknowledge and go to wait
 } RF_STATE;
+void init_protocol(void);
+
+void go_wait (void);
+
+void master_sync_send (void);
+void master_move_wait (void);
+void master_result_send (uint8_t slave_cmd);
+void master_end (void);
+
+
+void slave_sync_wait (void);
+void slave_acknowledge_send (void);
+void slave_move_send (void);
+void slave_end (uint8_t slave_cmd);
+
+
+
 
 #endif
