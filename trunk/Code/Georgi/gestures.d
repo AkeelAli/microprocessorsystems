@@ -1,9 +1,9 @@
 gestures.o: gestures.c
-gestures.o: d:\software\Keil\ARM\RV31\INC\math.h
+gestures.o: C:\Keil\ARM\RV31\INC\math.h
 gestures.o: ..\master\stm32f10x.h
 gestures.o: ..\master\core_cm3.h
-gestures.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-gestures.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+gestures.o: C:\Keil\ARM\RV31\INC\stdint.h
+gestures.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 gestures.o: ..\master\stm32f10x_conf.h
 gestures.o: ..\master\stm32f10x_adc.h
 gestures.o: ..\master\stm32f10x.h

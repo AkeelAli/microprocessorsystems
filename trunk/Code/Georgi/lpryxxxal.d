@@ -2,8 +2,8 @@ lpryxxxal.o: LPRYxxxAL.c
 lpryxxxal.o: LPRYxxxAL.h
 lpryxxxal.o: stm32f10x.h
 lpryxxxal.o: core_cm3.h
-lpryxxxal.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-lpryxxxal.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+lpryxxxal.o: C:\Keil\ARM\RV31\INC\stdint.h
+lpryxxxal.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 lpryxxxal.o: stm32f10x_conf.h
 lpryxxxal.o: stm32f10x_adc.h
 lpryxxxal.o: stm32f10x.h

@@ -3,8 +3,8 @@ lsm303dlh.o: LSM303DLH.h
 lsm303dlh.o: HAL_LSM303DLH.h
 lsm303dlh.o: stm32f10x.h
 lsm303dlh.o: core_cm3.h
-lsm303dlh.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-lsm303dlh.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+lsm303dlh.o: C:\Keil\ARM\RV31\INC\stdint.h
+lsm303dlh.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 lsm303dlh.o: stm32f10x_conf.h
 lsm303dlh.o: stm32f10x_adc.h
 lsm303dlh.o: stm32f10x.h

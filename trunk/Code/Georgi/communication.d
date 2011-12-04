@@ -1,11 +1,11 @@
 communication.o: communication.c
 communication.o: communication.h
-communication.o: d:\software\Keil\ARM\RV31\INC\stdint.h
+communication.o: C:\Keil\ARM\RV31\INC\stdint.h
 communication.o: rf2500.h
 communication.o: stm32f10x_spi.h
 communication.o: stm32f10x.h
 communication.o: core_cm3.h
-communication.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+communication.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 communication.o: stm32f10x_conf.h
 communication.o: stm32f10x_adc.h
 communication.o: stm32f10x.h
@@ -17,7 +17,7 @@ communication.o: stm32f10x_rcc.h
 communication.o: stm32f10x_tim.h
 communication.o: misc.h
 communication.o: C2500.h
-communication.o: d:\software\Keil\ARM\RV31\INC\stdbool.h
+communication.o: C:\Keil\ARM\RV31\INC\stdbool.h
 communication.o: service_functions.h
 communication.o: protocol.h
 communication.o: communication.h

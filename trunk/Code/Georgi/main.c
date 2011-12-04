@@ -18,10 +18,11 @@ int main(void){
 	init_timer();
 	init_protocol();
 	init_spi();
-	slave_acknowledge_send();
-	//master_sync_send();
-	go_wait();
-	
+//	slave_acknowledge_send();
+	//master_move_wait();
+go_wait();
+//master_sync_send();
+//master_result_send(RF_CMD_PAPER);	
 //	 while(1) move_m = get_move();
 	//rf_wait_command();		
 	/*					
