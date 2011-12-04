@@ -401,7 +401,6 @@ __irq void EXTI9_5_IRQHandler(void) {
 		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
 					
 			_new_rf_data = 1;
-			send_strobe	 (TI_CCxxx0_SIDLE);
 			
 		}
 		EXTI_ClearITPendingBit(EXTI_Line6);
