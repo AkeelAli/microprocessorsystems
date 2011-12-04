@@ -167,6 +167,7 @@ void latch_move (symbol_t lmove) {
 }
 
 symbol_t get_move (void) { 
+	symbol_t tmp;
 	if(newData){
 		 update_Orientation();
 	
@@ -177,7 +178,9 @@ symbol_t get_move (void) {
 	 }
 	 else if (2 == latching) {
 	 	latching = 0;
-		return move;
+		tmp = move;
+		move = no_move;
+		return tmp;
 	 }
 	 return no_move;
 	 
