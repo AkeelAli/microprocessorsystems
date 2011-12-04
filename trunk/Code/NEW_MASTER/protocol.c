@@ -7,12 +7,17 @@ RF_CMD master_move = RF_CMD_NO_CMD;
 RF_CMD slave_move = RF_CMD_NO_CMD;
 RF_CMD game_result = RF_CMD_NO_CMD;
 
+Led_TypeDef led; 
+
 symbol_t recorded_move = no_move;
 
 void init_protocol(void) {
 
+	
+	
 	NVIC_InitTypeDef NVIC_InitStructure;
 	EXTI_InitTypeDef EXTI_InitStructure;
+	iNEMO_Led_Init(led);
 
 	EXTI_InitStructure.EXTI_Line = EXTI_Line11;
 	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
@@ -171,7 +176,7 @@ void master_result_send (uint8_t slave_cmd) {
 	}
 
 	if (game_result == received_command) {
-		master_end();		
+		master_end(game_result);		
 	}
 
 	else {
@@ -180,11 +185,26 @@ void master_result_send (uint8_t slave_cmd) {
 
 }
 
-void master_end (void) {
+void master_end (uint8_t slave_cmd) {
 	uint8_t i = 0;
+	 game_result = (RF_CMD) slave_cmd;
 	_current_state = RF_STATE_M_END;
 	while (i++ < 5)
 		send_command(RF_CMD_ACK);
+
+	switch(game_result) {
+		 	case RF_CMD_MLOSE:
+				lose_and_weep();
+				break;
+			case RF_CMD_MWIN:
+				victory_dance();
+				break;
+			case RF_CMD_TIE:
+				equality_for_all();
+				break;
+
+	}
+
 	go_wait();
 }
 
@@ -282,9 +302,59 @@ void slave_end (uint8_t slave_cmd) {
 		i++;
 	}
 	if (RF_CMD_ACK == received_command)	{
+
+		switch(game_result) {
+		 	case RF_CMD_MWIN:
+				lose_and_weep();
+				break;
+			case RF_CMD_MLOSE:
+				victory_dance();
+				break;
+			case RF_CMD_TIE:
+				equality_for_all();
+				break;
+
+		}
+
 	 	go_wait();
 	}
 	else {
 		go_wait();
 	}
+}
+
+void victory_dance(void) {
+		uint8_t i = 0;
+
+		while (i++ < 50) {
+			iNEMO_Led_Toggle(led);
+			wait(10000);
+		}
+}
+
+void lose_and_weep (void) {
+
+	uint8_t i = 0;
+		while (i++ < 50) {
+			iNEMO_Led_On(led);
+			wait(5000);
+			
+
+		}	
+		iNEMO_Led_Off(led);
+
+}
+
+void equality_for_all (void) {
+
+	uint8_t i = 0;
+
+		while (i++ < 20) {
+			iNEMO_Led_On(led);
+			wait(40000);
+			iNEMO_Led_Off(led);
+			wait(5000);
+
+		}
+
 }
