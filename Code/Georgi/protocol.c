@@ -43,15 +43,14 @@ __irq void EXTI15_10_IRQHandler(void) {
 void go_wait (void) {
 	recorded_move = no_move;
 	latch_move (sync);
-	
-
-	
-   _current_state = RF_STATE_WAIT;
+	 
+   _current_state = RF_STATE_WAIT;	  
 	while (	RF_CMD_REQ != received_command && sync != recorded_move) {
 		received_command = listen_command();
 	}
 	if (sync == recorded_move) {
 		recorded_move = no_move;
+		
 		master_sync_send();
 
 	}
@@ -65,11 +64,11 @@ void go_wait (void) {
 void master_sync_send (void) {
 	uint8_t i = 0;
 
-	recorded_move = no_move;
-	master_move = RF_CMD_NO_CMD;
-	latch_move (rock | paper | scissors);
+		recorded_move = no_move;
+		master_move = RF_CMD_NO_CMD;
+		latch_move (rock | paper | scissors);
 	
-
+	
 	_current_state = RF_STATE_M_SYNC_SEND;
 	while (i < 20 && 	RF_CMD_NO_CMD == received_command ) {
 		received_command =  send_listen (RF_CMD_REQ);
@@ -87,9 +86,11 @@ void master_move_wait (void) {
 	uint8_t i = 0;
  	_current_state = RF_STATE_M_MOVE_WAIT;
 
-	while (i < 30 && !((RF_CMD_ROCK | RF_CMD_PAPER | RF_CMD_SCISSORS) & received_command )) {
+	while ((i < 50) && !((RF_CMD_ROCK | RF_CMD_PAPER | RF_CMD_SCISSORS) & received_command )) {
 		received_command =  listen_command ();
+		//received_command = rf_read_byte (10000);
 		i++;
+		
 	}
 	if (((RF_CMD_ROCK | RF_CMD_PAPER | RF_CMD_SCISSORS) & received_command ))	{
 	 	  master_result_send (received_command);
@@ -106,11 +107,10 @@ void master_result_send (uint8_t slave_cmd) {
 
 	_current_state = RF_STATE_M_RESULT_SEND;
 	
+
 	while (RF_CMD_NO_CMD == master_move && i++ < 10) {
-		if (no_move == recorded_move) {
-			wait (10000);
-		}
-		else  {
+		while (no_move == recorded_move);
+	
 			switch (recorded_move) {
 			 	case rock:
 					 master_move = RF_CMD_ROCK;
@@ -120,10 +120,12 @@ void master_result_send (uint8_t slave_cmd) {
 					break;
 				case scissors:
 					master_move = RF_CMD_SCISSORS;
-					break;			 
+					break;
+				default:
+					master_move = 	RF_CMD_NO_CMD;		 
 			}
 			recorded_move = no_move;
-		}
+		
 	}
 	
 	switch (master_move) { 	 	
@@ -194,9 +196,9 @@ void slave_sync_wait (void) {
 	_current_state = RF_STATE_S_SYNC_WAIT;
  	
 	recorded_move = no_move;
-	latch_move (sync);
+	//latch_move (sync);
 
-	while (sync != recorded_move);
+//	while (sync != recorded_move);
 
 	
 	// some kind of timeout

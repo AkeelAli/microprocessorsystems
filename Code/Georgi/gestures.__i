@@ -1,1 +1,1 @@
--c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I "..\master" -I "d:\software\Keil\ARM\CMSIS\Include" -I "d:\software\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -o "gestures.o" --omf_browse "gestures.crf" --depend "gestures.d" "gestures.c"
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I "..\master" -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -o "gestures.o" --omf_browse "gestures.crf" --depend "gestures.d" "gestures.c"

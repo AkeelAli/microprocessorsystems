@@ -4,8 +4,8 @@ gesture_latch.o: stm32f10x_conf.h
 gesture_latch.o: stm32f10x_adc.h
 gesture_latch.o: stm32f10x.h
 gesture_latch.o: core_cm3.h
-gesture_latch.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-gesture_latch.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+gesture_latch.o: C:\Keil\ARM\RV31\INC\stdint.h
+gesture_latch.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 gesture_latch.o: stm32f10x_conf.h
 gesture_latch.o: stm32f10x_dma.h
 gesture_latch.o: stm32f10x_exti.h
@@ -19,6 +19,6 @@ gesture_latch.o: HAL_LSM303DLH.h
 gesture_latch.o: LPRYxxxAL.h
 gesture_latch.o: HAL_LPRYxxxAL.h
 gesture_latch.o: atan_LUT.h
-gesture_latch.o: d:\software\Keil\ARM\RV31\INC\math.h
+gesture_latch.o: C:\Keil\ARM\RV31\INC\math.h
 gesture_latch.o: gestures.h
 gesture_latch.o: ..\master\stm32f10x.h

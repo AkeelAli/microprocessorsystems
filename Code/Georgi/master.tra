@@ -31,7 +31,7 @@
 ### ADS-LD Output File: 'master.axf'
 ### ADS-LD Command File: 'master.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'master.lnp', Handle=0x00000DFC
+### Creating CmdFile 'master.lnp', Handle=0x00000724
 ### Writing '.lnp' file
 ### ADS-LD Command file 'master.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

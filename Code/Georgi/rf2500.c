@@ -257,7 +257,8 @@ u8 rf_read_byte (u16 waittime) {
 			send_strobe	 (TI_CCxxx0_SFTX);
 
 		
-		default: 		
+		default:
+			send_strobe	 (TI_CCxxx0_SFRX); 		
 			_new_rf_data = 0;
 				 
 			send_strobe	 (TI_CCxxx0_SRX);
@@ -274,7 +275,7 @@ u8 rf_read_byte (u16 waittime) {
 				send_strobe	 (TI_CCxxx0_SFRX);
 				return findMode(data_rf);	 
 			}
-			
+			send_strobe	 (TI_CCxxx0_SIDLE);
 			return 0x00;
 			 
 	}

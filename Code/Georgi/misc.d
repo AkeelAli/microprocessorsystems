@@ -2,8 +2,8 @@ misc.o: misc.c
 misc.o: misc.h
 misc.o: stm32f10x.h
 misc.o: core_cm3.h
-misc.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-misc.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+misc.o: C:\Keil\ARM\RV31\INC\stdint.h
+misc.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 misc.o: stm32f10x_conf.h
 misc.o: stm32f10x_adc.h
 misc.o: stm32f10x.h

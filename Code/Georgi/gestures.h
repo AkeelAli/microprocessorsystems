@@ -20,10 +20,10 @@ typedef enum {
 
 typedef enum {
 	paper = 1,
-	rock,
-	scissors,
-	sync,
-	no_move
+	rock = 2,
+	scissors = 4,
+	sync = 8,
+	no_move = 0
 } symbol_t;	
 
 typedef struct {

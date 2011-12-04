@@ -3,8 +3,8 @@ atan_lut.o: stm32f10x_conf.h
 atan_lut.o: stm32f10x_adc.h
 atan_lut.o: stm32f10x.h
 atan_lut.o: core_cm3.h
-atan_lut.o: d:\software\Keil\ARM\RV31\INC\stdint.h
-atan_lut.o: d:\software\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+atan_lut.o: C:\Keil\ARM\RV31\INC\stdint.h
+atan_lut.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
 atan_lut.o: stm32f10x_conf.h
 atan_lut.o: stm32f10x_dma.h
 atan_lut.o: stm32f10x_exti.h
