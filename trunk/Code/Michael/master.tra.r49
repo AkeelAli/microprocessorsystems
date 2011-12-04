@@ -1,0 +1,40 @@
+*** Creating Trace Output File 'master.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"stm32f10x.o"'
+### List of Objects: adding '"atan_lut.o"'
+### List of Objects: adding '"debugger.o"'
+### List of Objects: adding '"gestures.o"'
+### List of Objects: adding '"lpryxxxal.o"'
+### List of Objects: adding '"lsm303dlh.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"mgest_stack.o"'
+### List of Objects: adding '"misc.o"'
+### List of Objects: adding '"rf2500.o"'
+### List of Objects: adding '"service_functions.o"'
+### List of Objects: adding '"stm32f10x_adc.o"'
+### List of Objects: adding '"stm32f10x_dma.o"'
+### List of Objects: adding '"stm32f10x_exti.o"'
+### List of Objects: adding '"stm32f10x_gpio.o"'
+### List of Objects: adding '"stm32f10x_i2c.o"'
+### List of Objects: adding '"stm32f10x_rcc.o"'
+### List of Objects: adding '"stm32f10x_spi.o"'
+### List of Objects: adding '"stm32f10x_tim.o"'
+### List of Objects: adding '"communication.o"'
+### List of Objects: adding '"protocol.o"'
+### List of Objects: adding '"gesture_latch.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "stm32f10x.o" "atan_lut.o" "debugger.o" "gestures.o" "lpryxxxal.o" "lsm303dlh.o" "main.o" "mgest_stack.o" "misc.o" "rf2500.o" "service_functions.o" "stm32f10x_adc.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "stm32f10x_spi.o" "stm32f10x_tim.o" "communication.o" "protocol.o" "gesture_latch.o" --strict --scatter "master.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\master.map" -o "master.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'master.axf'
+### ADS-LD Command File: 'master.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'master.lnp', Handle=0x00000724
+### Writing '.lnp' file
+### ADS-LD Command file 'master.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
