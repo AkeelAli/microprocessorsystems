@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include "communication.h"
+#include "iNEMO_Led.h"
 
 typedef enum {
 	RF_STATE_WAIT,	   			// both in this state; if sync gesture recorded go to RF_STATE_M_SYNC_SEND; if request received, go to 	RF_STATE_S_SYNC_WAIT
@@ -24,7 +25,7 @@ void go_wait (void);
 void master_sync_send (void);
 void master_move_wait (void);
 void master_result_send (uint8_t slave_cmd);
-void master_end (void);
+void master_end (uint8_t slave_cmd);
 
 
 void slave_sync_wait (void);
@@ -32,7 +33,9 @@ void slave_acknowledge_send (void);
 void slave_move_send (void);
 void slave_end (uint8_t slave_cmd);
 
-
+void victory_dance(void);
+void lose_and_weep (void);
+void equality_for_all(void);
 
 
 #endif
