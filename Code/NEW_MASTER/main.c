@@ -9,14 +9,13 @@
 
 
 int main(void){
-	
+				  extern u8 latching;
 	initAccGyro();
 	initTIM();
 	init_timer();
 	init_protocol();
 	init_spi();
-
-
+	
 	go_wait();
  
 
