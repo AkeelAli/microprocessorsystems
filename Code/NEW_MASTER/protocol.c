@@ -207,8 +207,8 @@ void master_end (uint8_t slave_cmd) {
 				break;
 
 	}
-
-	go_wait();
+	 Reset_Handler();
+	//go_wait();
 }
 
 
@@ -320,8 +320,9 @@ void slave_end (uint8_t slave_cmd) {
 				equality_for_all();
 				break;
 	  	}
-	go_wait();	
-
+	 
+	 Reset_Handler();
+	//go_wait();
 }
 
 void victory_dance(void) {
