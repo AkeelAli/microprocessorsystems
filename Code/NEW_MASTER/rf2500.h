@@ -27,9 +27,9 @@ typedef enum {
 RFStatus rf_get_status(void);
 u8 rf_get_free_bytes(void);
 
- void init_timer (void);
+void init_timer(u8 *lock);
 // wait function, takes tens of microseconds as input
-void wait(u16 timeout);
+void wait(u16 wait_time, u8 *lock);
 
 void wait_listen(u16 timeout)  ;
 void raise_css (void);
