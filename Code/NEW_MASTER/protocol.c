@@ -320,7 +320,7 @@ void slave_end (uint8_t slave_cmd) {
 				equality_for_all();
 				break;
 	  	}
-		
+	go_wait();	
 
 }
 
