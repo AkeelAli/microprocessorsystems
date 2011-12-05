@@ -37,5 +37,7 @@ void victory_dance(void);
 void lose_and_weep (void);
 void equality_for_all(void);
 
+extern void Reset_Handler(void);  
+
 
 #endif
