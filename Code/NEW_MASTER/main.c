@@ -9,13 +9,14 @@
 
 
 int main(void){
-	
-
+	u8 lock = 0; 
 	initAccGyro();
+	
+	init_timer(&lock);
 	initTIM();
-	init_timer();
 	init_protocol();
 	init_spi();
+
 
 	go_wait();
  
