@@ -16,7 +16,7 @@ int main(void){
 	init_protocol();
 	init_spi();
 
-	equality_for_all();
+
 	go_wait();
  
 
