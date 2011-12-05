@@ -76,7 +76,7 @@ void master_sync_send (void) {
 	
 	
 	_current_state = RF_STATE_M_SYNC_SEND;
-	while (i < 20 && 	RF_CMD_NO_CMD == received_command ) {
+	while (i < 50 && 	RF_CMD_NO_CMD == received_command ) {
 		received_command =  send_listen (RF_CMD_REQ);
 		i++;
 	}
@@ -302,7 +302,7 @@ void slave_end (uint8_t slave_cmd) {
 		i++;
 	}
 	if (RF_CMD_ACK == received_command)	{
-
+	}
 		switch(game_result) {
 		 	case RF_CMD_MWIN:
 				lose_and_weep();
@@ -313,14 +313,9 @@ void slave_end (uint8_t slave_cmd) {
 			case RF_CMD_TIE:
 				equality_for_all();
 				break;
+	  	}
+		
 
-		}
-
-	 	go_wait();
-	}
-	else {
-		go_wait();
-	}
 }
 
 void victory_dance(void) {
