@@ -62,6 +62,7 @@ int process_symbol(symbol_t *s){
 		for (i = 0; i < VALID_MOVES; i++){
 			if (tmp1 == valid_moves[i].mgest[0] && tmp2 == valid_moves[i].mgest[1]){
 				*s = valid_moves[i].symbol;
+				sp = 0;	  //clear buffer
 				return SUCCESS;
 			}
 		}
