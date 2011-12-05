@@ -43,7 +43,7 @@ int intelligent_push(mgest_t g) {
 	mgest_t head;
 
 	if(!isEmpty())	/* only peek if stack not empty */
-		if( peek(&head) == ERROR || head == g) /* don't push if empty or same */
+		if( peek(&head) == ERROR || (head == g && (g != neg_roll) && (g!= pos_roll))) /* don't push if empty or same (roll is exception) */
 			return ERROR;
 
 	push(g);

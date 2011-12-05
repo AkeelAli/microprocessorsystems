@@ -2,10 +2,10 @@
 #define GESTURES_H
 
 //Threshold values use to indicate presence of microgesture:
-#define		ACC_X_MAG	3000
-#define 	ACC_Y_MAG	2000
+#define		ACC_X_MAG	7000
+#define 	ACC_Y_MAG	20000
 #define		ACC_Z_MAG	7000
-#define		ROLL_MAG	10	  /* threshold angle */
+#define		ROLL_MAG	30	  /* threshold angle */
 
 typedef enum {
 	pos_x = 1,
@@ -36,6 +36,6 @@ extern gesture valid_moves[VALID_MOVES];
 
 #include <stm32f10x.h>
 
-int updateGesture(int32_t x, int32_t y, int32_t z, float roll, symbol_t *result);
+int updateGesture(float x, float y, float z, float roll, symbol_t *result);
 
 #endif
