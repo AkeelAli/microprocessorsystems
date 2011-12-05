@@ -50,9 +50,11 @@ void initTIM(void){
 
 	TIM_ARRPreloadConfig(TIM3,ENABLE);
 
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+
 	//Configure the Interrupt
 	nvicConfig.NVIC_IRQChannel = TIM2_IRQn;
-  	nvicConfig.NVIC_IRQChannelPreemptionPriority = 2;
+  	nvicConfig.NVIC_IRQChannelPreemptionPriority = 0;
   	nvicConfig.NVIC_IRQChannelSubPriority = 2; 
   	nvicConfig.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&nvicConfig);
@@ -61,8 +63,8 @@ void initTIM(void){
 
 	//Configure the Interrupt
 	nvicConfig.NVIC_IRQChannel = TIM3_IRQn;
-  	nvicConfig.NVIC_IRQChannelPreemptionPriority = 2;
-  	nvicConfig.NVIC_IRQChannelSubPriority = 3; 
+  	nvicConfig.NVIC_IRQChannelPreemptionPriority = 0;
+  	nvicConfig.NVIC_IRQChannelSubPriority = 0; 
   	nvicConfig.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&nvicConfig);
 	//Start the timer

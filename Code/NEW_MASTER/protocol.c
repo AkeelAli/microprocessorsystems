@@ -30,8 +30,8 @@ void init_protocol(void) {
 
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x0A;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	
 	NVIC_Init(&NVIC_InitStructure);
@@ -117,7 +117,8 @@ void master_result_send (uint8_t slave_cmd) {
 	
 
 	while (RF_CMD_NO_CMD == master_move && i++ < 10) {
-		while (no_move == recorded_move);
+		wait(50000,&_t_lock);
+		while ((no_move == recorded_move) && _t_lock);
 	
 			switch (recorded_move) {
 			 	case rock:
@@ -251,15 +252,15 @@ void slave_acknowledge_send (void) {
 
 void slave_move_send (void) {
 	uint8_t i = 0;
-
+	
 	_current_state = RF_STATE_S_MOVE_SEND;
 
 	
 	while (RF_CMD_NO_CMD == slave_move && i++ < 10) {
-		if (no_move == recorded_move) {
-			wait(10000,&_t_lock); while (_t_lock);
-		}
-		else  {
+		wait(50000,&_t_lock);
+		while ((no_move == recorded_move) && _t_lock);
+
+		
 			switch (recorded_move) {
 			 	case rock:
 					 slave_move = RF_CMD_ROCK;
@@ -269,10 +270,13 @@ void slave_move_send (void) {
 					break;
 				case scissors:
 					slave_move = RF_CMD_SCISSORS;
-					break;			 
+					break;	
+				default:
+					slave_move = RF_CMD_NO_CMD;
+					break;		 
 			}
 			recorded_move = no_move;
-		}
+		
 	}
 
 
