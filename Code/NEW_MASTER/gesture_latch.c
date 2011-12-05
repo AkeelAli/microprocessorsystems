@@ -27,7 +27,7 @@ uint16_t readout=0;
 
 void initTIM(void){
 	//ENABLE CLOCK FOR TIM 2's CLOCK
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2,ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 | RCC_APB1Periph_TIM3,ENABLE);
 	//Set up the timer
 	timConfig.TIM_Period = 80;
 	timConfig.TIM_Prescaler = 999; //Want to trigger every 10ms 8Meg/(80*(999+1)) = 100 (100Hz)
@@ -40,6 +40,16 @@ void initTIM(void){
 
 	TIM_ARRPreloadConfig(TIM2,ENABLE);
 
+
+	timConfig.TIM_Period = 40;
+	timConfig.TIM_Prescaler = 2;
+
+	TIM_TimeBaseInit(TIM3,&timConfig);
+
+	TIM_ITConfig(TIM3,TIM_IT_Update,ENABLE);//enable the Timer interrupt
+
+	TIM_ARRPreloadConfig(TIM3,ENABLE);
+
 	//Configure the Interrupt
 	nvicConfig.NVIC_IRQChannel = TIM2_IRQn;
   	nvicConfig.NVIC_IRQChannelPreemptionPriority = 2;
@@ -48,6 +58,15 @@ void initTIM(void){
 	NVIC_Init(&nvicConfig);
 	//Start the timer
 	TIM_Cmd(TIM2,ENABLE);
+
+	//Configure the Interrupt
+	nvicConfig.NVIC_IRQChannel = TIM3_IRQn;
+  	nvicConfig.NVIC_IRQChannelPreemptionPriority = 2;
+  	nvicConfig.NVIC_IRQChannelSubPriority = 3; 
+  	nvicConfig.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&nvicConfig);
+	//Start the timer
+	//TIM_Cmd(TIM3,ENABLE);
 }
 
 void initAccGyro(void){
@@ -114,6 +133,9 @@ __irq void TIM2_IRQHandler(void){
 		}
 	}
 }
+
+
+
 
 void latch_move (symbol_t lmove) {
 	  latching_move = lmove;
