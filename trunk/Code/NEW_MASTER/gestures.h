@@ -36,6 +36,6 @@ extern gesture valid_moves[VALID_MOVES];
 
 #include <stm32f10x.h>
 
-int updateGesture(float x, float y, float z, float roll, symbol_t *result);
+int updateGesture(int32_t x, int32_t y, int32_t z, float roll, symbol_t *result);
 
 #endif

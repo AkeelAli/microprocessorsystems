@@ -9,12 +9,12 @@ gesture valid_moves[VALID_MOVES] = {
 		 {{neg_x, pos_x}, scissors}, {{neg_y, pos_y}, paper}, {{neg_z, pos_z}, sync}, {{neg_roll, pos_roll}, rock}
 	};
 
-static float prev_acc[3];
-static float acc[3];
-static float delta[3];
-static float abs_delta[3];
+int32_t prev_acc[3];
+int32_t acc[3];
+int32_t delta[3];
+int32_t abs_delta[3];
 
-int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
+int updateGesture(int32_t x, int32_t y, int32_t z, float roll, symbol_t *result) {
 
 	acc[0] = x;
 	acc[1] = y;
@@ -36,19 +36,19 @@ int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 		intelligent_push(neg_roll);
 
 	else if (abs_delta[0] > abs_delta[1] && abs_delta[0] > abs_delta[2]) {
-		if (delta[0] > ACC_X_MAG)			 /* compare the value as opposed to the delta */
+		if (delta[0] > ACC_X_MAG)			 
 			intelligent_push(pos_x);
 		else if (-delta[0] > ACC_X_MAG)
 			intelligent_push(neg_x);	
 	}
 	else if (abs_delta[1] > abs_delta[0] && abs_delta[1] > abs_delta[2]) {
-		if (delta[1] > ACC_Y_MAG)			 /* compare the value as opposed to the delta */
+		if (delta[1] > ACC_Y_MAG)		
 			intelligent_push(pos_y);
 		else if (-delta[1] > ACC_Y_MAG)
 			intelligent_push(neg_y);
 	}
 	else {
-		if (delta[2] > ACC_Z_MAG)			 /* compare the value as opposed to the delta */
+		if (delta[2] > ACC_Z_MAG)			
 			intelligent_push(pos_z);
 		else if (-delta[2] > ACC_Z_MAG)
 			intelligent_push(neg_z);	
