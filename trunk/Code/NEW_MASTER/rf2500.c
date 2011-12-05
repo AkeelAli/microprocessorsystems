@@ -6,6 +6,11 @@ u8 t3,tmp;
 u8 _latest_byte = 0;
 u8 _new_rf_data = 0;
 
+u8 *timer_lock;
+u16 _milliseconds = 0;
+u16 _wait_time = 0;
+
+
 void init_spi (void) {
 
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -79,7 +84,6 @@ void init_spi (void) {
 	
 	configure();
 
-
 	//send_strobe	 (TI_CCxxx0_SFSTXON);
 	//send_strobe	 (TI_CCxxx0_SRX);
 	//rf_send_byte (0x13);
@@ -87,10 +91,6 @@ void init_spi (void) {
 //	SPI_I2S_SendData(SPI1, TI_CCxxx0_SRES);
 
 
-}
-
-void init_timer (void) {
- 	SysTick_Config (100);
 }
 
 void raise_css (void) {
@@ -111,12 +111,13 @@ u8 rf_get_free_bytes(void) {
  	return	0x0F & send_strobe(TI_CCxxx0_SNOP);
 }
 void rf_reset (void) {
-
+	u8 l = 1;
  	
 	drop_css();
 	raise_css();
 	
-	wait(5);
+	wait(5,&l);
+	while (l);
 
 	send_strobe	 (TI_CCxxx0_SRES);
 
@@ -243,7 +244,7 @@ void rf_send_byte (u8 byte) {
     }
 
 }
-RFStatus st;
+u8 read_lock = 0;
 
 u8 data_rf[32];
 u8 rf_read_byte (u16 waittime) {
@@ -264,7 +265,8 @@ u8 rf_read_byte (u16 waittime) {
 			send_strobe	 (TI_CCxxx0_SRX);
 			while (rf_get_status() != RF_STATUS_RX);
 			
-			wait_listen (waittime);
+			wait (waittime,&read_lock);
+			while (read_lock && !_new_rf_data);
 
 			if (_new_rf_data) {
 				_new_rf_data = 0;
@@ -298,42 +300,7 @@ uint8_t miso_high (void) {
 
 
 
-u8 _timer_run = 0;
-u8 _l_timer_run = 0;
-u16 _timeouts = 0;
-u16 _target_timeouts = 0;
-u16 _l_milliseconds = 0;
-u16 _milliseconds = 0;
-void SysTick_Handler(void) {
-		
-	if (_timer_run)	  {
-		_milliseconds++;
 
-	}
-	if (_l_timer_run) {
-	   _l_milliseconds++;
-	}
-}
-
-void wait(u16 timeout) {
-   _milliseconds = 0;
-   _timer_run = 1;
-   
-	while (_milliseconds < timeout);
-
-	_timer_run = 0;
-	_milliseconds = 0;
-}
-
-void wait_listen(u16 timeout) {
-   _l_milliseconds = 0;
-   _l_timer_run = 1;
-   
-	while (_l_milliseconds < timeout && !_new_rf_data);
-
-	_l_timer_run = 0;
-	_l_milliseconds = 0;
-}
 
 u8 set_config (u16 address, u16 byte) {
  	 write_byte (address,byte);	  
@@ -409,6 +376,41 @@ __irq void EXTI9_5_IRQHandler(void) {
 
 }
 
+
+
+void init_timer (u8 *lock) {
+ 	//SysTick_Config (100);
+	_milliseconds = 0;
+	_wait_time = 0;
+	timer_lock = lock;
+}
+
+
+
+__irq void TIM3_IRQHandler(void){
+	TIM_ClearITPendingBit(TIM3,TIM_IT_Update); //clear the pending Interrupt
+	_milliseconds++;
+
+	if ( _milliseconds > _wait_time ) {
+		*timer_lock = 0;
+		TIM_Cmd(TIM3,DISABLE);
+
+	}
+}
+
+
+void wait(u16 wait_time, u8 *lock) {
+   _milliseconds = 0;
+   _wait_time = wait_time;
+   timer_lock = lock;
+   *timer_lock = 1;
+
+	TIM_Cmd(TIM3,ENABLE);
+}
+
+void wait_listen(u16 timeout) {
+
+}
 
 
 

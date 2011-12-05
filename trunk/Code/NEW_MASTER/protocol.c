@@ -7,6 +7,8 @@ RF_CMD master_move = RF_CMD_NO_CMD;
 RF_CMD slave_move = RF_CMD_NO_CMD;
 RF_CMD game_result = RF_CMD_NO_CMD;
 
+u8 _t_lock = 0;
+
 Led_TypeDef led; 
 
 symbol_t recorded_move = no_move;
@@ -255,7 +257,7 @@ void slave_move_send (void) {
 	
 	while (RF_CMD_NO_CMD == slave_move && i++ < 10) {
 		if (no_move == recorded_move) {
-			wait (10000);
+			wait(10000,&_t_lock); while (_t_lock);
 		}
 		else  {
 			switch (recorded_move) {
@@ -323,7 +325,8 @@ void victory_dance(void) {
 
 		while (i++ < 50) {
 			iNEMO_Led_Toggle(led);
-			wait(10000);
+			wait(7000,&_t_lock);
+			while (_t_lock);
 		}
 }
 
@@ -332,7 +335,7 @@ void lose_and_weep (void) {
 	uint8_t i = 0;
 		while (i++ < 50) {
 			iNEMO_Led_On(led);
-			wait(5000);
+			wait(3000,&_t_lock); while (_t_lock);
 			
 
 		}	
@@ -346,9 +349,9 @@ void equality_for_all (void) {
 
 		while (i++ < 20) {
 			iNEMO_Led_On(led);
-			wait(40000);
+			wait(25000,&_t_lock); while (_t_lock);
 			iNEMO_Led_Off(led);
-			wait(5000);
+			wait(3000,&_t_lock); while (_t_lock);
 
 		}
 
