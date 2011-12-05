@@ -5,8 +5,8 @@
 
 /* valid moves for the game */
 gesture valid_moves[VALID_MOVES] = {
-		 {{pos_x, neg_x}, scissors}, {{pos_y, neg_y}, paper}, {{pos_z, neg_z}, sync}, {{pos_roll, neg_roll}, rock},
-		 {{neg_x, pos_x}, scissors}, {{neg_y, pos_y}, paper}, {{neg_z, pos_z}, sync}, {{neg_roll, pos_roll}, rock}
+		 {{pos_x, neg_x}, scissors}, {{pos_y, neg_y}, paper}, {{pos_z, neg_z}, sync}, {{pos_roll, pos_roll}, rock},
+		 {{neg_x, pos_x}, scissors}, {{neg_y, pos_y}, paper}, {{neg_z, pos_z}, sync}, {{neg_roll, neg_roll}, rock}
 	};
 
 int32_t prev_acc[3];
@@ -14,7 +14,7 @@ int32_t acc[3];
 int32_t delta[3];
 int32_t abs_delta[3];
 
-int updateGesture(int32_t x, int32_t y, int32_t z, float roll, symbol_t *result) {
+int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 
 	acc[0] = x;
 	acc[1] = y;
@@ -29,10 +29,10 @@ int updateGesture(int32_t x, int32_t y, int32_t z, float roll, symbol_t *result)
 	abs_delta[2] = fabs(acc[2] - prev_acc[2]);
 	
 	/* roll overrides other gestures hence comes first in comparison */
-	if (roll > ROLL_MAG)
+	if (roll > ROLL_MAG && acc[2] < 0)
 		intelligent_push(pos_roll);
 
-	else if (-roll > ROLL_MAG) 
+	else if (-roll > ROLL_MAG && acc[2] < 0) 
 		intelligent_push(neg_roll);
 
 	else if (abs_delta[0] > abs_delta[1] && abs_delta[0] > abs_delta[2]) {

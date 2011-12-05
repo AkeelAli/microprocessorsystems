@@ -10,7 +10,7 @@
 
 //Define constants/Macros
 #define PI 3.141592654
-
+extern symbol_t latched_move;
 void initTIM(void);
 void initAccGyro(void);
 void update_Orientation(void);
