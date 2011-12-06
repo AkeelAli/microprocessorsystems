@@ -1,0 +1,36 @@
+*** Creating Trace Output File 'akeel.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"atan_lut.o"'
+### List of Objects: adding '"debugger.o"'
+### List of Objects: adding '"lpryxxxal.o"'
+### List of Objects: adding '"lsm303dlh.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"misc.o"'
+### List of Objects: adding '"stm32f10x_adc.o"'
+### List of Objects: adding '"stm32f10x_dma.o"'
+### List of Objects: adding '"stm32f10x_exti.o"'
+### List of Objects: adding '"stm32f10x_gpio.o"'
+### List of Objects: adding '"stm32f10x_i2c.o"'
+### List of Objects: adding '"stm32f10x_rcc.o"'
+### List of Objects: adding '"stm32f10x_tim.o"'
+### List of Objects: adding '"stm32f10x.o"'
+### List of Objects: adding '"gestures.o"'
+### List of Objects: adding '"mgest_stack.o"'
+### List of Objects: adding '"cc2500.o"'
+### List of Objects: adding '"spi_protocol.o"'
+### List of Objects: adding '"stm32f10x_spi.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "atan_lut.o" "debugger.o" "lpryxxxal.o" "lsm303dlh.o" "main.o" "misc.o" "stm32f10x_adc.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "stm32f10x_tim.o" "stm32f10x.o" "gestures.o" "mgest_stack.o" "cc2500.o" "spi_protocol.o" "stm32f10x_spi.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\akeel.map" -o "akeel.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'akeel.axf'
+### ADS-LD Command File: 'akeel.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'akeel.lnp', Handle=0x000003A0
+### Writing '.lnp' file
+### ADS-LD Command file 'akeel.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,16 @@
+inemo_led.o: iNEMO_led.c
+inemo_led.o: iNEMO_Led.h
+inemo_led.o: stm32f10x.h
+inemo_led.o: core_cm3.h
+inemo_led.o: C:\Keil\ARM\RV31\INC\stdint.h
+inemo_led.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+inemo_led.o: stm32f10x_conf.h
+inemo_led.o: stm32f10x_adc.h
+inemo_led.o: stm32f10x.h
+inemo_led.o: stm32f10x_dma.h
+inemo_led.o: stm32f10x_exti.h
+inemo_led.o: stm32f10x_gpio.h
+inemo_led.o: stm32f10x_i2c.h
+inemo_led.o: stm32f10x_rcc.h
+inemo_led.o: stm32f10x_tim.h
+inemo_led.o: misc.h

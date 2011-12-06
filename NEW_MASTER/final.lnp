@@ -1,0 +1,4 @@
+--cpu Cortex-M3 "stm32f10x.o" "atan_lut.o" "communication.o" "debugger.o" "gesture_latch.o" "gestures.o" "lpryxxxal.o" "lsm303dlh.o" "main.o" "mgest_stack.o" "misc.o" "protocol.o" "rf2500.o" "service_functions.o" "stm32f10x_adc.o" "stm32f10x_dma.o" "stm32f10x_exti.o" "stm32f10x_gpio.o" "stm32f10x_i2c.o" "stm32f10x_rcc.o" "stm32f10x_spi.o" "stm32f10x_tim.o" "inemo_led.o" --strict --scatter "final.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\final.map" -o "final.axf"
