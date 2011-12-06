@@ -5,6 +5,8 @@
 #include "communication.h"
 #include "iNEMO_Led.h"
 
+
+// definition of states
 typedef enum {
 	RF_STATE_WAIT,	   			// both in this state; if sync gesture recorded go to RF_STATE_M_SYNC_SEND; if request received, go to 	RF_STATE_S_SYNC_WAIT
 
@@ -18,8 +20,11 @@ typedef enum {
 	RF_STATE_S_MOVE_SEND,		// if no slave move recorded, wait for slave move; send move; go to	RF_STATE_S_END when result is received
 	RF_STATE_S_END 				// send back result received; wait for acknowledge and go to wait
 } RF_STATE;
+
+// init protocol function. Enables the LED and interrupts on Line 11 (used for move latching)
 void init_protocol(void);
 
+// functions for the various states. master_* are master states, slave_* are slave states
 void go_wait (void);
 
 void master_sync_send (void);
@@ -33,6 +38,7 @@ void slave_acknowledge_send (void);
 void slave_move_send (void);
 void slave_end (uint8_t slave_cmd);
 
+// the various LED actions to show outcome
 void victory_dance(void);
 void lose_and_weep (void);
 void equality_for_all(void);

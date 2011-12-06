@@ -180,16 +180,17 @@ __irq void TIM2_IRQHandler(void){
 		newData = 1; //indicate that new data is available
 	 
 	 	latched_move = get_move();
+
+		// if the move matches what we're latching...
 		if (latched_move & latching_move) {
+			// set latching to 2 and generate an interrupt. the handler for this interrupt is in protocol.c
 			latching = 2;
 			EXTI_GenerateSWInterrupt(EXTI_Line11);	
 		}
 	}
 }
 
-
-
-
+// start latching move. the check is done in the tim2 interrupt
 void latch_move (symbol_t lmove) {
 	  latching_move = lmove;
 	  latching = 1;
@@ -197,6 +198,8 @@ void latch_move (symbol_t lmove) {
 
 symbol_t get_move (void) { 
 	symbol_t tmp;
+
+	// if there is new data, reset newData to 0 and return the move
 	if(newData){
 		 update_Orientation();
 	
@@ -205,12 +208,15 @@ symbol_t get_move (void) {
 		 newData = 0;
 		 return move;
 	 }
+	 // otherwise, if latching is 2, return the latest recorded move. this is designed to return a move only once
 	 else if (2 == latching) {
 	 	latching = 0;
 		tmp = move;
 		move = no_move;
 		return tmp;
 	 }
+
+	 // otherwise, return no_move
 	 return no_move;
 	 
 }

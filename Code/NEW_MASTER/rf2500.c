@@ -56,7 +56,7 @@ void init_spi (void) {
 
 
 
-	/* Connect EXTI Line13 to PA6 - MISO I pin */
+	/* Connect EXTI Line6 to PA6 - MISO I pin */
 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA,GPIO_PinSource6);
 
 
@@ -93,6 +93,7 @@ void init_spi (void) {
 
 }
 
+// just raise/lower css and read back until the desired value is on
 void raise_css (void) {
 	GPIO_WriteBit(GPIOA, GPIO_Pin_4, (BitAction)1);
 	while (!GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4));		  // wait until bit actually changes
@@ -103,22 +104,27 @@ void drop_css(void){
 	while (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4));	  // wait until bit actually changes
 }
 
+// will return the status bits (except for the MSB)
 RFStatus rf_get_status(void) {
  	return (RFStatus) (0x70 & send_strobe(TI_CCxxx0_SNOP));
 }
-
+// will return the free bytes (for writing)
 u8 rf_get_free_bytes(void) {
  	return	0x0F & send_strobe(TI_CCxxx0_SNOP);
 }
+
+// reset the chip
 void rf_reset (void) {
 	u8 l = 1;
  	
 	drop_css();
 	raise_css();
 	
+	// wait (at least) 40 mircoseconds
 	wait(5,&l);
 	while (l);
 
+   	// then send the reset strobe
 	send_strobe	 (TI_CCxxx0_SRES);
 
 //	t2=2000;
@@ -130,7 +136,7 @@ void rf_reset (void) {
 
 
 
-// this works!	 don't fucking touch anything
+// this works!	 don't touch anything
 u16 write_byte (u16 address, u16 byte) {
 
 	 
@@ -156,7 +162,7 @@ u16 write_byte (u16 address, u16 byte) {
 
 }
 
-
+// send an 8 bit strobe command
 u16 send_strobe (u8 strobe) {
  	// drop the css and wait until chip is ready
 	drop_css();
@@ -183,7 +189,7 @@ u16 send_strobe (u8 strobe) {
 
 	return t;
 }
-// this works!	 don't fucking DARE  touch anything
+// this works!	 don't touch anything
 u16 read_byte (u16 address) {
 	
 	// drop the css and wait until chip is ready
@@ -211,10 +217,12 @@ u16 read_byte (u16 address) {
 
  RFStatus statuses[128];
 
+// sends a byte using the rf chip
 void rf_send_byte (u8 byte) {
    
     switch ( rf_get_status () ) {
-            
+        
+		// perform various operations depending on state, most notably flush    
         case RF_STATUS_RXFIFO_OVERFLOW:
             send_strobe     (TI_CCxxx0_SFRX);
 
@@ -230,27 +238,33 @@ void rf_send_byte (u8 byte) {
                  
              tmp = 0;
              
-             
+             // send 33 bytes to the fifo
              while (tmp < 33) {
                   t3 = write_byte(TI_CCxxx0_TXFIFO,byte);
                   tmp++;
              }
+
+			 // send the packet. one packet is 32 bytes
              send_strobe (TI_CCxxx0_STX); 
              while (rf_get_status() == RF_STATUS_TX);
              
 
-
+			 // flush the buffer
              send_strobe     (TI_CCxxx0_SFTX);             
     }
 
 }
+
+// deprecated variables...
 u8 read_lock = 0;
 
 u8 data_rf[32];
+
+// read a byte using the rf chip
 u8 rf_read_byte (u16 waittime) {
  	
 	switch ( rf_get_status () ) {
-	 		
+	 	// perform various operations depending on state, most notably flush    	
 		case RF_STATUS_RXFIFO_OVERFLOW:
 			send_strobe	 (TI_CCxxx0_SFRX);
 
@@ -261,13 +275,16 @@ u8 rf_read_byte (u16 waittime) {
 		default:
 			send_strobe	 (TI_CCxxx0_SFRX); 		
 			_new_rf_data = 0;
-				 
+			
+			// switch to receive state	 
 			send_strobe	 (TI_CCxxx0_SRX);
 			while (rf_get_status() != RF_STATUS_RX);
 			
+			// wait the timeout time or until there is new data.
 			wait (waittime,&read_lock);
 			while (read_lock && !_new_rf_data);
 
+			// if new data, read it from the buffer, flush the buffer and return the byte
 			if (_new_rf_data) {
 				_new_rf_data = 0;
 				tmp = 0;
@@ -275,8 +292,12 @@ u8 rf_read_byte (u16 waittime) {
 					data_rf[tmp++] = read_byte(TI_CCxxx0_RXFIFO);
 
 				send_strobe	 (TI_CCxxx0_SFRX);
+
+				// the byte returned is the mode of 32 bytes. they should all be the same, but they not always are.
 				return findMode(data_rf);	 
 			}
+
+			// otherwise go to idle and return 0
 			send_strobe	 (TI_CCxxx0_SIDLE);
 			return 0x00;
 			 
@@ -292,6 +313,8 @@ void test_send(void) {
 
 }
 FlagStatus s;
+
+// return 1 if MISO is high
 uint8_t miso_high (void) {
 
 	return GPIO_ReadInputDataBit (GPIOA,GPIO_Pin_6);
@@ -301,7 +324,7 @@ uint8_t miso_high (void) {
 
 
 
-
+// write a byte to a register, then read it back.
 u8 set_config (u16 address, u16 byte) {
  	 write_byte (address,byte);	  
 	 
@@ -311,6 +334,7 @@ u8 set_config (u16 address, u16 byte) {
 		return 0;
 }
 
+// write all the configuration values
 u8 configure (void) {
 		
 	   while (set_config(TI_CCxxx0_IOCFG0,		SETTING_IOCFG0				)) ;
@@ -363,11 +387,12 @@ u8 configure (void) {
 
 }
 
-
+// called every time line 6 is raised
 __irq void EXTI9_5_IRQHandler(void) {
 	if(EXTI_GetITStatus(EXTI_Line6) != RESET) {
+		// however, valid only if css is high (if it's low, normal spi operation)
 		if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_4)) {
-					
+			// if high, that means we've received a new packet		
 			_new_rf_data = 1;
 			
 		}
@@ -377,7 +402,7 @@ __irq void EXTI9_5_IRQHandler(void) {
 }
 
 
-
+// the most important function of init_timer is to give a value to the lock pointer.
 void init_timer (u8 *lock) {
  	//SysTick_Config (100);
 	_milliseconds = 0;
@@ -386,7 +411,8 @@ void init_timer (u8 *lock) {
 }
 
 
-
+// this timer is set up in gesture_latch.c
+// used by the wait function
 __irq void TIM3_IRQHandler(void){
 	TIM_ClearITPendingBit(TIM3,TIM_IT_Update); //clear the pending Interrupt
 	_milliseconds++;
@@ -398,7 +424,7 @@ __irq void TIM3_IRQHandler(void){
 	}
 }
 
-
+// timer lock is set to 1 and tim3 is enabled. timer lock will become 0 once the wait time has been exceeded.
 void wait(u16 wait_time, u8 *lock) {
    _milliseconds = 0;
    _wait_time = wait_time;
@@ -407,7 +433,7 @@ void wait(u16 wait_time, u8 *lock) {
 
 	TIM_Cmd(TIM3,ENABLE);
 }
-
+// deprecate function
 void wait_listen(u16 timeout) {
 
 }
