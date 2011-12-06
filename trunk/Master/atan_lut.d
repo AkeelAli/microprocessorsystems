@@ -1,0 +1,16 @@
+atan_lut.o: atan_LUT.c
+atan_lut.o: stm32f10x_conf.h
+atan_lut.o: stm32f10x_adc.h
+atan_lut.o: stm32f10x.h
+atan_lut.o: core_cm3.h
+atan_lut.o: C:\Keil\ARM\RV31\INC\stdint.h
+atan_lut.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+atan_lut.o: stm32f10x_conf.h
+atan_lut.o: stm32f10x_dma.h
+atan_lut.o: stm32f10x_exti.h
+atan_lut.o: stm32f10x_gpio.h
+atan_lut.o: stm32f10x_i2c.h
+atan_lut.o: stm32f10x_rcc.h
+atan_lut.o: stm32f10x_tim.h
+atan_lut.o: misc.h
+atan_lut.o: atan_LUT.h

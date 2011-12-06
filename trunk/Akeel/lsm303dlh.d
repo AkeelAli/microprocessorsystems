@@ -1,0 +1,17 @@
+lsm303dlh.o: LSM303DLH.c
+lsm303dlh.o: LSM303DLH.h
+lsm303dlh.o: HAL_LSM303DLH.h
+lsm303dlh.o: stm32f10x.h
+lsm303dlh.o: core_cm3.h
+lsm303dlh.o: C:\Keil\ARM\RV31\INC\stdint.h
+lsm303dlh.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+lsm303dlh.o: stm32f10x_conf.h
+lsm303dlh.o: stm32f10x_adc.h
+lsm303dlh.o: stm32f10x.h
+lsm303dlh.o: stm32f10x_dma.h
+lsm303dlh.o: stm32f10x_exti.h
+lsm303dlh.o: stm32f10x_gpio.h
+lsm303dlh.o: stm32f10x_i2c.h
+lsm303dlh.o: stm32f10x_rcc.h
+lsm303dlh.o: stm32f10x_tim.h
+lsm303dlh.o: misc.h

@@ -1,0 +1,17 @@
+lpryxxxal.o: LPRYxxxAL.c
+lpryxxxal.o: LPRYxxxAL.h
+lpryxxxal.o: stm32f10x.h
+lpryxxxal.o: core_cm3.h
+lpryxxxal.o: C:\Keil\ARM\RV31\INC\stdint.h
+lpryxxxal.o: C:\Keil\ARM\INC\ST\STM32F10x\system_stm32f10x.h
+lpryxxxal.o: stm32f10x_conf.h
+lpryxxxal.o: stm32f10x_adc.h
+lpryxxxal.o: stm32f10x.h
+lpryxxxal.o: stm32f10x_dma.h
+lpryxxxal.o: stm32f10x_exti.h
+lpryxxxal.o: stm32f10x_gpio.h
+lpryxxxal.o: stm32f10x_i2c.h
+lpryxxxal.o: stm32f10x_rcc.h
+lpryxxxal.o: stm32f10x_tim.h
+lpryxxxal.o: misc.h
+lpryxxxal.o: HAL_LPRYxxxAL.h

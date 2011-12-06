@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I "..\master" -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -o "gesture_latch.o" --omf_browse "gesture_latch.crf" --depend "gesture_latch.d" "gesture_latch.c"
