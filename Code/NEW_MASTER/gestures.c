@@ -20,6 +20,7 @@ int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 	acc[1] = y;
 	acc[2] = z;
 
+    //Calculate the differences (delta)
 	delta[0] = (acc[0] - prev_acc[0]);
 	delta[1] = (acc[1] - prev_acc[1]);
 	delta[2] = (acc[2] - prev_acc[2]);
@@ -29,27 +30,37 @@ int updateGesture(float x, float y, float z, float roll, symbol_t *result) {
 	abs_delta[2] = fabs(acc[2] - prev_acc[2]);
 	
 	/* roll overrides other gestures hence comes first in comparison */
+    //Check for both roll and that the board is turned upside down (z value is negative)
 	if (roll > ROLL_MAG && acc[2] < 0)
 		intelligent_push(pos_roll);
 
+     //Check for both roll and that the board is turned upside down (z value is negative)
 	else if (-roll > ROLL_MAG && acc[2] < 0) 
 		intelligent_push(neg_roll);
 
+    //Check that the greatest translation is in the x-direction
 	else if (abs_delta[0] > abs_delta[1] && abs_delta[0] > abs_delta[2]) {
 		if (delta[0] > ACC_X_MAG)			 
 			intelligent_push(pos_x);
+        //for negative direction
 		else if (-delta[0] > ACC_X_MAG)
 			intelligent_push(neg_x);	
 	}
+
+    //Check that the greatest translation is in the y-direction
 	else if (abs_delta[1] > abs_delta[0] && abs_delta[1] > abs_delta[2]) {
 		if (delta[1] > ACC_Y_MAG)		
 			intelligent_push(pos_y);
+            //for negative direction
 		else if (-delta[1] > ACC_Y_MAG)
 			intelligent_push(neg_y);
 	}
+    
+    //Check that the greatest translation is in the z-direction
 	else {
 		if (delta[2] > ACC_Z_MAG)			
 			intelligent_push(pos_z);
+            //for negative direction
 		else if (-delta[2] > ACC_Z_MAG)
 			intelligent_push(neg_z);	
 	} 
