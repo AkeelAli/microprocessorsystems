@@ -40,6 +40,7 @@ void init_protocol(void) {
 
 }
 
+// this gets called using a software intrrupt on gesture_latch.c
 __irq void EXTI15_10_IRQHandler(void) {
 	if(EXTI_GetITStatus(EXTI_Line11) != RESET) {
 		recorded_move = get_move();
@@ -52,7 +53,9 @@ void go_wait (void) {
 	recorded_move = no_move;
 	latch_move (sync);
 	 
-   _current_state = RF_STATE_WAIT;	  
+   _current_state = RF_STATE_WAIT;
+   
+    // wait for as long as no request command is received and no sync move is recorded...	  
 	while (	RF_CMD_REQ != received_command && sync != recorded_move) {
 		received_command = listen_command();
 	}
@@ -68,7 +71,7 @@ void go_wait (void) {
 }
 
 
-
+// send the sync request to the slave. wait for acknowledge.  also, start latching move
 void master_sync_send (void) {
 	uint8_t i = 0;
 
@@ -94,6 +97,8 @@ void master_move_wait (void) {
 	uint8_t i = 0;
  	_current_state = RF_STATE_M_MOVE_WAIT;
 
+
+	// wait for the slave to send its move. if nothing is received within a certain time period, go to wait
 	while ((i < 50) && !((RF_CMD_ROCK | RF_CMD_PAPER | RF_CMD_SCISSORS) & received_command )) {
 		received_command =  listen_command ();
 		//received_command = rf_read_byte (10000);
@@ -108,6 +113,7 @@ void master_move_wait (void) {
 	}
 }
 
+// send game result and wait for slave response
 void master_result_send (uint8_t slave_cmd) {
 
 	uint8_t i = 0;
@@ -116,6 +122,7 @@ void master_result_send (uint8_t slave_cmd) {
 	_current_state = RF_STATE_M_RESULT_SEND;
 	
 
+	// this block gets the move
 	while (RF_CMD_NO_CMD == master_move && i++ < 10) {
 		wait(50000,&_t_lock);
 		while ((no_move == recorded_move) && _t_lock);
@@ -137,6 +144,7 @@ void master_result_send (uint8_t slave_cmd) {
 		
 	}
 	
+	// determine result
 	switch (master_move) { 	 	
 		case RF_CMD_ROCK:
 			if ( RF_CMD_ROCK == (RF_CMD)slave_cmd) 
@@ -172,6 +180,8 @@ void master_result_send (uint8_t slave_cmd) {
 			go_wait();
 			break;
 	}
+
+	// send result
 	i = 0;
 	while (i < 30 && game_result != received_command ) {
 		received_command = send_listen (game_result);
@@ -188,6 +198,7 @@ void master_result_send (uint8_t slave_cmd) {
 
 }
 
+// send acknowledge and perform relevant led action
 void master_end (uint8_t slave_cmd) {
 	uint8_t i = 0;
 	 game_result = (RF_CMD) slave_cmd;
@@ -212,9 +223,7 @@ void master_end (uint8_t slave_cmd) {
 }
 
 
-
-
-
+// deprecated state. simply go to acknowledge send
 void slave_sync_wait (void) {
 
 	_current_state = RF_STATE_S_SYNC_WAIT;
@@ -234,6 +243,7 @@ void slave_sync_wait (void) {
 
 }
 
+// send the acknowledge. also, start latching move
 void slave_acknowledge_send (void) {
 	uint8_t i = 0;
 	_current_state = RF_STATE_S_ACK_SEND;
@@ -250,12 +260,13 @@ void slave_acknowledge_send (void) {
 
 }
 
+// send move and wait for result
 void slave_move_send (void) {
 	uint8_t i = 0;
 	
 	_current_state = RF_STATE_S_MOVE_SEND;
 
-	
+	// this block gets the move
 	while (RF_CMD_NO_CMD == slave_move && i++ < 10) {
 		wait(50000,&_t_lock);
 		while ((no_move == recorded_move) && _t_lock);
@@ -281,7 +292,7 @@ void slave_move_send (void) {
 
 
 
-
+	// send move and wait for the result
 	while ((i < 50) && !((RF_CMD_MWIN | RF_CMD_MLOSE | RF_CMD_TIE) & received_command ) ) {
 		received_command = send_listen (slave_move);
 		//send_command(slave_move);
@@ -297,6 +308,7 @@ void slave_move_send (void) {
 	}
 }
 
+// keep sending back the result until acknowledge, then perform led action
 void slave_end (uint8_t slave_cmd) {
 	
 	uint8_t i = 0;
@@ -325,6 +337,7 @@ void slave_end (uint8_t slave_cmd) {
 	//go_wait();
 }
 
+// just various ways of lighting up the LED
 void victory_dance(void) {
 		uint8_t i = 0;
 

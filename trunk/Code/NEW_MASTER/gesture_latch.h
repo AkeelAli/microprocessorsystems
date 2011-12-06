@@ -17,6 +17,8 @@ void update_Orientation(void);
 
 symbol_t get_move (void);
 
+
+// latch for a particular move. works for move combinations as well
 void latch_move (symbol_t lmove);
 
 #endif
