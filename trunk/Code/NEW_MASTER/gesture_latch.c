@@ -123,6 +123,18 @@ void update_Orientation(void){
 			roll = roll -360;
 		}
 	}
+
+    /***************************************************************
+    *In order to better determine the translation of the board from 
+    *the sensors inputs(especially since we have both the gyroscope 
+    *and acccelerometer) a Kalman filter and a Sensor Fusion algorithm.
+    *We build a filter based on an exponential model, were we arbitrarily
+    *choose to use factors 0.1 and 0.9 for the accelerometer and 
+    *gyroscope respectively. We hold a history of 10 and use an
+    *exponential model.
+    *More info, can be found here: http://en.wikipedia.org/wiki/Kalman_filter
+    ***************************************************************/
+
 	//compute the mean and variance of the pitch and roll obtained from
 	//the accelerometer
 	mean_pitch = mean_pitch - pitch_stat[stat_count]/10 + pitch/10;
@@ -137,16 +149,19 @@ void update_Orientation(void){
 	roll2_stat[stat_count] = roll*roll;
 	stat_count = (stat_count + 1) % 10;		
 
+    //Calculating the variance
 	var_pitch = pitchsquare - mean_pitch*mean_pitch;
 	var_roll = rollsquare - mean_roll*mean_roll;
 
 	//compute the fuse factor for each of the roll and pitch angles
 	fuse_factor_r = 0.1+0.9*exp(-(var_roll*var_roll/64));
 	fuse_factor_p = 0.1+0.9*exp(-(var_pitch*var_pitch/64));
-	//obtain roll, pitch, and yaw speed from the gyroscope
+
+	//obtain the roll, pitch, and yaw averages from the gyroscope
 	gyrosp_roll = (rawGyro[0][0] + rawGyro[1][0] + rawGyro[2][0] + rawGyro[3][0])/4;
 	gyrosp_pitch = (rawGyro[0][1] + rawGyro[1][1] + rawGyro[2][1] + rawGyro[3][1])/4;
 	gyrosp_yaw = (rawGyro[0][2] + rawGyro[1][2] + rawGyro[2][2] + rawGyro[3][2])/4;
+
 	//compute the actual gyroscope roll as the average between the currently obtained
 	//roll and the previous value 
 	gyro_roll = roll_fuse + (gyrosp_roll+gyrosp_roll_b)/50.0;
